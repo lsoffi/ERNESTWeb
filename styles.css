@@ -1995,8 +1995,25 @@ li {
   margin: -24px -24px 4px;
   border-bottom: 1px solid var(--line);
   object-fit: cover;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
+}
+
+.event-image-contain {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  margin: 0 0 4px;
+  object-fit: contain;
+  padding: 12px;
+  background: #ffffff;
+  filter: url("#ernest-blue-lines");
+}
+
+.image-filter-defs {
+  position: absolute;
+  pointer-events: none;
 }
 
 .event-image-placeholder {
