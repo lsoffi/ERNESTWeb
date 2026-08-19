@@ -1423,7 +1423,7 @@ const programI18n = {
       }
     },
     labels: {
-      area: "Sala / area",
+      area: "Area",
       topic: "Tema scientifico",
       age: "Età consigliata",
       ageAdaptation: "Adattamento età",
@@ -1477,7 +1477,7 @@ const programI18n = {
       }
     },
     labels: {
-      area: "Room / area",
+      area: "Area",
       topic: "Scientific topic",
       age: "Recommended age",
       ageAdaptation: "Age adaptation",
@@ -1531,7 +1531,7 @@ const programI18n = {
       }
     },
     labels: {
-      area: "Salle / espace",
+      area: "Area",
       topic: "Thème scientifique",
       age: "Âge recommandé",
       ageAdaptation: "Adaptation d'âge",
@@ -1741,6 +1741,7 @@ function renderActivityZone(zoneKey, activities, currentDay) {
   const zone = copy.zones?.[zoneKey];
   const showInvestigationPlaceholder = zoneKey === "investigation" && eventKey !== "avezzano" && !activities.length;
   if (!zone || (!activities.length && !showInvestigationPlaceholder)) return "";
+  const showZoneDescription = zoneKey === "investigation";
   const countLabel = activities.length === 1 ? copy.zoneActivitySingular : copy.zoneActivityPlural;
   const countMarkup = zoneKey === "investigation" && activities.length
     ? `<p class="program-zone-count">${activities.length} ${countLabel}</p>`
@@ -1761,7 +1762,7 @@ function renderActivityZone(zoneKey, activities, currentDay) {
           <h3 id="program-zone-${zoneKey}-title">${zone.title}</h3>
         </div>
       </div>
-      <p class="program-zone-description">${zone.description}</p>
+      ${showZoneDescription ? `<p class="program-zone-description">${zone.description}</p>` : ""}
       ${zoneBody}
     </section>`;
 }

@@ -2464,7 +2464,7 @@ html[data-theme="dark"] .credits-disclosure {
 .program-zone-entrance .program-zone-grid,
 .program-zone-debrief .program-zone-grid,
 .program-zone-eu .program-zone-grid {
-  grid-template-columns: minmax(0, 32rem);
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .program-activity-card {
