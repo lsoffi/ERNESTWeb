@@ -206,7 +206,7 @@ const programmeActivities2026 = {
         "it": "Avezzano",
         "fr": "Avezzano"
       },
-      "image": "activities-ern-2026_img/avezzano-hepscape.jpg",
+      "image": "activities-ern-2026_img/avezzano-hepscape-2026.jpg",
       "venue": {
         "en": "Castello Orsini",
         "it": "Castello Orsini",
