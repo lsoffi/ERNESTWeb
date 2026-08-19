@@ -1397,7 +1397,7 @@ const programI18n = {
     day26: "26 settembre",
     imagePlaceholder: "Immagine attività in arrivo",
     investigationWipTitle: "Programma in preparazione",
-    investigationWipCopy: "Le attività specifiche della Investigation Area saranno pubblicate appena finalizzate.",
+    investigationWipCopy: "Questa area è in aggiornamento: altre attività potranno essere aggiunte appena finalizzate.",
     zoneActivitySingular: "attività",
     zoneActivityPlural: "attività",
     zones: {
@@ -1451,7 +1451,7 @@ const programI18n = {
     day26: "26 September",
     imagePlaceholder: "Activity image coming soon",
     investigationWipTitle: "Programme in progress",
-    investigationWipCopy: "The specific activities for this city's Investigation Area will be published as soon as they are finalized.",
+    investigationWipCopy: "This area is being updated: more activities may be added as soon as they are finalized.",
     zoneActivitySingular: "activity",
     zoneActivityPlural: "activities",
     zones: {
@@ -1505,7 +1505,7 @@ const programI18n = {
     day26: "26 septembre",
     imagePlaceholder: "Image de l'activité bientôt disponible",
     investigationWipTitle: "Programme en préparation",
-    investigationWipCopy: "Les activités spécifiques de l’Investigation Area de cette ville seront publiées dès qu’elles seront finalisées.",
+    investigationWipCopy: "Cette zone est en cours de mise à jour : d’autres activités pourront être ajoutées dès qu’elles seront finalisées.",
     zoneActivitySingular: "activité",
     zoneActivityPlural: "activités",
     zones: {
@@ -1739,7 +1739,7 @@ function renderActivityCard(activity, currentDay = "all") {
 
 function renderActivityZone(zoneKey, activities, currentDay) {
   const zone = copy.zones?.[zoneKey];
-  const showInvestigationPlaceholder = zoneKey === "investigation" && eventKey !== "avezzano" && !activities.length;
+  const showInvestigationPlaceholder = zoneKey === "investigation" && eventKey !== "avezzano";
   if (!zone || (!activities.length && !showInvestigationPlaceholder)) return "";
   const showZoneDescription = zoneKey === "investigation";
   const countLabel = activities.length === 1 ? copy.zoneActivitySingular : copy.zoneActivityPlural;
@@ -1747,7 +1747,12 @@ function renderActivityZone(zoneKey, activities, currentDay) {
     ? `<p class="program-zone-count">${activities.length} ${countLabel}</p>`
     : "";
   const zoneBody = showInvestigationPlaceholder
-    ? `<div class="program-zone-wip">
+    ? `${activities.length
+        ? `<div class="program-zone-grid">
+          ${activities.map((activity) => renderActivityCard(activity, currentDay)).join("")}
+        </div>`
+        : ""}
+      <div class="program-zone-wip">
         <h4>${copy.investigationWipTitle}</h4>
         <p>${copy.investigationWipCopy}</p>
       </div>`
@@ -1767,6 +1772,29 @@ function renderActivityZone(zoneKey, activities, currentDay) {
     </section>`;
 }
 
+function hepscapeActivitiesForEvent() {
+  const hepscapeEventKeys = ["pisa", "bari", "terni", "paris"];
+  const baseActivity = programmeActivities2026.avezzano?.find((activity) => activity.id === "AVE-001");
+  if (!eventProgramme || !baseActivity || !hepscapeEventKeys.includes(eventKey)) return [];
+
+  const cityCode = String(eventKey).toUpperCase().replace(/[^A-Z0-9]/g, "-");
+  const pendingText = { en: "To be defined", it: "In definizione", fr: "À définir" };
+
+  return [{
+    ...baseActivity,
+    id: `${cityCode}-HEPSCAPE`,
+    sourceActivityId: "",
+    city: eventProgramme.city,
+    venue: eventProgramme.venue,
+    area: copy.zones.investigation.title,
+    sessions25: eventIncludesDay("25") ? pendingText : "",
+    sessions26: eventIncludesDay("26") ? pendingText : "",
+    bookingMethod: pendingText,
+    accessibility: "",
+    partner: ""
+  }];
+}
+
 function renderActivities(day = "all") {
   const section = document.getElementById("program-activities");
   const grid = document.getElementById("program-activity-grid");
@@ -1775,6 +1803,7 @@ function renderActivities(day = "all") {
 
   const activities = [
     ...sharedZoneActivitiesForEvent(),
+    ...hepscapeActivitiesForEvent(),
     ...(programmeActivities2026[eventKey] || [])
   ];
   if (!activities.length) {
