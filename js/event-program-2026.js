@@ -1423,7 +1423,7 @@ const programI18n = {
       }
     },
     labels: {
-      area: "Sala / area",
+      area: "Area",
       topic: "Tema scientifico",
       age: "Età consigliata",
       ageAdaptation: "Adattamento età",
@@ -1477,7 +1477,7 @@ const programI18n = {
       }
     },
     labels: {
-      area: "Room / area",
+      area: "Area",
       topic: "Scientific topic",
       age: "Recommended age",
       ageAdaptation: "Age adaptation",
@@ -1531,7 +1531,7 @@ const programI18n = {
       }
     },
     labels: {
-      area: "Salle / espace",
+      area: "Area",
       topic: "Thème scientifique",
       age: "Âge recommandé",
       ageAdaptation: "Adaptation d'âge",
