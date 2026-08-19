@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event programme | ERNEST 2026</title>
+    <meta name="description" content="Programme for an ERNEST European Researchers' Night 2026 event." />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", storedTheme || (prefersDark ? "dark" : "light"));
+        } catch {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20260819-1" />
+  </head>
+  <body>
+    <svg class="image-filter-defs" aria-hidden="true" width="0" height="0">
+      <filter id="ernest-blue-lines" color-interpolation-filters="sRGB">
+        <feColorMatrix type="matrix" values="
+          0.1976 0.6647 0.0671 0 0.0706
+          0.1693 0.5693 0.0575 0 0.2039
+          0.1301 0.4376 0.0442 0 0.3882
+          0      0      0      1 0" />
+      </filter>
+    </svg>
+    <div class="page-shell">
+      <header class="program-header">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html" aria-label="ERNEST home">
+            <img src="ERNEST_long_blue.svg" data-light-src="ERNEST_long_blue.svg" data-dark-src="ERNEST_long_yellow.svg" alt="ERNEST project logo" />
+          </a>
+          <div class="topbar-actions">
+            <a class="button button-secondary" id="all-events-link" href="events-ern-2026.html">All events</a>
+            <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+              <span class="theme-toggle-sun" aria-hidden="true">☀</span>
+              <span class="theme-toggle-moon" aria-hidden="true">☾</span>
+            </button>
+            <div class="lang-switch" aria-label="Language selector">
+              <span class="lang-switch-current" aria-current="true">EN</span>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <a href="it/programmi-ern-2026.html" lang="it" data-program-lang-link="it">IT</a>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <a href="fr/programmi-ern-2026.html" lang="fr" data-program-lang-link="fr">FR</a>
+              </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="program-main" id="main-content">
+        <article class="program-card" aria-live="polite">
+          <div class="program-visual">
+            <img id="program-image" src="" alt="" />
+          </div>
+          <div class="program-copy">
+            <p class="eyebrow" id="program-eyebrow">European Researchers' Night 2026</p>
+            <p class="event-date" id="program-date"></p>
+            <h1 id="program-city">Event programme</h1>
+            <dl class="event-meta-list program-meta">
+              <div><dt id="program-institution-label">Institution</dt><dd id="program-institution"></dd></div>
+              <div><dt id="program-venue-label">Venue</dt><dd id="program-venue"></dd></div>
+            </dl>
+            <section class="program-placeholder">
+              <p class="section-kicker" id="program-section-kicker">Programme</p>
+              <h2 id="program-placeholder-title">Full programme coming soon.</h2>
+              <p id="program-placeholder-copy">We are finalising the activities and timetable for this event. The complete programme will be published on this page: you can save or share this link now.</p>
+            </section>
+            <p class="program-permalink-note" id="program-permalink-note">This is the permanent link for this event programme.</p>
+          </div>
+        </article>
+
+        <section class="program-activities" id="program-activities" hidden>
+          <div class="program-activities-heading">
+            <p class="section-kicker" id="program-activities-kicker"></p>
+            <h2 id="program-activities-title"></h2>
+            <p id="program-activities-copy"></p>
+          </div>
+          <div class="program-activity-filters" id="program-activity-filters" aria-label="Programme filters"></div>
+          <div class="program-activity-grid" id="program-activity-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer program-footer">
+        <div class="eu-funding-mark" aria-label="Funded by the European Union">
+          <div class="eu-logo-box"><img class="eu-logo-full" src="EN_FundedbytheEU_RGB_POS.png" alt="Funded by the European Union" /></div>
+        </div>
+        <p class="funding-text">ERNEST is a European Researchers' Night project funded by the European Commission under the Marie Skłodowska-Curie Actions. GA 101305138.</p>
+        <div class="footer-policy-links"><p>© 2026 ERNEST</p><a href="cookie-policy-eu.html">Cookie policy</a></div>
+      </footer>
+    </div>
+    <script src="site.js"></script>
+    <script src="js/event-program-2026.js?v=20260819-2"></script>
+  </body>
+</html>
