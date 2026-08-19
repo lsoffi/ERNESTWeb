@@ -2499,6 +2499,10 @@ html[data-theme="dark"] .credits-disclosure {
   padding: 0.55rem;
 }
 
+.program-activity-card[data-activity-id="AVE-007"] .program-activity-media img {
+  object-position: center 24%;
+}
+
 .program-activity-image-placeholder {
   display: grid;
   width: 100%;
