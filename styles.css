@@ -2201,84 +2201,57 @@ li {
 .event-route {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
   margin-top: 18px;
-}
-
-.event-route::before {
-  content: "";
-  position: absolute;
-  left: calc(12.5% + 58px);
-  right: calc(12.5% + 58px);
-  top: 58px;
-  height: 3px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent-strong), rgba(31, 32, 65, 0.22));
 }
 
 .journey-step {
   position: relative;
   display: grid;
-  gap: 18px;
+  gap: 0;
   align-content: start;
-  justify-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: 0 1rem 2.5rem rgba(19, 52, 99, 0.08);
 }
 
-.journey-step:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 50px;
-  right: -22px;
-  width: 18px;
-  height: 18px;
-  border-top: 3px solid var(--accent-strong);
-  border-right: 3px solid var(--accent-strong);
-  transform: rotate(45deg);
-}
-
-.journey-marker {
+.journey-image {
   position: relative;
   z-index: 1;
-  display: grid;
-  place-items: center;
-  width: 116px;
-  height: 116px;
-  border: 1px solid rgba(31, 32, 65, 0.18);
-  border-radius: 999px;
-  background: var(--accent);
-  color: var(--text);
-  padding: 0 14px;
-  text-align: center;
-  font-size: clamp(0.68rem, 0.8vw, 0.78rem);
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  line-height: 1.1;
-  text-transform: uppercase;
-  box-shadow: 0 12px 34px rgba(31, 32, 65, 0.14);
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 0;
+  background: #fffbea;
+  padding: 0;
+  box-shadow: none;
 }
 
-.journey-step-final .journey-marker {
-  background: var(--text);
-  border-color: var(--text);
-  color: var(--bg);
+.journey-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .journey-copy {
   width: 100%;
-  min-height: 260px;
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  background: var(--surface);
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   padding: 22px;
-  backdrop-filter: blur(12px);
+  backdrop-filter: none;
 }
 
 .journey-copy h3 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 }
 
 .journey-copy p:last-child {
@@ -2288,11 +2261,28 @@ li {
 }
 
 .passport-note {
+  display: grid;
+  grid-template-columns: minmax(10rem, 16rem) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 1.5rem);
+  align-items: center;
   margin-top: 18px;
   border: 1px solid var(--line);
   border-radius: 24px;
   background: var(--surface);
   padding: 24px;
+}
+
+.passport-note-image {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fffbea;
+}
+
+.passport-note-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .passport-note h3 {
@@ -2302,20 +2292,16 @@ li {
 }
 
 .passport-note p {
-  margin: 0;
+  margin: 0 0 0.9rem;
   color: var(--muted);
   line-height: 1.7;
 }
 
-@media (max-width: 1080px) {
-  .event-route {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.passport-note p:last-child {
+  margin-bottom: 0;
+}
 
-  .event-route::before,
-  .journey-step::after {
-    display: none;
-  }
+@media (max-width: 1080px) {
 }
 
 @media (max-width: 640px) {
@@ -2325,18 +2311,15 @@ li {
   }
 
   .journey-step {
-    grid-template-columns: 104px 1fr;
-    align-items: start;
-    justify-items: stretch;
+    grid-template-columns: 1fr;
   }
 
-  .journey-marker {
-    width: 104px;
-    height: 104px;
+  .passport-note {
+    grid-template-columns: 1fr;
   }
 
-  .journey-copy {
-    min-height: 0;
+  .passport-note-image {
+    max-width: 18rem;
   }
 }
 
@@ -2354,31 +2337,12 @@ li {
 }
 
 
-html[data-theme="dark"] .journey-marker {
-  background: #ffe548;
-  border-color: rgba(255, 229, 72, 0.42);
-  color: #1f2041;
-}
-
-html[data-theme="dark"] .journey-step-final .journey-marker {
-  background: #fffbea;
-  border-color: rgba(255, 251, 234, 0.72);
-  color: #1f2041;
-}
-
+html[data-theme="dark"] .journey-step,
 html[data-theme="dark"] .journey-copy,
 html[data-theme="dark"] .passport-note,
 html[data-theme="dark"] .credits-disclosure {
   background: rgba(35, 36, 73, 0.72);
   border-color: rgba(255, 229, 72, 0.14);
-}
-
-html[data-theme="dark"] .event-route::before {
-  background: linear-gradient(90deg, #ffe548, rgba(255, 229, 72, 0.34));
-}
-
-html[data-theme="dark"] .journey-step:not(:last-child)::after {
-  border-color: #ffe548;
 }
 
 
@@ -2435,8 +2399,72 @@ html[data-theme="dark"] .journey-step:not(:last-child)::after {
 
 .program-activity-grid {
   display: grid;
+  gap: clamp(1.75rem, 4vw, 3rem);
+}
+
+.program-zone {
+  border-top: 2px solid var(--line);
+  padding-top: clamp(1.2rem, 3vw, 2rem);
+}
+
+.program-zone-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 0.7rem;
+}
+
+.program-zone-count {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.program-zone-heading h3 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.55rem);
+  line-height: 1;
+}
+
+.program-zone-description {
+  max-width: 880px;
+  margin: 0 0 1.15rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.program-zone-grid {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
   gap: 1rem;
+}
+
+.program-zone-wip {
+  max-width: 42rem;
+  border: 1px dashed var(--line-strong);
+  border-radius: 1.2rem;
+  padding: clamp(1.2rem, 3vw, 1.6rem);
+  background: var(--surface);
+}
+
+.program-zone-wip h4 {
+  margin: 0 0 0.45rem;
+  font-size: 1.15rem;
+}
+
+.program-zone-wip p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.program-zone-entrance .program-zone-grid,
+.program-zone-debrief .program-zone-grid,
+.program-zone-eu .program-zone-grid {
+  grid-template-columns: minmax(0, 32rem);
 }
 
 .program-activity-card {
@@ -2459,6 +2487,16 @@ html[data-theme="dark"] .journey-step:not(:last-child)::after {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.program-activity-card[data-activity-id="AVE-011"] .program-activity-media {
+  background: #fffbea;
+}
+
+.program-activity-card[data-activity-id="AVE-011"] .program-activity-media img {
+  object-fit: contain;
+  object-position: center;
+  padding: 0.55rem;
 }
 
 .program-activity-image-placeholder {
@@ -2534,6 +2572,11 @@ html[data-theme="dark"] .journey-step:not(:last-child)::after {
 }
 
 @media (max-width: 640px) {
+  .program-zone-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
   .program-activity-details {
     grid-template-columns: 1fr;
   }
