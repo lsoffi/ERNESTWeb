@@ -1154,7 +1154,7 @@ const programmeActivities2026 = {
         "it": "Avezzano",
         "fr": "Avezzano"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/avezzano-torre-delle-stelle.jpg",
       "venue": {
         "en": "Castello Orsini",
         "it": "Castello Orsini",
@@ -1222,82 +1222,82 @@ const programmeActivities2026 = {
         "fr": ""
       }
     },
-    {
-      "id": "AVE-014",
-      "sourceActivityId": "",
-      "city": {
-        "en": "Avezzano",
-        "it": "Avezzano",
-        "fr": "Avezzano"
-      },
-      "image": "",
-      "venue": {
-        "en": "Castello Orsini",
-        "it": "Castello Orsini",
-        "fr": "Castello Orsini"
-      },
-      "area": {
-        "en": "Giardini",
-        "it": "Giardini",
-        "fr": "Giardini"
-      },
-      "title": {
-        "en": "Micron: demonstration activity",
-        "it": "Micron: attività dimostrativa",
-        "fr": "Micron : activité de démonstration"
-      },
-      "type": {
-        "en": "Demonstration",
-        "it": "Dimostrazione",
-        "fr": "Démonstration"
-      },
-      "description": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "topic": {
-        "en": "Interdisciplinary",
-        "it": "Interdisciplinare",
-        "fr": "Interdisciplinaire"
-      },
-      "age": "All Ages",
-      "ageAdaptation": {
-        "en": "Yes",
-        "it": "Sì",
-        "fr": "Oui"
-      },
-      "format": {
-        "en": "Continuous",
-        "it": "Continuo",
-        "fr": "Continu"
-      },
-      "duration": "",
-      "sessions25": "17-22",
-      "sessions26": "17-22",
-      "maxParticipants": "",
-      "bookingRequired": {
-        "en": "No",
-        "it": "No",
-        "fr": "Non"
-      },
-      "bookingMethod": "",
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "Micron",
-        "it": "Micron",
-        "fr": "Micron"
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
-    },
+    // {
+    //   "id": "AVE-014",
+    //   "sourceActivityId": "",
+    //   "city": {
+    //     "en": "Avezzano",
+    //     "it": "Avezzano",
+    //     "fr": "Avezzano"
+    //   },
+    //   "image": "",
+    //   "venue": {
+    //     "en": "Castello Orsini",
+    //     "it": "Castello Orsini",
+    //     "fr": "Castello Orsini"
+    //   },
+    //   "area": {
+    //     "en": "Giardini",
+    //     "it": "Giardini",
+    //     "fr": "Giardini"
+    //   },
+    //   "title": {
+    //     "en": "Micron: demonstration activity",
+    //     "it": "Micron: attività dimostrativa",
+    //     "fr": "Micron : activité de démonstration"
+    //   },
+    //   "type": {
+    //     "en": "Demonstration",
+    //     "it": "Dimostrazione",
+    //     "fr": "Démonstration"
+    //   },
+    //   "description": {
+    //     "en": "",
+    //     "it": "",
+    //     "fr": ""
+    //   },
+    //   "topic": {
+    //     "en": "Interdisciplinary",
+    //     "it": "Interdisciplinare",
+    //     "fr": "Interdisciplinaire"
+    //   },
+    //   "age": "All Ages",
+    //   "ageAdaptation": {
+    //     "en": "Yes",
+    //     "it": "Sì",
+    //     "fr": "Oui"
+    //   },
+    //   "format": {
+    //     "en": "Continuous",
+    //     "it": "Continuo",
+    //     "fr": "Continu"
+    //   },
+    //   "duration": "",
+    //   "sessions25": "17-22",
+    //   "sessions26": "17-22",
+    //   "maxParticipants": "",
+    //   "bookingRequired": {
+    //     "en": "No",
+    //     "it": "No",
+    //     "fr": "Non"
+    //   },
+    //   "bookingMethod": "",
+    //   "accessibility": {
+    //     "en": "",
+    //     "it": "",
+    //     "fr": ""
+    //   },
+    //   "partner": {
+    //     "en": "Micron",
+    //     "it": "Micron",
+    //     "fr": "Micron"
+    //   },
+    //   "notes": {
+    //     "en": "",
+    //     "it": "",
+    //     "fr": ""
+    //   }
+    // },
     {
       "id": "AVE-015",
       "sourceActivityId": "",
