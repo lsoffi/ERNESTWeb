@@ -569,6 +569,7 @@ html[data-theme="dark"] .theme-toggle-moon {
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 1.2rem;
+  overflow-wrap: anywhere;
 }
 
 .feature-band {
@@ -2125,6 +2126,7 @@ li {
   margin: 0.35rem 0 1.5rem;
   font-size: clamp(2.8rem, 6vw, 5.8rem);
   line-height: 0.95;
+  overflow-wrap: anywhere;
 }
 
 .program-meta {
