@@ -1996,7 +1996,7 @@ li {
   margin: -24px -24px 4px;
   border-bottom: 1px solid var(--line);
   object-fit: cover;
-  background-color: #ffffff;
+  background-color: transparent;
   background-size: cover;
   background-position: center;
 }
@@ -2008,8 +2008,7 @@ li {
   margin: 0 0 4px;
   object-fit: contain;
   padding: 12px;
-  background: #ffffff;
-  filter: url("#ernest-blue-lines");
+  background: transparent;
 }
 
 .image-filter-defs {
@@ -2112,7 +2111,6 @@ li {
   height: 100%;
   max-height: 34rem;
   object-fit: contain;
-  filter: url("#ernest-blue-lines");
 }
 
 .program-copy {

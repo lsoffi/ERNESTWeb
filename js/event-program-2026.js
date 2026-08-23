@@ -1858,7 +1858,7 @@ if (!eventProgramme) {
   const city = localise(eventProgramme.city);
   document.title = `${city} ${copy.titleSuffix}`;
   const image = document.getElementById("program-image");
-  image.src = `${assetPrefix}events-ern-2026_img/${eventProgramme.image}`;
+  image.src = `${assetPrefix}events-ern-2026_img/${eventProgramme.image}?v=20260823-12`;
   image.alt = copy.imageAlt.replace("{city}", city);
   setText("program-date", localise(eventProgramme.date));
   setText("program-city", city);
