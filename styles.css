@@ -2103,7 +2103,7 @@ li {
   min-height: 32rem;
   padding: clamp(1.5rem, 4vw, 3.5rem);
   place-items: center;
-  background: #fff;
+  background: transparent;
 }
 
 .program-visual img {
