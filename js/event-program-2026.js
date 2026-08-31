@@ -77,7 +77,7 @@ const eventProgrammes2026 = {
       it: "Università di Pavia · Istituto Nazionale di Fisica Nucleare",
       fr: "Université de Pavie · Institut national italien de physique nucléaire"
     },
-    venue: { en: "To be confirmed", it: "Da confermare", fr: "À confirmer" },
+    venue: { en: "Department of Physics", it: "Dipartimento di Fisica", fr: "Département de physique" },
     image: "PAVIA.png"
   },
   manchester: {
@@ -261,6 +261,12 @@ const programmeActivities2026 = {
         "en": "Online registration",
         "it": "Registrazione online",
         "fr": "Inscription en ligne"
+      },
+      "bookingUrl": "https://l.infn.it/prenotazioni-hepscape-avezzano2026",
+      "bookingLabel": {
+        "en": "Book HEPscape in Avezzano",
+        "it": "Prenota HEPscape ad Avezzano",
+        "fr": "Réserver HEPscape à Avezzano"
       },
       "accessibility": {
         "en": "",
@@ -1733,6 +1739,7 @@ function renderActivityCard(activity, currentDay = "all") {
         <h3>${title || localise(activity.id)}</h3>
         ${localise(activity.description).trim() ? `<p class="program-activity-description">${localise(activity.description).trim()}</p>` : ""}
         <dl class="program-activity-details">${details}</dl>
+        ${localise(activity.bookingUrl).trim() ? `<a class="button button-primary program-activity-booking" href="${localise(activity.bookingUrl).trim()}" target="_blank" rel="noopener noreferrer">${localise(activity.bookingLabel).trim() || localise(activity.bookingMethod).trim() || copy.labels.booking}</a>` : ""}
       </div>
     </article>`;
 }
