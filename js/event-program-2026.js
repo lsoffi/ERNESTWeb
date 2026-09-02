@@ -206,7 +206,7 @@ const programmeActivities2026 = {
         "it": "Avezzano",
         "fr": "Avezzano"
       },
-      "image": "activities-ern-2026_img/avezzano-hepscape-2026.jpg",
+      "image": "escape-rooms_img/hepscape/img1.jpg",
       "venue": {
         "en": "Castello Orsini",
         "it": "Castello Orsini",
@@ -223,19 +223,19 @@ const programmeActivities2026 = {
         "fr": "HEPscape!"
       },
       "type": {
-        "en": "Escape room",
+        "en": "Escape Room",
         "it": "Escape room",
         "fr": "Escape room"
       },
       "description": {
-        "en": "Step into the Control Room of a major CERN experiment and become part of the research team. Working with your group, you will solve puzzles, analyse real data, rebuild a particle detector and complete a mission inspired by the work of physicists. An immersive experience combining play, logic and authentic scientific research to discover how a new physics discovery is made.",
+        "en": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica.",
         "it": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica.",
-        "fr": "Entrez dans la salle de contrôle d'une grande expérience du CERN et intégrez l'équipe de recherche. En collaboration avec votre groupe, vous devrez résoudre des énigmes, analyser de vraies données, reconstruire un détecteur de particules et accomplir une mission inspirée du travail des physiciens. Une expérience immersive qui associe jeu, logique et recherche scientifique authentique pour découvrir comment naît une nouvelle découverte en physique."
+        "fr": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica."
       },
       "topic": {
         "en": "Physics",
-        "it": "Fisica",
-        "fr": "Physique"
+        "it": "Physics",
+        "fr": "Physics"
       },
       "age": "All Ages",
       "ageAdaptation": {
@@ -262,26 +262,14 @@ const programmeActivities2026 = {
         "it": "Registrazione online",
         "fr": "Inscription en ligne"
       },
+      "accessibility": "",
+      "partner": "",
+      "notes": "",
       "bookingUrl": "https://l.infn.it/prenotazioni-hepscape-avezzano2026",
       "bookingLabel": {
         "en": "Book HEPscape in Avezzano",
         "it": "Prenota HEPscape ad Avezzano",
         "fr": "Réserver HEPscape à Avezzano"
-      },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
       }
     },
     {
@@ -309,19 +297,19 @@ const programmeActivities2026 = {
         "fr": "INFN Kids"
       },
       "type": {
-        "en": "Hands-on activity",
+        "en": "Hands-on Activity",
         "it": "Attività pratica",
         "fr": "Activité pratique"
       },
       "description": {
-        "en": "An area dedicated to younger visitors, with games, experiments and interactive activities to discover science while having fun. Through hands-on workshops and challenges, children and families can explore the principles of physics and learn about the work of INFN researchers.",
+        "en": "Un'area dedicata ai più piccoli con giochi, esperimenti e attività interattive per scoprire la scienza divertendosi. Attraverso laboratori pratici e sfide, bambini e famiglie potranno esplorare i principi della fisica e conoscere il lavoro dei ricercatori dell'INFN.",
         "it": "Un'area dedicata ai più piccoli con giochi, esperimenti e attività interattive per scoprire la scienza divertendosi. Attraverso laboratori pratici e sfide, bambini e famiglie potranno esplorare i principi della fisica e conoscere il lavoro dei ricercatori dell'INFN.",
-        "fr": "Un espace dédié aux plus jeunes, avec des jeux, des expériences et des activités interactives pour découvrir la science en s'amusant. Grâce à des ateliers pratiques et à des défis, enfants et familles pourront explorer les principes de la physique et découvrir le travail des chercheurs de l'INFN."
+        "fr": "Un'area dedicata ai più piccoli con giochi, esperimenti e attività interattive per scoprire la scienza divertendosi. Attraverso laboratori pratici e sfide, bambini e famiglie potranno esplorare i principi della fisica e conoscere il lavoro dei ricercatori dell'INFN."
       },
       "topic": {
         "en": "Physics",
-        "it": "Fisica",
-        "fr": "Physique"
+        "it": "Physics",
+        "fr": "Physics"
       },
       "age": "3–5, 6–10",
       "ageAdaptation": {
@@ -348,21 +336,9 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
     {
       "id": "AVE-003",
@@ -386,22 +362,22 @@ const programmeActivities2026 = {
       "title": {
         "en": "ESA Quiz",
         "it": "ESA Quiz",
-        "fr": "Quiz ESA"
+        "fr": "ESA Quiz"
       },
       "type": {
-        "en": "Interactive installation",
+        "en": "Interactive Installation",
         "it": "Installazione interattiva",
         "fr": "Installation interactive"
       },
       "description": {
-        "en": "Discover how Europe explores space together with the European Space Agency (ESA). Through outreach materials, interactive activities and conversations with researchers and experts, you will learn about European space missions, the technologies developed to explore the Universe and their impact on everyday life. A chance to get closer to the world of space and to the research challenges of the future.",
+        "en": "Scopri come l'Europa esplora lo spazio insieme all'Agenzia Spaziale Europea (ESA). Attraverso materiali divulgativi, attività interattive e il confronto con ricercatori ed esperti, potrai conoscere le missioni spaziali europee, le tecnologie sviluppate per l'esplorazione dell'Universo e il loro impatto sulla vita di tutti i giorni. Un'occasione per avvicinarsi al mondo dello spazio e alle sfide della ricerca del futuro.",
         "it": "Scopri come l'Europa esplora lo spazio insieme all'Agenzia Spaziale Europea (ESA). Attraverso materiali divulgativi, attività interattive e il confronto con ricercatori ed esperti, potrai conoscere le missioni spaziali europee, le tecnologie sviluppate per l'esplorazione dell'Universo e il loro impatto sulla vita di tutti i giorni. Un'occasione per avvicinarsi al mondo dello spazio e alle sfide della ricerca del futuro.",
-        "fr": "Découvrez comment l'Europe explore l'espace avec l'Agence spatiale européenne (ESA). Grâce à des supports de médiation scientifique, des activités interactives et des échanges avec des chercheurs et des experts, vous découvrirez les missions spatiales européennes, les technologies développées pour explorer l'Univers et leur impact sur la vie quotidienne. Une occasion de se rapprocher du monde de l'espace et des défis de la recherche de demain."
+        "fr": "Scopri come l'Europa esplora lo spazio insieme all'Agenzia Spaziale Europea (ESA). Attraverso materiali divulgativi, attività interattive e il confronto con ricercatori ed esperti, potrai conoscere le missioni spaziali europee, le tecnologie sviluppate per l'esplorazione dell'Universo e il loro impatto sulla vita di tutti i giorni. Un'occasione per avvicinarsi al mondo dello spazio e alle sfide della ricerca del futuro."
       },
       "topic": {
-        "en": "Physics, astronomy, engineering, environment, Earth sciences",
-        "it": "Fisica, astronomia, ingegneria, ambiente, scienze della Terra",
-        "fr": "Physique, astronomie, ingénierie, environnement, sciences de la Terre"
+        "en": "Physics, Astronomy, Engineering, Environment, Earth Sciences",
+        "it": "Physics, Astronomy, Engineering, Environment, Earth Sciences",
+        "fr": "Physics, Astronomy, Engineering, Environment, Earth Sciences"
       },
       "age": "All Ages",
       "ageAdaptation": {
@@ -428,261 +404,9 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "ESA",
-        "it": "ESA",
-        "fr": "ESA"
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
-    },
-    {
-      "id": "AVE-004",
-      "sourceActivityId": "4",
-      "city": {
-        "en": "Avezzano",
-        "it": "Avezzano",
-        "fr": "Avezzano"
-      },
-      "image": "activities-ern-2026_img/avezzano-ingresso-ernest.png",
-      "venue": {
-        "en": "Castello Orsini",
-        "it": "Castello Orsini",
-        "fr": "Castello Orsini"
-      },
-      "area": {
-        "en": "Giardini",
-        "it": "Giardini",
-        "fr": "Giardini"
-      },
-      "title": {
-        "en": "ERNEST Welcome Desk",
-        "it": "Ingresso ERNEST",
-        "fr": "Accueil ERNEST"
-      },
-      "type": {
-        "en": "Talk",
-        "it": "Incontro",
-        "fr": "Rencontre"
-      },
-      "description": {
-        "en": "Start your European Researchers' Night adventure here! Pick up your ERNEST passport, discover the activities on the programme and get ready to explore the world of research. The Entrance area is the starting point of the journey: here you will find all the information you need to enjoy the event, collect clues, meet researchers and become the protagonist of your own experience.",
-        "it": "Inizia qui la tua avventura nella Notte Europea delle Ricercatrici e dei Ricercatori! Ritira il tuo passaporto ERNEST, scopri le attività in programma e preparati a esplorare il mondo della ricerca. L'area Entrance è il punto di partenza del percorso: qui troverai tutte le informazioni utili per vivere l'evento, raccogliere indizi, incontrare i ricercatori e diventare protagonista della tua esperienza.",
-        "fr": "Commencez ici votre aventure pendant la Nuit européenne des chercheuses et des chercheurs ! Récupérez votre passeport ERNEST, découvrez les activités au programme et préparez-vous à explorer le monde de la recherche. L'espace d'accueil est le point de départ du parcours : vous y trouverez toutes les informations utiles pour vivre l'événement, collecter des indices, rencontrer les chercheurs et devenir acteur de votre expérience."
-      },
-      "topic": {
-        "en": "Interdisciplinary",
-        "it": "Interdisciplinare",
-        "fr": "Interdisciplinaire"
-      },
-      "age": "All Ages",
-      "ageAdaptation": {
-        "en": "Yes",
-        "it": "Sì",
-        "fr": "Oui"
-      },
-      "format": {
-        "en": "Continuous",
-        "it": "Continuo",
-        "fr": "Continu"
-      },
-      "duration": "",
-      "sessions25": "17-22",
-      "sessions26": "17-22",
-      "maxParticipants": "",
-      "bookingRequired": {
-        "en": "No",
-        "it": "No",
-        "fr": "Non"
-      },
-      "bookingMethod": {
-        "en": "Not applicable",
-        "it": "Non applicabile",
-        "fr": "Non applicable"
-      },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
-    },
-    {
-      "id": "AVE-005",
-      "sourceActivityId": "5",
-      "city": {
-        "en": "Avezzano",
-        "it": "Avezzano",
-        "fr": "Avezzano"
-      },
-      "image": "activities-ern-2026_img/avezzano-debriefing.png",
-      "venue": {
-        "en": "Castello Orsini",
-        "it": "Castello Orsini",
-        "fr": "Castello Orsini"
-      },
-      "area": {
-        "en": "Giardini",
-        "it": "Giardini",
-        "fr": "Giardini"
-      },
-      "title": {
-        "en": "ERNEST Debriefing",
-        "it": "Debriefing ERNEST",
-        "fr": "Débriefing ERNEST"
-      },
-      "type": {
-        "en": "Talk",
-        "it": "Incontro",
-        "fr": "Rencontre"
-      },
-      "description": {
-        "en": "Conclude your journey through the European Researchers' Night by revisiting the experiences you had during the event. In the Debriefing area, you can share what you discovered, test what you learned through short interactive activities and discover how curiosity, the scientific method and collaboration turn questions into new knowledge.",
-        "it": "Concludi il tuo viaggio nella Notte Europea delle Ricercatrici e dei Ricercatori ripercorrendo le esperienze vissute durante l'evento. Nell'area Debriefing potrai condividere ciò che hai scoperto, mettere alla prova le conoscenze acquisite con brevi attività interattive e scoprire come la curiosità, il metodo scientifico e la collaborazione trasformano domande in nuove conoscenze.",
-        "fr": "Terminez votre parcours dans la Nuit européenne des chercheuses et des chercheurs en revenant sur les expériences vécues pendant l'événement. Dans l'espace de débriefing, vous pourrez partager vos découvertes, tester vos connaissances grâce à de courtes activités interactives et découvrir comment la curiosité, la méthode scientifique et la collaboration transforment les questions en nouvelles connaissances."
-      },
-      "topic": {
-        "en": "Interdisciplinary",
-        "it": "Interdisciplinare",
-        "fr": "Interdisciplinaire"
-      },
-      "age": "18+, 15–18",
-      "ageAdaptation": {
-        "en": "Yes",
-        "it": "Sì",
-        "fr": "Oui"
-      },
-      "format": {
-        "en": "Continuous",
-        "it": "Continuo",
-        "fr": "Continu"
-      },
-      "duration": "",
-      "sessions25": "17-22",
-      "sessions26": "17-22",
-      "maxParticipants": "",
-      "bookingRequired": {
-        "en": "No",
-        "it": "No",
-        "fr": "Non"
-      },
-      "bookingMethod": {
-        "en": "Not applicable",
-        "it": "Non applicabile",
-        "fr": "Non applicable"
-      },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
-    },
-    {
-      "id": "AVE-006",
-      "sourceActivityId": "6",
-      "city": {
-        "en": "Avezzano",
-        "it": "Avezzano",
-        "fr": "Avezzano"
-      },
-      "image": "activities-ern-2026_img/avezzano-eu-explorer.png",
-      "venue": {
-        "en": "Castello Orsini",
-        "it": "Castello Orsini",
-        "fr": "Castello Orsini"
-      },
-      "area": {
-        "en": "Giardini",
-        "it": "Giardini",
-        "fr": "Giardini"
-      },
-      "title": {
-        "en": "ERNEST EU Explorer",
-        "it": "ERNEST EU Explorer",
-        "fr": "ERNEST EU Explorer"
-      },
-      "type": {
-        "en": "Talk, game, competition",
-        "it": "Incontro, gioco, competizione",
-        "fr": "Rencontre, jeu, concours"
-      },
-      "description": {
-        "en": "Explore the world of European research and discover how the European Union supports science, innovation and international collaboration. Through interactive activities and quiz games, you will learn about EU-funded research projects, opportunities for researchers and citizens, and the role of science in addressing the major challenges of our time.",
-        "it": "Esplora il mondo della ricerca europea e scopri come l'Unione Europea sostiene scienza, innovazione e collaborazione internazionale. Attraverso attività interattive e giochi a quiz, potrai conoscere i progetti di ricerca finanziati dall'UE, le opportunità per ricercatori e cittadini e il ruolo della scienza nell'affrontare le grandi sfide del nostro tempo.",
-        "fr": "Explorez le monde de la recherche européenne et découvrez comment l'Union européenne soutient la science, l'innovation et la collaboration internationale. Grâce à des activités interactives et à des quiz, vous découvrirez les projets de recherche financés par l'UE, les opportunités pour les chercheurs et les citoyens, ainsi que le rôle de la science face aux grands défis de notre époque."
-      },
-      "topic": {
-        "en": "Interdisciplinary",
-        "it": "Interdisciplinare",
-        "fr": "Interdisciplinaire"
-      },
-      "age": "All Ages",
-      "ageAdaptation": {
-        "en": "Yes",
-        "it": "Sì",
-        "fr": "Oui"
-      },
-      "format": {
-        "en": "Continuous",
-        "it": "Continuo",
-        "fr": "Continu"
-      },
-      "duration": "",
-      "sessions25": "17-22",
-      "sessions26": "17-22",
-      "maxParticipants": "",
-      "bookingRequired": {
-        "en": "No",
-        "it": "No",
-        "fr": "Non"
-      },
-      "bookingMethod": {
-        "en": "Not applicable",
-        "it": "Non applicabile",
-        "fr": "Non applicable"
-      },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
     {
       "id": "AVE-007",
@@ -705,23 +429,23 @@ const programmeActivities2026 = {
       },
       "title": {
         "en": "Giant Experiments in VR",
-        "it": "Grandi esperimenti in VR",
-        "fr": "Grands expériences en réalité virtuelle"
+        "it": "Giant Experiments in VR",
+        "fr": "Giant Experiments in VR"
       },
       "type": {
-        "en": "VR/AR experience",
+        "en": "VR/AR Experience",
         "it": "Esperienza VR/AR",
         "fr": "Expérience VR/AR"
       },
       "description": {
-        "en": "Put on a virtual reality headset and explore some of the largest scientific experiments in the world. Enter research laboratories, observe extraordinary instruments up close and discover how thousands of researchers collaborate internationally to study the Universe, from elementary particles to the cosmos.",
+        "en": "Indossa un visore per la realtà virtuale ed esplora alcuni dei più grandi esperimenti scientifici al mondo. Entra nei laboratori di ricerca, osserva da vicino strumenti straordinari e scopri come migliaia di ricercatrici e ricercatori collaborano a livello internazionale per studiare l'Universo, dalle particelle elementari al cosmo.",
         "it": "Indossa un visore per la realtà virtuale ed esplora alcuni dei più grandi esperimenti scientifici al mondo. Entra nei laboratori di ricerca, osserva da vicino strumenti straordinari e scopri come migliaia di ricercatrici e ricercatori collaborano a livello internazionale per studiare l'Universo, dalle particelle elementari al cosmo.",
-        "fr": "Enfilez un casque de réalité virtuelle et explorez quelques-unes des plus grandes expériences scientifiques au monde. Entrez dans des laboratoires de recherche, observez de près des instruments extraordinaires et découvrez comment des milliers de chercheuses et de chercheurs collaborent à l'échelle internationale pour étudier l'Univers, des particules élémentaires au cosmos."
+        "fr": "Indossa un visore per la realtà virtuale ed esplora alcuni dei più grandi esperimenti scientifici al mondo. Entra nei laboratori di ricerca, osserva da vicino strumenti straordinari e scopri come migliaia di ricercatrici e ricercatori collaborano a livello internazionale per studiare l'Universo, dalle particelle elementari al cosmo."
       },
       "topic": {
-        "en": "Physics, astronomy, climate, Earth sciences",
-        "it": "Fisica, astronomia, clima, scienze della Terra",
-        "fr": "Physique, astronomie, climat, sciences de la Terre"
+        "en": "Physics, Astronomy, Climate, Earth Sciences",
+        "it": "Physics, Astronomy, Climate, Earth Sciences",
+        "fr": "Physics, Astronomy, Climate, Earth Sciences"
       },
       "age": "11–14, 15–18, 18+",
       "ageAdaptation": {
@@ -748,21 +472,9 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
     {
       "id": "AVE-008",
@@ -784,24 +496,24 @@ const programmeActivities2026 = {
         "fr": "Giardini"
       },
       "title": {
-        "en": "Listening to the Universe: discovering gravitational waves",
+        "en": "Ascolta l'Universo: alla scoperta delle onde gravitazionali",
         "it": "Ascolta l'Universo: alla scoperta delle onde gravitazionali",
-        "fr": "Écouter l'Univers : à la découverte des ondes gravitationnelles"
+        "fr": "Ascolta l'Universo: alla scoperta delle onde gravitazionali"
       },
       "type": {
-        "en": "Hands-on activity, interactive installation",
-        "it": "Attività pratica, installazione interattiva",
-        "fr": "Activité pratique, installation interactive"
+        "en": "Hands-on Activity, Interactive Installation",
+        "it": "Attività pratica, Installazione interattiva",
+        "fr": "Activité pratique, Installation interactive"
       },
       "description": {
-        "en": "Discover how scientists can 'listen' to the Universe through gravitational waves, tiny ripples in spacetime produced by the most violent events in the cosmos. Explore how large detectors work, what collisions between black holes and neutron stars can tell us, and how this extraordinary discovery opened a new window onto the Universe.",
+        "en": "Scopri come gli scienziati riescono a \"ascoltare\" l'Universo attraverso le onde gravitazionali, minuscole increspature dello spazio-tempo prodotte dagli eventi più violenti del cosmo. Esplora come funzionano i grandi rivelatori, cosa ci raccontano le collisioni tra buchi neri e stelle di neutroni e come questa straordinaria scoperta ha aperto una nuova finestra sull'Universo.",
         "it": "Scopri come gli scienziati riescono a \"ascoltare\" l'Universo attraverso le onde gravitazionali, minuscole increspature dello spazio-tempo prodotte dagli eventi più violenti del cosmo. Esplora come funzionano i grandi rivelatori, cosa ci raccontano le collisioni tra buchi neri e stelle di neutroni e come questa straordinaria scoperta ha aperto una nuova finestra sull'Universo.",
-        "fr": "Découvrez comment les scientifiques peuvent « écouter » l'Univers grâce aux ondes gravitationnelles, de minuscules ondulations de l'espace-temps produites par les événements les plus violents du cosmos. Explorez le fonctionnement des grands détecteurs, ce que nous révèlent les collisions entre trous noirs et étoiles à neutrons, et comment cette découverte extraordinaire a ouvert une nouvelle fenêtre sur l'Univers."
+        "fr": "Scopri come gli scienziati riescono a \"ascoltare\" l'Universo attraverso le onde gravitazionali, minuscole increspature dello spazio-tempo prodotte dagli eventi più violenti del cosmo. Esplora come funzionano i grandi rivelatori, cosa ci raccontano le collisioni tra buchi neri e stelle di neutroni e come questa straordinaria scoperta ha aperto una nuova finestra sull'Universo."
       },
       "topic": {
-        "en": "Physics, astronomy",
-        "it": "Fisica, astronomia",
-        "fr": "Physique, astronomie"
+        "en": "Physics, Astronomy",
+        "it": "Physics, Astronomy",
+        "fr": "Physics, Astronomy"
       },
       "age": "6–10, 11–14, 15–18, 18+",
       "ageAdaptation": {
@@ -828,21 +540,9 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
     {
       "id": "AVE-009",
@@ -864,20 +564,16 @@ const programmeActivities2026 = {
         "fr": "Teatro"
       },
       "title": {
-        "en": "Telespazio Seminar",
+        "en": "Seminario Telespazio",
         "it": "Seminario Telespazio",
-        "fr": "Séminaire Telespazio"
+        "fr": "Seminario Telespazio"
       },
       "type": {
         "en": "Talk",
         "it": "Incontro",
         "fr": "Rencontre"
       },
-      "description": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
+      "description": "",
       "topic": "",
       "age": "",
       "ageAdaptation": "",
@@ -896,21 +592,9 @@ const programmeActivities2026 = {
         "it": "Registrazione online",
         "fr": "Inscription en ligne"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "TELESPAZIO",
-        "it": "TELESPAZIO",
-        "fr": "TELESPAZIO"
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
     {
       "id": "AVE-010",
@@ -932,24 +616,20 @@ const programmeActivities2026 = {
         "fr": "Teatro"
       },
       "title": {
-        "en": "LHC Seminar",
+        "en": "Seminario LHC",
         "it": "Seminario LHC",
-        "fr": "Séminaire LHC"
+        "fr": "Seminario LHC"
       },
       "type": {
         "en": "Talk",
         "it": "Incontro",
         "fr": "Rencontre"
       },
-      "description": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
+      "description": "",
       "topic": {
         "en": "Physics",
-        "it": "Fisica",
-        "fr": "Physique"
+        "it": "Physics",
+        "fr": "Physics"
       },
       "age": "15–18, 18+",
       "ageAdaptation": {
@@ -972,25 +652,13 @@ const programmeActivities2026 = {
         "fr": "Oui"
       },
       "bookingMethod": {
-        "en": "Online registration, information desk, first come first served",
-        "it": "Registrazione online, desk informazioni, ordine di arrivo",
-        "fr": "Inscription en ligne, point information, ordre d'arrivée"
+        "en": "Online registration, Information desk, First Come, First Served",
+        "it": "Registrazione online, Desk informazioni, First Come, First Served",
+        "fr": "Inscription en ligne, Point information, First Come, First Served"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
     {
       "id": "AVE-011",
@@ -1012,24 +680,24 @@ const programmeActivities2026 = {
         "fr": "Giardini"
       },
       "title": {
-        "en": "CSI - Hunting the Higgs boson",
+        "en": "CSI - Caccia al bosone di Higgs",
         "it": "CSI - Caccia al bosone di Higgs",
-        "fr": "CSI - À la chasse au boson de Higgs"
+        "fr": "CSI - Caccia al bosone di Higgs"
       },
       "type": {
-        "en": "Talk, hands-on activity",
-        "it": "Incontro, attività pratica",
-        "fr": "Rencontre, activité pratique"
+        "en": "Talk, Hands-on Activity",
+        "it": "Incontro, Attività pratica",
+        "fr": "Rencontre, Activité pratique"
       },
       "description": {
-        "en": "A team-based scientific investigation in which participants analyse clues, formulate hypotheses and carry out simple experiments to reconstruct the traces of the mysterious Higgs boson and discover how particle physicists really work.",
+        "en": "Un’indagine scientifica a squadre in cui i partecipanti analizzano indizi, formulano ipotesi e affrontano semplici esperimenti per ricostruire le tracce del misterioso bosone di Higgs e scoprire come lavorano davvero i fisici delle particelle.",
         "it": "Un’indagine scientifica a squadre in cui i partecipanti analizzano indizi, formulano ipotesi e affrontano semplici esperimenti per ricostruire le tracce del misterioso bosone di Higgs e scoprire come lavorano davvero i fisici delle particelle.",
-        "fr": "Une enquête scientifique en équipe dans laquelle les participants analysent des indices, formulent des hypothèses et réalisent de petites expériences pour reconstituer les traces du mystérieux boson de Higgs et découvrir comment travaillent réellement les physiciens des particules."
+        "fr": "Un’indagine scientifica a squadre in cui i partecipanti analizzano indizi, formulano ipotesi e affrontano semplici esperimenti per ricostruire le tracce del misterioso bosone di Higgs e scoprire come lavorano davvero i fisici delle particelle."
       },
       "topic": {
         "en": "Physics",
-        "it": "Fisica",
-        "fr": "Physique"
+        "it": "Physics",
+        "fr": "Physics"
       },
       "age": "15–18, 18+",
       "ageAdaptation": {
@@ -1056,25 +724,13 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
     {
       "id": "AVE-012",
-      "sourceActivityId": "",
+      "sourceActivityId": "12",
       "city": {
         "en": "Avezzano",
         "it": "Avezzano",
@@ -1092,24 +748,20 @@ const programmeActivities2026 = {
         "fr": "Giardini"
       },
       "title": {
-        "en": "Demonstrations / Experiments",
-        "it": "Attività dimostrative / Esperimenti",
-        "fr": "Démonstrations / Expériences"
+        "en": "Attività dimostrative/Esperimenti",
+        "it": "Attività dimostrative/Esperimenti",
+        "fr": "Attività dimostrative/Esperimenti"
       },
       "type": {
-        "en": "Hands-on activity",
+        "en": "Hands-on Activity",
         "it": "Attività pratica",
         "fr": "Activité pratique"
       },
-      "description": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
+      "description": "",
       "topic": {
-        "en": "Physics, astronomy, biology, environment, interdisciplinary",
-        "it": "Fisica, astronomia, biologia, ambiente, interdisciplinare",
-        "fr": "Physique, astronomie, biologie, environnement, interdisciplinaire"
+        "en": "Physics, Astronomy, Biology, Environment, Interdisciplinary",
+        "it": "Physics, Astronomy, Biology, Environment, Interdisciplinary",
+        "fr": "Physics, Astronomy, Biology, Environment, Interdisciplinary"
       },
       "age": "All Ages",
       "ageAdaptation": {
@@ -1136,25 +788,13 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "partner": {
-        "en": "Liceo Vitruvio Pollione, Avezzano",
-        "it": "Liceo Vitruvio Pollione, Avezzano",
-        "fr": "Liceo Vitruvio Pollione, Avezzano"
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
     {
       "id": "AVE-013",
-      "sourceActivityId": "",
+      "sourceActivityId": "13",
       "city": {
         "en": "Avezzano",
         "it": "Avezzano",
@@ -1172,24 +812,20 @@ const programmeActivities2026 = {
         "fr": "Giardini"
       },
       "title": {
-        "en": "Torre delle Stelle: demonstration activity",
-        "it": "Torre delle Stelle: attività dimostrativa",
-        "fr": "Torre delle Stelle : activité de démonstration"
+        "en": "Torre delle Stelle: Attività dimostrativa",
+        "it": "Torre delle Stelle: Attività dimostrativa",
+        "fr": "Torre delle Stelle: Attività dimostrativa"
       },
       "type": {
         "en": "Demonstration",
         "it": "Dimostrazione",
         "fr": "Démonstration"
       },
-      "description": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
+      "description": "",
       "topic": {
         "en": "Astronomy",
-        "it": "Astronomia",
-        "fr": "Astronomie"
+        "it": "Astronomy",
+        "fr": "Astronomy"
       },
       "age": "All Ages",
       "ageAdaptation": {
@@ -1211,102 +847,82 @@ const programmeActivities2026 = {
         "it": "No",
         "fr": "Non"
       },
-      "bookingMethod": "",
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
       },
-      "partner": {
-        "en": "Torre Delle Stelle",
-        "it": "Torre Delle Stelle",
-        "fr": "Torre Delle Stelle"
-      },
-      "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      }
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     },
-    // {
-    //   "id": "AVE-014",
-    //   "sourceActivityId": "",
-    //   "city": {
-    //     "en": "Avezzano",
-    //     "it": "Avezzano",
-    //     "fr": "Avezzano"
-    //   },
-    //   "image": "",
-    //   "venue": {
-    //     "en": "Castello Orsini",
-    //     "it": "Castello Orsini",
-    //     "fr": "Castello Orsini"
-    //   },
-    //   "area": {
-    //     "en": "Giardini",
-    //     "it": "Giardini",
-    //     "fr": "Giardini"
-    //   },
-    //   "title": {
-    //     "en": "Micron: demonstration activity",
-    //     "it": "Micron: attività dimostrativa",
-    //     "fr": "Micron : activité de démonstration"
-    //   },
-    //   "type": {
-    //     "en": "Demonstration",
-    //     "it": "Dimostrazione",
-    //     "fr": "Démonstration"
-    //   },
-    //   "description": {
-    //     "en": "",
-    //     "it": "",
-    //     "fr": ""
-    //   },
-    //   "topic": {
-    //     "en": "Interdisciplinary",
-    //     "it": "Interdisciplinare",
-    //     "fr": "Interdisciplinaire"
-    //   },
-    //   "age": "All Ages",
-    //   "ageAdaptation": {
-    //     "en": "Yes",
-    //     "it": "Sì",
-    //     "fr": "Oui"
-    //   },
-    //   "format": {
-    //     "en": "Continuous",
-    //     "it": "Continuo",
-    //     "fr": "Continu"
-    //   },
-    //   "duration": "",
-    //   "sessions25": "17-22",
-    //   "sessions26": "17-22",
-    //   "maxParticipants": "",
-    //   "bookingRequired": {
-    //     "en": "No",
-    //     "it": "No",
-    //     "fr": "Non"
-    //   },
-    //   "bookingMethod": "",
-    //   "accessibility": {
-    //     "en": "",
-    //     "it": "",
-    //     "fr": ""
-    //   },
-    //   "partner": {
-    //     "en": "Micron",
-    //     "it": "Micron",
-    //     "fr": "Micron"
-    //   },
-    //   "notes": {
-    //     "en": "",
-    //     "it": "",
-    //     "fr": ""
-    //   }
-    // },
+    {
+      "id": "AVE-014",
+      "sourceActivityId": "14",
+      "city": {
+        "en": "Avezzano",
+        "it": "Avezzano",
+        "fr": "Avezzano"
+      },
+      "image": "",
+      "venue": {
+        "en": "Castello Orsini",
+        "it": "Castello Orsini",
+        "fr": "Castello Orsini"
+      },
+      "area": {
+        "en": "Giardini",
+        "it": "Giardini",
+        "fr": "Giardini"
+      },
+      "title": {
+        "en": "Micron: Attività dimostrativa",
+        "it": "Micron: Attività dimostrativa",
+        "fr": "Micron: Attività dimostrativa"
+      },
+      "type": {
+        "en": "Demonstration",
+        "it": "Dimostrazione",
+        "fr": "Démonstration"
+      },
+      "description": "",
+      "topic": {
+        "en": "Interdisciplinary",
+        "it": "Interdisciplinary",
+        "fr": "Interdisciplinary"
+      },
+      "age": "All Ages",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "",
+      "sessions25": "17-22",
+      "sessions26": "17-22",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
     {
       "id": "AVE-015",
-      "sourceActivityId": "",
+      "sourceActivityId": "15",
       "city": {
         "en": "Avezzano",
         "it": "Avezzano",
@@ -1324,9 +940,9 @@ const programmeActivities2026 = {
         "fr": "Giardini"
       },
       "title": {
-        "en": "Threads of Science: girls and women in research",
+        "en": "Trame di scienza: ragazze e donne nella ricerca",
         "it": "Trame di scienza: ragazze e donne nella ricerca",
-        "fr": "Trames de science : filles et femmes dans la recherche"
+        "fr": "Trame di scienza: ragazze e donne nella ricerca"
       },
       "type": {
         "en": "Hands-on Activity",
@@ -1334,14 +950,14 @@ const programmeActivities2026 = {
         "fr": "Activité pratique"
       },
       "description": {
-        "en": "Who do we imagine when we think of a person doing research? A participatory activity exploring how girls and women are perceived in science. Through questions, choices and coloured threads, participants build a large shared map of their ideas, bringing out associations, expectations and gender stereotypes linked to research. A simple, visual way to reflect on who can do science and how we imagine today’s scientists.",
+        "en": "Chi immaginiamo quando pensiamo a una persona che fa ricerca? Un’attività partecipativa per esplorare la percezione del ruolo delle ragazze e delle donne nella scienza. Attraverso domande, scelte e fili colorati, i partecipanti costruiscono insieme una grande mappa delle proprie idee, facendo emergere associazioni, aspettative e stereotipi di genere legati al mondo della ricerca. Un modo semplice e visuale per riflettere su chi può fare scienza e su come immaginiamo le scienziate e gli scienziati di oggi.",
         "it": "Chi immaginiamo quando pensiamo a una persona che fa ricerca? Un’attività partecipativa per esplorare la percezione del ruolo delle ragazze e delle donne nella scienza. Attraverso domande, scelte e fili colorati, i partecipanti costruiscono insieme una grande mappa delle proprie idee, facendo emergere associazioni, aspettative e stereotipi di genere legati al mondo della ricerca. Un modo semplice e visuale per riflettere su chi può fare scienza e su come immaginiamo le scienziate e gli scienziati di oggi.",
-        "fr": "Qui imaginons-nous lorsque nous pensons à une personne qui fait de la recherche ? Une activité participative pour explorer la perception du rôle des filles et des femmes dans la science. À travers des questions, des choix et des fils colorés, les participants construisent ensemble une grande carte de leurs idées, faisant émerger associations, attentes et stéréotypes de genre liés au monde de la recherche. Une manière simple et visuelle de réfléchir à qui peut faire de la science et à la façon dont nous imaginons les scientifiques d’aujourd’hui."
+        "fr": "Chi immaginiamo quando pensiamo a una persona che fa ricerca? Un’attività partecipativa per esplorare la percezione del ruolo delle ragazze e delle donne nella scienza. Attraverso domande, scelte e fili colorati, i partecipanti costruiscono insieme una grande mappa delle proprie idee, facendo emergere associazioni, aspettative e stereotipi di genere legati al mondo della ricerca. Un modo semplice e visuale per riflettere su chi può fare scienza e su come immaginiamo le scienziate e gli scienziati di oggi."
       },
       "topic": {
         "en": "Interdisciplinary",
-        "it": "Interdisciplinare",
-        "fr": "Interdisciplinaire"
+        "it": "Interdisciplinary",
+        "fr": "Interdisciplinary"
       },
       "age": "11–14, 15–18, 18+",
       "ageAdaptation": {
@@ -1364,25 +980,1941 @@ const programmeActivities2026 = {
         "fr": "Non"
       },
       "bookingMethod": {
-        "en": "Not Applicable",
+        "en": "Not applicable",
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": {
-        "en": "",
-        "it": "",
-        "fr": ""
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "alessandria": [
+    {
+      "id": "ALE-001",
+      "sourceActivityId": "16",
+      "city": {
+        "en": "Alessandria",
+        "it": "Alessandria",
+        "fr": "Alessandria"
       },
-      "partner": {
-        "en": "Livia Soffi",
-        "it": "Livia Soffi",
-        "fr": "Livia Soffi"
+      "image": "escape-rooms_img/mastem/img1.jpg",
+      "venue": {
+        "en": "Dipartimento di Scienze e Innovazione Tecnologica UPO",
+        "it": "Dipartimento di Scienze e Innovazione Tecnologica UPO",
+        "fr": "Dipartimento di Scienze e Innovazione Tecnologica UPO"
       },
+      "area": {
+        "en": "Aula studio",
+        "it": "Aula studio",
+        "fr": "Aula studio"
+      },
+      "title": {
+        "en": "maSTEM game",
+        "it": "maSTEM game",
+        "fr": "maSTEM game"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "maSTEM game è un percorso coinvolgente tra fisica medica, chimica e medicina veterinaria. Tre escape room, enigmi e sfide per scoprire, giocando, come la scienza contribuisce alla salute delle persone e degli animali.",
+        "it": "maSTEM game è un percorso coinvolgente tra fisica medica, chimica e medicina veterinaria. Tre escape room, enigmi e sfide per scoprire, giocando, come la scienza contribuisce alla salute delle persone e degli animali.",
+        "fr": "maSTEM game è un percorso coinvolgente tra fisica medica, chimica e medicina veterinaria. Tre escape room, enigmi e sfide per scoprire, giocando, come la scienza contribuisce alla salute delle persone e degli animali."
+      },
+      "topic": {
+        "en": "Interdisciplinary",
+        "it": "Interdisciplinary",
+        "fr": "Interdisciplinary"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "30",
+      "sessions25": "20-22",
+      "sessions26": "TBD",
+      "maxParticipants": "25",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "palermo": [
+    {
+      "id": "PAL-001",
+      "sourceActivityId": "17",
+      "city": {
+        "en": "Palermo",
+        "it": "Palermo",
+        "fr": "Palermo"
+      },
+      "image": "escape-rooms_img/bang/INAF_BANG_1.jpg",
+      "venue": {
+        "en": "Campus UniPA",
+        "it": "Campus UniPA",
+        "fr": "Campus UniPA"
+      },
+      "area": {
+        "en": "TBD",
+        "it": "TBD",
+        "fr": "TBD"
+      },
+      "title": {
+        "en": "Bang! Chi è stato?",
+        "it": "Bang! Chi è stato?",
+        "fr": "Bang! Chi è stato?"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "In una vera e propria \"investigazione\" astronomica, scopri come si osservano i raggi gamma ad altissima energia provenienti dall'Universo, e qual è la loro origine",
+        "it": "In una vera e propria \"investigazione\" astronomica, scopri come si osservano i raggi gamma ad altissima energia provenienti dall'Universo, e qual è la loro origine",
+        "fr": "In una vera e propria \"investigazione\" astronomica, scopri come si osservano i raggi gamma ad altissima energia provenienti dall'Universo, e qual è la loro origine"
+      },
+      "topic": {
+        "en": "Astronomy",
+        "it": "Astronomy",
+        "fr": "Astronomy"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "30",
+      "sessions25": "18-23",
+      "sessions26": "",
+      "maxParticipants": "25",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "PAL-002",
+      "sourceActivityId": "18",
+      "city": {
+        "en": "Palermo",
+        "it": "Palermo",
+        "fr": "Palermo"
+      },
+      "image": "",
+      "venue": {
+        "en": "Campus UniPA",
+        "it": "Campus UniPA",
+        "fr": "Campus UniPA"
+      },
+      "area": {
+        "en": "TBD",
+        "it": "TBD",
+        "fr": "TBD"
+      },
+      "title": {
+        "en": "Chiedi a un astrofisico",
+        "it": "Chiedi a un astrofisico",
+        "fr": "Chiedi a un astrofisico"
+      },
+      "type": {
+        "en": "Talk",
+        "it": "Incontro",
+        "fr": "Rencontre"
+      },
+      "description": {
+        "en": "I ricercatori dell'IASF di Palermo raccontano il proprio lavoro e rispondono alle domande di chi è curioso di scienza",
+        "it": "I ricercatori dell'IASF di Palermo raccontano il proprio lavoro e rispondono alle domande di chi è curioso di scienza",
+        "fr": "I ricercatori dell'IASF di Palermo raccontano il proprio lavoro e rispondono alle domande di chi è curioso di scienza"
+      },
+      "topic": {
+        "en": "Astronomy",
+        "it": "Astronomy",
+        "fr": "Astronomy"
+      },
+      "age": "All Ages",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "",
+      "sessions25": "18-23",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "terni": [
+    {
+      "id": "TER-001",
+      "sourceActivityId": "21",
+      "city": {
+        "en": "Terni",
+        "it": "Terni",
+        "fr": "Terni"
+      },
+      "image": "escape-rooms_img/hepscape/img1.jpg",
+      "venue": {
+        "en": "Biblioteca Comunale Terni",
+        "it": "Biblioteca Comunale Terni",
+        "fr": "Biblioteca Comunale Terni"
+      },
+      "area": {
+        "en": "sala",
+        "it": "sala",
+        "fr": "sala"
+      },
+      "title": {
+        "en": "HEPscape!",
+        "it": "HEPscape!",
+        "fr": "HEPscape!"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica.",
+        "it": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica.",
+        "fr": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "All Ages",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "45",
+      "sessions25": "14-20",
+      "sessions26": "",
+      "maxParticipants": "25",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "torino": [
+    {
+      "id": "TOR-001",
+      "sourceActivityId": "25",
+      "city": {
+        "en": "Torino",
+        "it": "Torino",
+        "fr": "Torino"
+      },
+      "image": "escape-rooms_img/photon/img1.jpeg",
+      "venue": {
+        "en": "Castello del Valentino",
+        "it": "Castello del Valentino",
+        "fr": "Castello del Valentino"
+      },
+      "area": {
+        "en": "sala delle colonne",
+        "it": "sala delle colonne",
+        "fr": "sala delle colonne"
+      },
+      "title": {
+        "en": "A cavallo di un fotone",
+        "it": "A cavallo di un fotone",
+        "fr": "A cavallo di un fotone"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "Un’esperienza interattiva per far comprendere il viaggio dei fotoni fin dalle profondità del Sole dove vengono prodotti, quindi \"la fatica\" per uscire dalla stella, poi il viaggio attraverso lo spazio cosmico, fino a giungere nei telescopi sulla Terra, dove vengono osservati e studiati in dettaglio, per comprendere meglio come funzione il nostro universo tramite le splendide immagine che ne derivano.",
+        "it": "Un’esperienza interattiva per far comprendere il viaggio dei fotoni fin dalle profondità del Sole dove vengono prodotti, quindi \"la fatica\" per uscire dalla stella, poi il viaggio attraverso lo spazio cosmico, fino a giungere nei telescopi sulla Terra, dove vengono osservati e studiati in dettaglio, per comprendere meglio come funzione il nostro universo tramite le splendide immagine che ne derivano.",
+        "fr": "Un’esperienza interattiva per far comprendere il viaggio dei fotoni fin dalle profondità del Sole dove vengono prodotti, quindi \"la fatica\" per uscire dalla stella, poi il viaggio attraverso lo spazio cosmico, fino a giungere nei telescopi sulla Terra, dove vengono osservati e studiati in dettaglio, per comprendere meglio come funzione il nostro universo tramite le splendide immagine che ne derivano."
+      },
+      "topic": {
+        "en": "Physics, Astronomy",
+        "it": "Physics, Astronomy",
+        "fr": "Physics, Astronomy"
+      },
+      "age": "6–10, 11–14, 15–18",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "60",
+      "sessions25": "TBD",
+      "sessions26": "TBD",
+      "maxParticipants": "30",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "TOR-002",
+      "sourceActivityId": "26",
+      "city": {
+        "en": "Torino",
+        "it": "Torino",
+        "fr": "Torino"
+      },
+      "image": "escape-rooms_img/mastem/img1.jpg",
+      "venue": {
+        "en": "Castello del Valentino",
+        "it": "Castello del Valentino",
+        "fr": "Castello del Valentino"
+      },
+      "area": {
+        "en": "sala delle colonne",
+        "it": "sala delle colonne",
+        "fr": "sala delle colonne"
+      },
+      "title": {
+        "en": "MaSTEM game",
+        "it": "MaSTEM game",
+        "fr": "MaSTEM game"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "maSTEM game è un percorso coinvolgente tra fisica medica, chimica e medicina veterinaria. Tre escape room si alterneranno, con enigmi e sfide per scoprire, giocando, come la scienza contribuisce alla salute delle persone e degli animali.",
+        "it": "maSTEM game è un percorso coinvolgente tra fisica medica, chimica e medicina veterinaria. Tre escape room si alterneranno, con enigmi e sfide per scoprire, giocando, come la scienza contribuisce alla salute delle persone e degli animali.",
+        "fr": "maSTEM game è un percorso coinvolgente tra fisica medica, chimica e medicina veterinaria. Tre escape room si alterneranno, con enigmi e sfide per scoprire, giocando, come la scienza contribuisce alla salute delle persone e degli animali."
+      },
+      "topic": {
+        "en": "Interdisciplinary",
+        "it": "Interdisciplinary",
+        "fr": "Interdisciplinary"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "30",
+      "sessions25": "TBD",
+      "sessions26": "TBD",
+      "maxParticipants": "10",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "TOR-003",
+      "sourceActivityId": "27",
+      "city": {
+        "en": "Torino",
+        "it": "Torino",
+        "fr": "Torino"
+      },
+      "image": "",
+      "venue": {
+        "en": "Castello del Valentino",
+        "it": "Castello del Valentino",
+        "fr": "Castello del Valentino"
+      },
+      "area": {
+        "en": "sala delle colonne",
+        "it": "sala delle colonne",
+        "fr": "sala delle colonne"
+      },
+      "title": {
+        "en": "Il satellite LIMADOU",
+        "it": "Il satellite LIMADOU",
+        "fr": "Il satellite LIMADOU"
+      },
+      "type": {
+        "en": "Talk, Demonstration",
+        "it": "Incontro, Dimostrazione",
+        "fr": "Rencontre, Démonstration"
+      },
+      "description": {
+        "en": "Dal CERN allo spazio: scopri come le tecnologie nate per i grandi esperimenti di fisica delle particelle sono arrivate in orbita con la missione CSES-02. Guarda da vicino sensori monolitici al silicio, circuiti flessibili e strutture ultraleggere in fibra di carbonio e osserva un vero rivelatore ricostruire in tempo reale le tracce dei raggi cosmici che ci raggiungono dallo spazio.",
+        "it": "Dal CERN allo spazio: scopri come le tecnologie nate per i grandi esperimenti di fisica delle particelle sono arrivate in orbita con la missione CSES-02. Guarda da vicino sensori monolitici al silicio, circuiti flessibili e strutture ultraleggere in fibra di carbonio e osserva un vero rivelatore ricostruire in tempo reale le tracce dei raggi cosmici che ci raggiungono dallo spazio.",
+        "fr": "Dal CERN allo spazio: scopri come le tecnologie nate per i grandi esperimenti di fisica delle particelle sono arrivate in orbita con la missione CSES-02. Guarda da vicino sensori monolitici al silicio, circuiti flessibili e strutture ultraleggere in fibra di carbonio e osserva un vero rivelatore ricostruire in tempo reale le tracce dei raggi cosmici che ci raggiungono dallo spazio."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "All Ages",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "17:00 - 00:00",
+      "sessions26": "10:30 - 19:00",
+      "maxParticipants": "10",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
+      "accessibility": "",
+      "partner": "",
       "notes": {
-        "en": "",
-        "it": "",
-        "fr": ""
+        "en": "table, projector, white screen",
+        "it": "table, projector, white screen",
+        "fr": "table, projector, white screen"
       }
+    },
+    {
+      "id": "TOR-004",
+      "sourceActivityId": "28",
+      "city": {
+        "en": "Torino",
+        "it": "Torino",
+        "fr": "Torino"
+      },
+      "image": "",
+      "venue": {
+        "en": "Castello del Valentino",
+        "it": "Castello del Valentino",
+        "fr": "Castello del Valentino"
+      },
+      "area": {
+        "en": "sala delle colonne",
+        "it": "sala delle colonne",
+        "fr": "sala delle colonne"
+      },
+      "title": {
+        "en": "Visori e particelle",
+        "it": "Visori e particelle",
+        "fr": "Visori e particelle"
+      },
+      "type": {
+        "en": "VR/AR Experience, Interactive Installation",
+        "it": "Esperienza VR/AR, Installazione interattiva",
+        "fr": "Expérience VR/AR, Installation interactive"
+      },
+      "description": {
+        "en": "Indossa un visore per la realtà virtuale ed entra nel cuore dell’esperimento Belle II! In questa esperienza immersiva potrai esplorare le collisioni tra elettroni e positroni, osservando le tracce lasciate dalle particelle nel rivelatore. Scoprirai come ricercatrici e ricercatori ricostruiscono eventi invisibili ai nostri occhi e studiano le sottili differenze tra materia e antimateria, alla ricerca di indizi sul perché il nostro Universo sia composto quasi interamente di materia. Un viaggio interattivo nel mondo subatomico, tra particelle, antiparticelle e grandi misteri della fisica.",
+        "it": "Indossa un visore per la realtà virtuale ed entra nel cuore dell’esperimento Belle II! In questa esperienza immersiva potrai esplorare le collisioni tra elettroni e positroni, osservando le tracce lasciate dalle particelle nel rivelatore. Scoprirai come ricercatrici e ricercatori ricostruiscono eventi invisibili ai nostri occhi e studiano le sottili differenze tra materia e antimateria, alla ricerca di indizi sul perché il nostro Universo sia composto quasi interamente di materia. Un viaggio interattivo nel mondo subatomico, tra particelle, antiparticelle e grandi misteri della fisica.",
+        "fr": "Indossa un visore per la realtà virtuale ed entra nel cuore dell’esperimento Belle II! In questa esperienza immersiva potrai esplorare le collisioni tra elettroni e positroni, osservando le tracce lasciate dalle particelle nel rivelatore. Scoprirai come ricercatrici e ricercatori ricostruiscono eventi invisibili ai nostri occhi e studiano le sottili differenze tra materia e antimateria, alla ricerca di indizi sul perché il nostro Universo sia composto quasi interamente di materia. Un viaggio interattivo nel mondo subatomico, tra particelle, antiparticelle e grandi misteri della fisica."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "TBD",
+      "sessions26": "TBD",
+      "maxParticipants": "1",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "First Come, First Served",
+        "it": "First Come, First Served",
+        "fr": "First Come, First Served"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": {
+        "en": "VR headset",
+        "it": "VR headset",
+        "fr": "VR headset"
+      }
+    }
+  ],
+  "paris": [
+    {
+      "id": "PAR-001",
+      "sourceActivityId": "32",
+      "city": {
+        "en": "Palaiseau",
+        "it": "Palaiseau",
+        "fr": "Palaiseau"
+      },
+      "image": "escape-rooms_img/hepscape/img1.jpg",
+      "venue": {
+        "en": "Ecole polytechnique",
+        "it": "Ecole polytechnique",
+        "fr": "Ecole polytechnique"
+      },
+      "area": {
+        "en": "LLR conference room",
+        "it": "LLR conference room",
+        "fr": "LLR conference room"
+      },
+      "title": {
+        "en": "HEPscape!",
+        "it": "HEPscape!",
+        "fr": "HEPscape!"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "Pénétrez dans la salle de contrôle d'une grande expérience du CERN et rejoignez l'équipe de recherche. En collaborant avec votre équipe, vous devrez résoudre des énigmes, analyser des données réelles, reconstituer un détecteur de particules et mener à bien une mission inspirée du travail des physiciens. Une expérience immersive mêlant jeu, logique et véritable recherche scientifique pour découvrir comment naît une nouvelle découverte en physique.",
+        "it": "Pénétrez dans la salle de contrôle d'une grande expérience du CERN et rejoignez l'équipe de recherche. En collaborant avec votre équipe, vous devrez résoudre des énigmes, analyser des données réelles, reconstituer un détecteur de particules et mener à bien une mission inspirée du travail des physiciens. Une expérience immersive mêlant jeu, logique et véritable recherche scientifique pour découvrir comment naît une nouvelle découverte en physique.",
+        "fr": "Pénétrez dans la salle de contrôle d'une grande expérience du CERN et rejoignez l'équipe de recherche. En collaborant avec votre équipe, vous devrez résoudre des énigmes, analyser des données réelles, reconstituer un détecteur de particules et mener à bien une mission inspirée du travail des physiciens. Une expérience immersive mêlant jeu, logique et véritable recherche scientifique pour découvrir comment naît une nouvelle découverte en physique."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "45",
+      "sessions25": "10-20",
+      "sessions26": "",
+      "maxParticipants": "20",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Email, Invitation only",
+        "it": "Email, Solo su invito",
+        "fr": "E-mail, Sur invitation uniquement"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "manchester": [
+    {
+      "id": "MAN-001",
+      "sourceActivityId": "36",
+      "city": {
+        "en": "Manchester",
+        "it": "Manchester",
+        "fr": "Manchester"
+      },
+      "image": "escape-rooms_img/ACCELER8/img1.jpeg",
+      "venue": {
+        "en": "Science and Industry Museum",
+        "it": "Science and Industry Museum",
+        "fr": "Science and Industry Museum"
+      },
+      "area": {
+        "en": "Revolution Manchester Gallery",
+        "it": "Revolution Manchester Gallery",
+        "fr": "Revolution Manchester Gallery"
+      },
+      "title": {
+        "en": "Acceler8Escape",
+        "it": "Acceler8Escape",
+        "fr": "Acceler8Escape"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "Welcome to Acceler8Escape where you will be placed inside a particle accelerator, working in teams to solve 8 interactive puzzles corresponding to key elements of an accelerator. Each puzzle mimics real-life research skills through combinations of visual, audio and physical problem-solving, revealing a code that unlocks a customized stamp for participants to complete their “accelerator passport” within a time-limit. Acceler8Escape provides a fun, immersive, hands-on experience for all ages to access, engage with and learn all about the fascinating science of particle accelerators.",
+        "it": "Welcome to Acceler8Escape where you will be placed inside a particle accelerator, working in teams to solve 8 interactive puzzles corresponding to key elements of an accelerator. Each puzzle mimics real-life research skills through combinations of visual, audio and physical problem-solving, revealing a code that unlocks a customized stamp for participants to complete their “accelerator passport” within a time-limit. Acceler8Escape provides a fun, immersive, hands-on experience for all ages to access, engage with and learn all about the fascinating science of particle accelerators.",
+        "fr": "Welcome to Acceler8Escape where you will be placed inside a particle accelerator, working in teams to solve 8 interactive puzzles corresponding to key elements of an accelerator. Each puzzle mimics real-life research skills through combinations of visual, audio and physical problem-solving, revealing a code that unlocks a customized stamp for participants to complete their “accelerator passport” within a time-limit. Acceler8Escape provides a fun, immersive, hands-on experience for all ages to access, engage with and learn all about the fascinating science of particle accelerators."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "",
+      "sessions25": "10-17",
+      "sessions26": "",
+      "maxParticipants": "20",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "bari": [
+    {
+      "id": "BAR-001",
+      "sourceActivityId": "40",
+      "city": {
+        "en": "Bari",
+        "it": "Bari",
+        "fr": "Bari"
+      },
+      "image": "escape-rooms_img/hepscape/img1.jpg",
+      "venue": {
+        "en": "Centro Polifunzionale Studenti (I piano) - P.zza Cesare Battisti",
+        "it": "Centro Polifunzionale Studenti (I piano) - P.zza Cesare Battisti",
+        "fr": "Centro Polifunzionale Studenti (I piano) - P.zza Cesare Battisti"
+      },
+      "area": {
+        "en": "BaLab",
+        "it": "BaLab",
+        "fr": "BaLab"
+      },
+      "title": {
+        "en": "HEPscape!",
+        "it": "HEPscape!",
+        "fr": "HEPscape!"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica.",
+        "it": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica.",
+        "fr": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "All Ages",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "45",
+      "sessions25": "10 - 22",
+      "sessions26": "",
+      "maxParticipants": "25",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration",
+        "it": "Registrazione online",
+        "fr": "Inscription en ligne"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "napoli": [
+    {
+      "id": "NAP-001",
+      "sourceActivityId": "43",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "escape-rooms_img/equilibrio/img1.jpg",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "Alla ricerca dell'equilibrio perduto!",
+        "it": "Alla ricerca dell'equilibrio perduto!",
+        "fr": "Alla ricerca dell'equilibrio perduto!"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "Prova a risolvere gli enigmi per aiutare la Dottoressa Chiara Costanza. Costanza è a capo di un’equipe interdisciplinare che è riuscita a trovare una soluzione per ridurre l’impatto ambientale dell’uomo. Purtroppo la dottoressa è in ospedale, incosciente, per un trauma cranico. Toccherà quindi ai partecipanti presentare alla sessione del G20 i risultati della sua ricerca che però, per proteggerla, è stata nascosta nella stanza. Una volta entrati, la porta si è chiusa a chiave e l’equipe scientifica avrà 45 minuti per trovare la “Formula dell’Equilibrio“, la chiave per sbloccare la porta.",
+        "it": "Prova a risolvere gli enigmi per aiutare la Dottoressa Chiara Costanza. Costanza è a capo di un’equipe interdisciplinare che è riuscita a trovare una soluzione per ridurre l’impatto ambientale dell’uomo. Purtroppo la dottoressa è in ospedale, incosciente, per un trauma cranico. Toccherà quindi ai partecipanti presentare alla sessione del G20 i risultati della sua ricerca che però, per proteggerla, è stata nascosta nella stanza. Una volta entrati, la porta si è chiusa a chiave e l’equipe scientifica avrà 45 minuti per trovare la “Formula dell’Equilibrio“, la chiave per sbloccare la porta.",
+        "fr": "Prova a risolvere gli enigmi per aiutare la Dottoressa Chiara Costanza. Costanza è a capo di un’equipe interdisciplinare che è riuscita a trovare una soluzione per ridurre l’impatto ambientale dell’uomo. Purtroppo la dottoressa è in ospedale, incosciente, per un trauma cranico. Toccherà quindi ai partecipanti presentare alla sessione del G20 i risultati della sua ricerca che però, per proteggerla, è stata nascosta nella stanza. Una volta entrati, la porta si è chiusa a chiave e l’equipe scientifica avrà 45 minuti per trovare la “Formula dell’Equilibrio“, la chiave per sbloccare la porta."
+      },
+      "topic": {
+        "en": "Physics, Biology, Mathematics, Engineering, Interdisciplinary",
+        "it": "Physics, Biology, Mathematics, Engineering, Interdisciplinary",
+        "fr": "Physics, Biology, Mathematics, Engineering, Interdisciplinary"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "45",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration, Information desk",
+        "it": "Registrazione online, Desk informazioni",
+        "fr": "Inscription en ligne, Point information"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-002",
+      "sourceActivityId": "44",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "Matematica per il cittadino",
+        "it": "Matematica per il cittadino",
+        "fr": "Matematica per il cittadino"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Un percorso di gioco (anzi, due distinti: uno per bambini fino a 12 anni e uno per gli altri) per verificare se capiamo i dati numerici e grafici abbastanza per essere cittadini consapevoli. Con un approfondimento su come gli algoritmi usano i nostri dati.",
+        "it": "Un percorso di gioco (anzi, due distinti: uno per bambini fino a 12 anni e uno per gli altri) per verificare se capiamo i dati numerici e grafici abbastanza per essere cittadini consapevoli. Con un approfondimento su come gli algoritmi usano i nostri dati.",
+        "fr": "Un percorso di gioco (anzi, due distinti: uno per bambini fino a 12 anni e uno per gli altri) per verificare se capiamo i dati numerici e grafici abbastanza per essere cittadini consapevoli. Con un approfondimento su come gli algoritmi usano i nostri dati."
+      },
+      "topic": {
+        "en": "Mathematics",
+        "it": "Mathematics",
+        "fr": "Mathematics"
+      },
+      "age": "11–14, 15–18",
+      "ageAdaptation": "",
+      "format": "",
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": "",
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-003",
+      "sourceActivityId": "45",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "Il medico degli affreschi: il progetto HeRide",
+        "it": "Il medico degli affreschi: il progetto HeRide",
+        "fr": "Il medico degli affreschi: il progetto HeRide"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nel progetto HeriDe",
+        "it": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nel progetto HeriDe",
+        "fr": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nel progetto HeriDe"
+      },
+      "topic": {
+        "en": "Physics, Humanities, Interdisciplinary",
+        "it": "Physics, Humanities, Interdisciplinary",
+        "fr": "Physics, Humanities, Interdisciplinary"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "5",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-006",
+      "sourceActivityId": "53",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "I ricercatori della luce",
+        "it": "I ricercatori della luce",
+        "fr": "I ricercatori della luce"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibbre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno",
+        "it": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibbre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno",
+        "fr": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibbre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno"
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": "",
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-007",
+      "sourceActivityId": "54",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "In laboratorio: alla scoperta della vita",
+        "it": "In laboratorio: alla scoperta della vita",
+        "fr": "In laboratorio: alla scoperta della vita"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Un’attività interattiva e laboratoriale dedicata ai principali processi biologici che regolano la vita, dalla genetica alla biologia cellulare e molecolare, dall’immunologia all’epigenetica, fino alla microbiologia e alla biologia dello sviluppo. Attraverso semplici esperimenti, osservazioni e attività pratiche, i partecipanti potranno esplorare alcuni concetti fondamentali della biologia e avvicinarsi al metodo scientifico in modo diretto e coinvolgente attraverso dialoghi con ricercatori e ricercatrici che stimoleranno le loro curiosità.",
+        "it": "Un’attività interattiva e laboratoriale dedicata ai principali processi biologici che regolano la vita, dalla genetica alla biologia cellulare e molecolare, dall’immunologia all’epigenetica, fino alla microbiologia e alla biologia dello sviluppo. Attraverso semplici esperimenti, osservazioni e attività pratiche, i partecipanti potranno esplorare alcuni concetti fondamentali della biologia e avvicinarsi al metodo scientifico in modo diretto e coinvolgente attraverso dialoghi con ricercatori e ricercatrici che stimoleranno le loro curiosità.",
+        "fr": "Un’attività interattiva e laboratoriale dedicata ai principali processi biologici che regolano la vita, dalla genetica alla biologia cellulare e molecolare, dall’immunologia all’epigenetica, fino alla microbiologia e alla biologia dello sviluppo. Attraverso semplici esperimenti, osservazioni e attività pratiche, i partecipanti potranno esplorare alcuni concetti fondamentali della biologia e avvicinarsi al metodo scientifico in modo diretto e coinvolgente attraverso dialoghi con ricercatori e ricercatrici che stimoleranno le loro curiosità."
+      },
+      "topic": {
+        "en": "Biology",
+        "it": "Biology",
+        "fr": "Biology"
+      },
+      "age": "6–10, 11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-008",
+      "sourceActivityId": "55",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "Segreti dal mare: nuove molecole per la salute",
+        "it": "Segreti dal mare: nuove molecole per la salute",
+        "fr": "Segreti dal mare: nuove molecole per la salute"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Studio chimico degli organismi marini alla scoperta di nuovi composti bioattivi: identificazione di piccole molecole organiche per applicazioni in campo farmacologico.",
+        "it": "Studio chimico degli organismi marini alla scoperta di nuovi composti bioattivi: identificazione di piccole molecole organiche per applicazioni in campo farmacologico.",
+        "fr": "Studio chimico degli organismi marini alla scoperta di nuovi composti bioattivi: identificazione di piccole molecole organiche per applicazioni in campo farmacologico."
+      },
+      "topic": {
+        "en": "Chemistry, Biology",
+        "it": "Chemistry, Biology",
+        "fr": "Chemistry, Biology"
+      },
+      "age": "6–10, 11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-009",
+      "sourceActivityId": "56",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "La scienza che si vede: dalla rigenerazione ai biosensori",
+        "it": "La scienza che si vede: dalla rigenerazione ai biosensori",
+        "fr": "La scienza che si vede: dalla rigenerazione ai biosensori"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Un viaggio nel mondo della ricerca sperimentale, dalla straordinaria capacità di rigenerazione di Hydra vulgaris ai biosensori SERS, che utilizzano la luce per riconoscere molecole anche in quantità minime. Attraverso osservazioni al microscopio, esperimenti, giochi e piccole sfide, ragazze e ragazzi scopriranno i meccanismi della rigenerazione e il funzionamento dei biosensori, avvicinandosi alla biologia, chimica e fisica in modo coinvolgente e interattivo. Un’esperienza per capire come nasce la ricerca scientifica: osservare, porsi domande, formulare ipotesi e sperimentare in prima persona.",
+        "it": "Un viaggio nel mondo della ricerca sperimentale, dalla straordinaria capacità di rigenerazione di Hydra vulgaris ai biosensori SERS, che utilizzano la luce per riconoscere molecole anche in quantità minime. Attraverso osservazioni al microscopio, esperimenti, giochi e piccole sfide, ragazze e ragazzi scopriranno i meccanismi della rigenerazione e il funzionamento dei biosensori, avvicinandosi alla biologia, chimica e fisica in modo coinvolgente e interattivo. Un’esperienza per capire come nasce la ricerca scientifica: osservare, porsi domande, formulare ipotesi e sperimentare in prima persona.",
+        "fr": "Un viaggio nel mondo della ricerca sperimentale, dalla straordinaria capacità di rigenerazione di Hydra vulgaris ai biosensori SERS, che utilizzano la luce per riconoscere molecole anche in quantità minime. Attraverso osservazioni al microscopio, esperimenti, giochi e piccole sfide, ragazze e ragazzi scopriranno i meccanismi della rigenerazione e il funzionamento dei biosensori, avvicinandosi alla biologia, chimica e fisica in modo coinvolgente e interattivo. Un’esperienza per capire come nasce la ricerca scientifica: osservare, porsi domande, formulare ipotesi e sperimentare in prima persona."
+      },
+      "topic": {
+        "en": "Biology",
+        "it": "Biology",
+        "fr": "Biology"
+      },
+      "age": "18+, 11–14, 6–10, 15–18",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-010",
+      "sourceActivityId": "57",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "Scienza in gioco: sperimenta, scopri, divertiti!",
+        "it": "Scienza in gioco: sperimenta, scopri, divertiti!",
+        "fr": "Scienza in gioco: sperimenta, scopri, divertiti!"
+      },
+      "type": {
+        "en": "Game",
+        "it": "Gioco",
+        "fr": "Jeu"
+      },
+      "description": {
+        "en": "Un viaggio coinvolgente tra chimica, fisica e biologia, dove la scienza si impara facendo. Dalla magia della luce laser ai segreti delle molecole biologiche, ragazze e ragazzi sperimenteranno in prima persona tra giochi e piccole sfide. Osservando fenomeni sorprendenti e mettendosi alla prova, scopriranno cosa si nasconde davvero dietro i dettagli più curiosi della vita quotidiana.",
+        "it": "Un viaggio coinvolgente tra chimica, fisica e biologia, dove la scienza si impara facendo. Dalla magia della luce laser ai segreti delle molecole biologiche, ragazze e ragazzi sperimenteranno in prima persona tra giochi e piccole sfide. Osservando fenomeni sorprendenti e mettendosi alla prova, scopriranno cosa si nasconde davvero dietro i dettagli più curiosi della vita quotidiana.",
+        "fr": "Un viaggio coinvolgente tra chimica, fisica e biologia, dove la scienza si impara facendo. Dalla magia della luce laser ai segreti delle molecole biologiche, ragazze e ragazzi sperimenteranno in prima persona tra giochi e piccole sfide. Osservando fenomeni sorprendenti e mettendosi alla prova, scopriranno cosa si nasconde davvero dietro i dettagli più curiosi della vita quotidiana."
+      },
+      "topic": {
+        "en": "Biology",
+        "it": "Biology",
+        "fr": "Biology"
+      },
+      "age": "",
+      "ageAdaptation": "",
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-011",
+      "sourceActivityId": "58",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "GUAI: Guida Umana all'Artificial Intelligence",
+        "it": "GUAI: Guida Umana all'Artificial Intelligence",
+        "fr": "GUAI: Guida Umana all'Artificial Intelligence"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Attraverso semplici attività interattive, come l'addestramento di un classificatore o la realizzazione di un albero decisionale umano, i partecipanti scopriranno come l’intelligenza artificiale riconosce schemi nei dati e prende decisioni. L’obiettivo è offrire strumenti di base per comprenderne il funzionamento e valutarne criticamente l’impatto sulla società.",
+        "it": "Attraverso semplici attività interattive, come l'addestramento di un classificatore o la realizzazione di un albero decisionale umano, i partecipanti scopriranno come l’intelligenza artificiale riconosce schemi nei dati e prende decisioni. L’obiettivo è offrire strumenti di base per comprenderne il funzionamento e valutarne criticamente l’impatto sulla società.",
+        "fr": "Attraverso semplici attività interattive, come l'addestramento di un classificatore o la realizzazione di un albero decisionale umano, i partecipanti scopriranno come l’intelligenza artificiale riconosce schemi nei dati e prende decisioni. L’obiettivo è offrire strumenti di base per comprenderne il funzionamento e valutarne criticamente l’impatto sulla società."
+      },
+      "topic": {
+        "en": "Mathematics, Computer Science",
+        "it": "Mathematics, Computer Science",
+        "fr": "Mathematics, Computer Science"
+      },
+      "age": "",
+      "ageAdaptation": "",
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-012",
+      "sourceActivityId": "59",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "MOF, Energia e Mobilità: dentro la scienza del domani",
+        "it": "MOF, Energia e Mobilità: dentro la scienza del domani",
+        "fr": "MOF, Energia e Mobilità: dentro la scienza del domani"
+      },
+      "type": {
+        "en": "Hands-on Activity, Other",
+        "it": "Attività pratica, Altro",
+        "fr": "Activité pratique, Autre"
+      },
+      "description": {
+        "en": "Come possiamo produrre energia in modo più sostenibile, ridurre le emissioni di CO₂ e ripensare la mobilità del futuro? Attraverso esperimenti, dimostrazioni e un coinvolgente quiz interattivo, i partecipanti scopriranno il ruolo dei materiali avanzati nella transizione energetica e nella lotta ai cambiamenti climatici.L'attività permetterà di esplorare il mondo dei MOF (Metal-Organic Frameworks), materiali innovativi capaci di catturare e trattenere gas come la CO₂, con potenziali applicazioni nella decarbonizzazione dei processi industriali. Saranno inoltre presentate alcune delle principali strategie oggi in campo per ridurre l'impatto ambientale delle attività umane, tra cui le energie rinnovabili, l'efficienza energetica, la cattura e il riutilizzo della CO₂ e le nuove soluzioni per una mobilità più sostenibile. Mettiti alla prova con il quiz finale e scopri quanto sei pronto per entrare nella scienza del domani.",
+        "it": "Come possiamo produrre energia in modo più sostenibile, ridurre le emissioni di CO₂ e ripensare la mobilità del futuro? Attraverso esperimenti, dimostrazioni e un coinvolgente quiz interattivo, i partecipanti scopriranno il ruolo dei materiali avanzati nella transizione energetica e nella lotta ai cambiamenti climatici.L'attività permetterà di esplorare il mondo dei MOF (Metal-Organic Frameworks), materiali innovativi capaci di catturare e trattenere gas come la CO₂, con potenziali applicazioni nella decarbonizzazione dei processi industriali. Saranno inoltre presentate alcune delle principali strategie oggi in campo per ridurre l'impatto ambientale delle attività umane, tra cui le energie rinnovabili, l'efficienza energetica, la cattura e il riutilizzo della CO₂ e le nuove soluzioni per una mobilità più sostenibile. Mettiti alla prova con il quiz finale e scopri quanto sei pronto per entrare nella scienza del domani.",
+        "fr": "Come possiamo produrre energia in modo più sostenibile, ridurre le emissioni di CO₂ e ripensare la mobilità del futuro? Attraverso esperimenti, dimostrazioni e un coinvolgente quiz interattivo, i partecipanti scopriranno il ruolo dei materiali avanzati nella transizione energetica e nella lotta ai cambiamenti climatici.L'attività permetterà di esplorare il mondo dei MOF (Metal-Organic Frameworks), materiali innovativi capaci di catturare e trattenere gas come la CO₂, con potenziali applicazioni nella decarbonizzazione dei processi industriali. Saranno inoltre presentate alcune delle principali strategie oggi in campo per ridurre l'impatto ambientale delle attività umane, tra cui le energie rinnovabili, l'efficienza energetica, la cattura e il riutilizzo della CO₂ e le nuove soluzioni per una mobilità più sostenibile. Mettiti alla prova con il quiz finale e scopri quanto sei pronto per entrare nella scienza del domani."
+      },
+      "topic": {
+        "en": "Chemistry, Energy, Interdisciplinary, Other",
+        "it": "Chemistry, Energy, Interdisciplinary, Other",
+        "fr": "Chemistry, Energy, Interdisciplinary, Other"
+      },
+      "age": "6–10, 11–14, 15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-013",
+      "sourceActivityId": "61",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "Viaggio nei biosistemi: esperimenti tra ambiente e salute",
+        "it": "Viaggio nei biosistemi: esperimenti tra ambiente e salute",
+        "fr": "Viaggio nei biosistemi: esperimenti tra ambiente e salute"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Quali nuove prospettive si aprono quando smettiamo di considerare lo scarto alimentare come un rifiuto e iniziamo a vederlo come una risorsa per la salute? Il laboratorio “Viaggio nei biosistemi” proporrà un’esperienza scientifica tra provette e microscopi. Attraverso esperimenti ad effetto visivo immediato ed estrazioni green colorate, i partecipanti vestiranno i panni dei ricercatori, estraendo molecole bioattive e, mediante l’osservazione di modelli cellulari in vitro, esplorandone l’azione antiossidante. Un viaggio interattivo alla scoperta di come la valorizzazione dei sottoprodotti possa contribuire al benessere umano, animale e ambientale.",
+        "it": "Quali nuove prospettive si aprono quando smettiamo di considerare lo scarto alimentare come un rifiuto e iniziamo a vederlo come una risorsa per la salute? Il laboratorio “Viaggio nei biosistemi” proporrà un’esperienza scientifica tra provette e microscopi. Attraverso esperimenti ad effetto visivo immediato ed estrazioni green colorate, i partecipanti vestiranno i panni dei ricercatori, estraendo molecole bioattive e, mediante l’osservazione di modelli cellulari in vitro, esplorandone l’azione antiossidante. Un viaggio interattivo alla scoperta di come la valorizzazione dei sottoprodotti possa contribuire al benessere umano, animale e ambientale.",
+        "fr": "Quali nuove prospettive si aprono quando smettiamo di considerare lo scarto alimentare come un rifiuto e iniziamo a vederlo come una risorsa per la salute? Il laboratorio “Viaggio nei biosistemi” proporrà un’esperienza scientifica tra provette e microscopi. Attraverso esperimenti ad effetto visivo immediato ed estrazioni green colorate, i partecipanti vestiranno i panni dei ricercatori, estraendo molecole bioattive e, mediante l’osservazione di modelli cellulari in vitro, esplorandone l’azione antiossidante. Un viaggio interattivo alla scoperta di come la valorizzazione dei sottoprodotti possa contribuire al benessere umano, animale e ambientale."
+      },
+      "topic": {
+        "en": "Biology, Environment",
+        "it": "Biology, Environment",
+        "fr": "Biology, Environment"
+      },
+      "age": "11–14, 15–18, 6–10",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "10",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-014",
+      "sourceActivityId": "62",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "Dai materiali al mondo di domani",
+        "it": "Dai materiali al mondo di domani",
+        "fr": "Dai materiali al mondo di domani"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Sapreste dire cosa è un superconduttore? O piuttosto vi siete mai chiesti perchè alcuni materiali sono magnetici e altri no? E perché la plastica è invece un ottimo isolante elettrico? Ma poi siete proprio sicuri che tutte le “plastiche” lo sono davvero? Insieme ai ricercatori dell’Istituto SPIN del CNR e con l’ausilio di video e piccoli dimostratori, scopriremo come tutte queste caratteristiche dei materiali siano legate alla loro struttura elettronica e come queste proprietà trovino impiego in tantissimi dispositivi che possono essere applicati in settori quali quello dell’energia, dell’elettronica, della sensoristica e delle tecnologie quantistiche.",
+        "it": "Sapreste dire cosa è un superconduttore? O piuttosto vi siete mai chiesti perchè alcuni materiali sono magnetici e altri no? E perché la plastica è invece un ottimo isolante elettrico? Ma poi siete proprio sicuri che tutte le “plastiche” lo sono davvero? Insieme ai ricercatori dell’Istituto SPIN del CNR e con l’ausilio di video e piccoli dimostratori, scopriremo come tutte queste caratteristiche dei materiali siano legate alla loro struttura elettronica e come queste proprietà trovino impiego in tantissimi dispositivi che possono essere applicati in settori quali quello dell’energia, dell’elettronica, della sensoristica e delle tecnologie quantistiche.",
+        "fr": "Sapreste dire cosa è un superconduttore? O piuttosto vi siete mai chiesti perchè alcuni materiali sono magnetici e altri no? E perché la plastica è invece un ottimo isolante elettrico? Ma poi siete proprio sicuri che tutte le “plastiche” lo sono davvero? Insieme ai ricercatori dell’Istituto SPIN del CNR e con l’ausilio di video e piccoli dimostratori, scopriremo come tutte queste caratteristiche dei materiali siano legate alla loro struttura elettronica e come queste proprietà trovino impiego in tantissimi dispositivi che possono essere applicati in settori quali quello dell’energia, dell’elettronica, della sensoristica e delle tecnologie quantistiche."
+      },
+      "topic": {
+        "en": "Physics, Other",
+        "it": "Physics, Other",
+        "fr": "Physics, Other"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": "",
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "10",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-015",
+      "sourceActivityId": "63",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "La Bottega della Luce",
+        "it": "La Bottega della Luce",
+        "fr": "La Bottega della Luce"
+      },
+      "type": {
+        "en": "Science Show, Talk",
+        "it": "Science show, Incontro",
+        "fr": "Science show, Rencontre"
+      },
+      "description": {
+        "en": "La Bottega della Luce è una valigia di cartone, l’indispensabile che porteremo con noi in un breve viaggio alla scoperta di uno dei fenomeni più affascinanti della natura. Prenderanno così vita esperimenti e piccole meraviglie: un viaggio tra scienza, gioco e scoperta per capire che dietro qualcosa di apparentemente familiare come un raggio di luce si nasconde una delle più grandi avventure della conoscenza umana. Perché la luce è ovunque. Ma per scoprirla davvero, bisogna imparare a guardarla.",
+        "it": "La Bottega della Luce è una valigia di cartone, l’indispensabile che porteremo con noi in un breve viaggio alla scoperta di uno dei fenomeni più affascinanti della natura. Prenderanno così vita esperimenti e piccole meraviglie: un viaggio tra scienza, gioco e scoperta per capire che dietro qualcosa di apparentemente familiare come un raggio di luce si nasconde una delle più grandi avventure della conoscenza umana. Perché la luce è ovunque. Ma per scoprirla davvero, bisogna imparare a guardarla.",
+        "fr": "La Bottega della Luce è una valigia di cartone, l’indispensabile che porteremo con noi in un breve viaggio alla scoperta di uno dei fenomeni più affascinanti della natura. Prenderanno così vita esperimenti e piccole meraviglie: un viaggio tra scienza, gioco e scoperta per capire che dietro qualcosa di apparentemente familiare come un raggio di luce si nasconde una delle più grandi avventure della conoscenza umana. Perché la luce è ovunque. Ma per scoprirla davvero, bisogna imparare a guardarla."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "6–10, 11–14, 15–18, 18+",
+      "ageAdaptation": "",
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "20",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": "",
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "NAP-016",
+      "sourceActivityId": "71",
+      "city": {
+        "en": "Napoli",
+        "it": "Napoli",
+        "fr": "Napoli"
+      },
+      "image": "",
+      "venue": {
+        "en": "Piazza S. Maria La Nova",
+        "it": "Piazza S. Maria La Nova",
+        "fr": "Piazza S. Maria La Nova"
+      },
+      "area": {
+        "en": "Chiostro",
+        "it": "Chiostro",
+        "fr": "Chiostro"
+      },
+      "title": {
+        "en": "Plastic detective Lab",
+        "it": "Plastic detective Lab",
+        "fr": "Plastic detective Lab"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Un'attività per individuare, attraverso campioni disponibili, una plastica riciclabile, una compostabile e una vegetale, basandosi su simboli, diciture e caratteristiche dei materiali.",
+        "it": "Un'attività per individuare, attraverso campioni disponibili, una plastica riciclabile, una compostabile e una vegetale, basandosi su simboli, diciture e caratteristiche dei materiali.",
+        "fr": "Un'attività per individuare, attraverso campioni disponibili, una plastica riciclabile, una compostabile e una vegetale, basandosi su simboli, diciture e caratteristiche dei materiali."
+      },
+      "topic": {
+        "en": "Chemistry, Environment",
+        "it": "Chemistry, Environment",
+        "fr": "Chemistry, Environment"
+      },
+      "age": "6–10, 11–14",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "On demand",
+        "it": "Su richiesta",
+        "fr": "À la demande"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": "",
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "roma": [
+    {
+      "id": "ROM-001",
+      "sourceActivityId": "64",
+      "city": {
+        "en": "Roma",
+        "it": "Roma",
+        "fr": "Roma"
+      },
+      "image": "escape-rooms_img/photon/img1.jpeg",
+      "venue": {
+        "en": "Area di Ricerca del CNR a Tor Vergata",
+        "it": "Area di Ricerca del CNR a Tor Vergata",
+        "fr": "Area di Ricerca del CNR a Tor Vergata"
+      },
+      "area": {
+        "en": "Biblioteca",
+        "it": "Biblioteca",
+        "fr": "Biblioteca"
+      },
+      "title": {
+        "en": "A cavallo di un fotone",
+        "it": "A cavallo di un fotone",
+        "fr": "A cavallo di un fotone"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "Vivi il viaggio dei fotoni – le particelle della luce – dalle profondità del Sole, dove iniziano la loro avventura, attraverso i pianeti e altri corpi celesti del Sistema solare, fino ai telescopi degli astronomi che, dalla Terra, osservano questi corpi per studiarli in dettaglio, comprenderne il funzionamento e realizzarne splendide immagini. Un'escape room che combina l'esplorazione dello spazio con la pratica del pensiero computazionale, tra sfide di robotica e coding unplugged.",
+        "it": "Vivi il viaggio dei fotoni – le particelle della luce – dalle profondità del Sole, dove iniziano la loro avventura, attraverso i pianeti e altri corpi celesti del Sistema solare, fino ai telescopi degli astronomi che, dalla Terra, osservano questi corpi per studiarli in dettaglio, comprenderne il funzionamento e realizzarne splendide immagini. Un'escape room che combina l'esplorazione dello spazio con la pratica del pensiero computazionale, tra sfide di robotica e coding unplugged.",
+        "fr": "Vivi il viaggio dei fotoni – le particelle della luce – dalle profondità del Sole, dove iniziano la loro avventura, attraverso i pianeti e altri corpi celesti del Sistema solare, fino ai telescopi degli astronomi che, dalla Terra, osservano questi corpi per studiarli in dettaglio, comprenderne il funzionamento e realizzarne splendide immagini. Un'escape room che combina l'esplorazione dello spazio con la pratica del pensiero computazionale, tra sfide di robotica e coding unplugged."
+      },
+      "topic": {
+        "en": "Astronomy, Physics, Computer Science",
+        "it": "Astronomy, Physics, Computer Science",
+        "fr": "Astronomy, Physics, Computer Science"
+      },
+      "age": "11–14, 15–18",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "45",
+      "sessions25": "19-22",
+      "sessions26": "",
+      "maxParticipants": "25",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration, Information desk",
+        "it": "Registrazione online, Desk informazioni",
+        "fr": "Inscription en ligne, Point information"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "ROM-005",
+      "sourceActivityId": "68",
+      "city": {
+        "en": "Roma",
+        "it": "Roma",
+        "fr": "Roma"
+      },
+      "image": "",
+      "venue": {
+        "en": "Area di Ricerca del CNR a Tor Vergata",
+        "it": "Area di Ricerca del CNR a Tor Vergata",
+        "fr": "Area di Ricerca del CNR a Tor Vergata"
+      },
+      "area": {
+        "en": "TBC",
+        "it": "TBC",
+        "fr": "TBC"
+      },
+      "title": {
+        "en": "Tour dei laboratori",
+        "it": "Tour dei laboratori",
+        "fr": "Tour dei laboratori"
+      },
+      "type": {
+        "en": "Lab Visit",
+        "it": "Visita ai laboratori",
+        "fr": "Visite de laboratoire"
+      },
+      "description": {
+        "en": "Visita i laboratori dell'Istituto di Astrofisica e Planetologia Spaziali dell'INAF, l'Istituto nazionale di astrofisica.",
+        "it": "Visita i laboratori dell'Istituto di Astrofisica e Planetologia Spaziali dell'INAF, l'Istituto nazionale di astrofisica.",
+        "fr": "Visita i laboratori dell'Istituto di Astrofisica e Planetologia Spaziali dell'INAF, l'Istituto nazionale di astrofisica."
+      },
+      "topic": {
+        "en": "Physics, Astronomy, Engineering",
+        "it": "Physics, Astronomy, Engineering",
+        "fr": "Physics, Astronomy, Engineering"
+      },
+      "age": "All Ages",
+      "ageAdaptation": "",
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "18-22",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration",
+        "it": "Registrazione online",
+        "fr": "Inscription en ligne"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "ROM-006",
+      "sourceActivityId": "69",
+      "city": {
+        "en": "Roma",
+        "it": "Roma",
+        "fr": "Roma"
+      },
+      "image": "",
+      "venue": {
+        "en": "Area di Ricerca del CNR a Tor Vergata",
+        "it": "Area di Ricerca del CNR a Tor Vergata",
+        "fr": "Area di Ricerca del CNR a Tor Vergata"
+      },
+      "area": {
+        "en": "TBC",
+        "it": "TBC",
+        "fr": "TBC"
+      },
+      "title": {
+        "en": "Dal Sistema solare alle profondità del cosmo",
+        "it": "Dal Sistema solare alle profondità del cosmo",
+        "fr": "Dal Sistema solare alle profondità del cosmo"
+      },
+      "type": {
+        "en": "Hands-on Activity, Demonstration, Science Show, Exhibition, Talk, Guided Tour, Interactive Installation",
+        "it": "Attività pratica, Dimostrazione, Science show, Mostra, Incontro, Visita guidata, Installazione interattiva",
+        "fr": "Activité pratique, Démonstration, Science show, Exposition, Rencontre, Visite guidée, Installation interactive"
+      },
+      "description": {
+        "en": "Parti per un viaggio alla scoperta dello spazio insieme alle ricercatrici e ai ricercatori dell'INAF, l'Istituto nazionale di astrofisica. Si comincia dal Sistema solare, tutto da esplorare sia in miniatura che in dettaglio, scoprendo le missioni spaziali con a bordo strumentazione a guida italiana, che studiano pianeti come Mercurio, Marte, Giove e le sue lune. Passando per la luna, si prosegue verso le stelle della Via Lattea e gli esopianeti intorno ad esse, scoprendo come nascono, si formano ed evolvono questi mondi lontani. Il viaggio continua tra raggi cosmici ed esplosioni di supernove, tra satelliti e telescopi all'avanguardia, esplorando lo spaziotempo curvo e la luce che trasporta informazioni attraverso l'universo, fino a scoprire l'intera storia del cosmo attraverso un'installazione interattiva: il calendario cosmico. Infine, si torna sulla Terra per comprendere le ricadute tecnologiche della scienza dello spazio e i loro benefici per la vita sul nostro pianeta.",
+        "it": "Parti per un viaggio alla scoperta dello spazio insieme alle ricercatrici e ai ricercatori dell'INAF, l'Istituto nazionale di astrofisica. Si comincia dal Sistema solare, tutto da esplorare sia in miniatura che in dettaglio, scoprendo le missioni spaziali con a bordo strumentazione a guida italiana, che studiano pianeti come Mercurio, Marte, Giove e le sue lune. Passando per la luna, si prosegue verso le stelle della Via Lattea e gli esopianeti intorno ad esse, scoprendo come nascono, si formano ed evolvono questi mondi lontani. Il viaggio continua tra raggi cosmici ed esplosioni di supernove, tra satelliti e telescopi all'avanguardia, esplorando lo spaziotempo curvo e la luce che trasporta informazioni attraverso l'universo, fino a scoprire l'intera storia del cosmo attraverso un'installazione interattiva: il calendario cosmico. Infine, si torna sulla Terra per comprendere le ricadute tecnologiche della scienza dello spazio e i loro benefici per la vita sul nostro pianeta.",
+        "fr": "Parti per un viaggio alla scoperta dello spazio insieme alle ricercatrici e ai ricercatori dell'INAF, l'Istituto nazionale di astrofisica. Si comincia dal Sistema solare, tutto da esplorare sia in miniatura che in dettaglio, scoprendo le missioni spaziali con a bordo strumentazione a guida italiana, che studiano pianeti come Mercurio, Marte, Giove e le sue lune. Passando per la luna, si prosegue verso le stelle della Via Lattea e gli esopianeti intorno ad esse, scoprendo come nascono, si formano ed evolvono questi mondi lontani. Il viaggio continua tra raggi cosmici ed esplosioni di supernove, tra satelliti e telescopi all'avanguardia, esplorando lo spaziotempo curvo e la luce che trasporta informazioni attraverso l'universo, fino a scoprire l'intera storia del cosmo attraverso un'installazione interattiva: il calendario cosmico. Infine, si torna sulla Terra per comprendere le ricadute tecnologiche della scienza dello spazio e i loro benefici per la vita sul nostro pianeta."
+      },
+      "topic": {
+        "en": "Physics, Astronomy, Engineering",
+        "it": "Physics, Astronomy, Engineering",
+        "fr": "Physics, Astronomy, Engineering"
+      },
+      "age": "All Ages",
+      "ageAdaptation": "",
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "",
+      "sessions25": "18-22",
+      "sessions26": "18-22",
+      "maxParticipants": "",
+      "bookingRequired": "",
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "ROM-007",
+      "sourceActivityId": "70",
+      "city": {
+        "en": "Roma",
+        "it": "Roma",
+        "fr": "Roma"
+      },
+      "image": "",
+      "venue": {
+        "en": "Area di Ricerca del CNR a Tor Vergata",
+        "it": "Area di Ricerca del CNR a Tor Vergata",
+        "fr": "Area di Ricerca del CNR a Tor Vergata"
+      },
+      "area": {
+        "en": "TBC",
+        "it": "TBC",
+        "fr": "TBC"
+      },
+      "title": {
+        "en": "Osservazione del cielo al telescopio",
+        "it": "Osservazione del cielo al telescopio",
+        "fr": "Osservazione del cielo al telescopio"
+      },
+      "type": {
+        "en": "Hands-on Activity",
+        "it": "Attività pratica",
+        "fr": "Activité pratique"
+      },
+      "description": {
+        "en": "Meteo permettendo, sarà possibile osservare il cielo con i telescopi dell'INAF e di Astrolab.io APS",
+        "it": "Meteo permettendo, sarà possibile osservare il cielo con i telescopi dell'INAF e di Astrolab.io APS",
+        "fr": "Meteo permettendo, sarà possibile osservare il cielo con i telescopi dell'INAF e di Astrolab.io APS"
+      },
+      "topic": {
+        "en": "Astronomy",
+        "it": "Astronomy",
+        "fr": "Astronomy"
+      },
+      "age": "All Ages",
+      "ageAdaptation": "",
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "",
+      "sessions25": "20-22",
+      "sessions26": "20-22",
+      "maxParticipants": "",
+      "bookingRequired": "",
+      "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
+  "pavia": [
+    {
+      "id": "PAV-001",
+      "sourceActivityId": "49",
+      "city": {
+        "en": "Pavia",
+        "it": "Pavia",
+        "fr": "Pavia"
+      },
+      "image": "escape-rooms_img/per/img1.jpg",
+      "venue": {
+        "en": "Università degli Studi di Pavia",
+        "it": "Università degli Studi di Pavia",
+        "fr": "Università degli Studi di Pavia"
+      },
+      "area": {
+        "en": "Aule 2 e 3 di Giurisprudenza",
+        "it": "Aule 2 e 3 di Giurisprudenza",
+        "fr": "Aule 2 e 3 di Giurisprudenza"
+      },
+      "title": {
+        "en": "PER me si va ne la fisica recente",
+        "it": "PER me si va ne la fisica recente",
+        "fr": "PER me si va ne la fisica recente"
+      },
+      "type": {
+        "en": "Escape Room, Talk",
+        "it": "Escape room, Incontro",
+        "fr": "Escape room, Rencontre"
+      },
+      "description": {
+        "en": "Qui inizia l'escape room ispirata alla Divina Commedia che ti porta alla scoperta della fisica delle particelle: dalle prime teorie atomiche alla scoperta del bosone di Higgs, attraverso enigmi, esperimenti e grandi rivoluzioni scientifiche. A guidarti sarà Democrito, il tuo Virgilio moderno, lungo un viaggio alla scoperta del Modello Standard. Ma quando il sapere finisce e iniziano le domande ancora senza risposta, sarà la Curiosità, la nostra Beatrice, ad accompagnarti oltre i confini della fisica conosciuta. Sei pronto a ricostruire il Modello Standard e spingerti oltre, verso i misteri ancora irrisolti dell’Universo?",
+        "it": "Qui inizia l'escape room ispirata alla Divina Commedia che ti porta alla scoperta della fisica delle particelle: dalle prime teorie atomiche alla scoperta del bosone di Higgs, attraverso enigmi, esperimenti e grandi rivoluzioni scientifiche. A guidarti sarà Democrito, il tuo Virgilio moderno, lungo un viaggio alla scoperta del Modello Standard. Ma quando il sapere finisce e iniziano le domande ancora senza risposta, sarà la Curiosità, la nostra Beatrice, ad accompagnarti oltre i confini della fisica conosciuta. Sei pronto a ricostruire il Modello Standard e spingerti oltre, verso i misteri ancora irrisolti dell’Universo?",
+        "fr": "Qui inizia l'escape room ispirata alla Divina Commedia che ti porta alla scoperta della fisica delle particelle: dalle prime teorie atomiche alla scoperta del bosone di Higgs, attraverso enigmi, esperimenti e grandi rivoluzioni scientifiche. A guidarti sarà Democrito, il tuo Virgilio moderno, lungo un viaggio alla scoperta del Modello Standard. Ma quando il sapere finisce e iniziano le domande ancora senza risposta, sarà la Curiosità, la nostra Beatrice, ad accompagnarti oltre i confini della fisica conosciuta. Sei pronto a ricostruire il Modello Standard e spingerti oltre, verso i misteri ancora irrisolti dell’Universo?"
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "15–18, 18+",
+      "ageAdaptation": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "90",
+      "sessions25": "8-23.30",
+      "sessions26": "",
+      "maxParticipants": "30",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration, Information desk",
+        "it": "Registrazione online, Desk informazioni",
+        "fr": "Inscription en ligne, Point information"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
     }
   ]
 };
@@ -1598,7 +3130,7 @@ function eventIncludesDay(day) {
 }
 
 function sharedZoneActivitiesForEvent() {
-  if (!eventProgramme || eventKey === "avezzano") return [];
+  if (!eventProgramme) return [];
   const sessions25 = eventIncludesDay("25") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
   const sessions26 = eventIncludesDay("26") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
   const cityCode = String(eventKey || "ernest").toUpperCase().replace(/[^A-Z0-9]/g, "-");
@@ -1617,7 +3149,7 @@ function sharedZoneActivitiesForEvent() {
       venue: eventProgramme.venue,
       sessions25,
       sessions26,
-      image: "events-ern-2026_img/ernest-zone-entrance.png"
+      image: "activities-ern-2026_img/avezzano-ingresso-ernest.png"
     },
     {
       id: `${cityCode}-EU`,
@@ -1631,7 +3163,7 @@ function sharedZoneActivitiesForEvent() {
       venue: eventProgramme.venue,
       sessions25,
       sessions26,
-      image: "events-ern-2026_img/ernest-zone-eu-explorer.png"
+      image: "activities-ern-2026_img/avezzano-eu-explorer.png"
     },
     {
       id: `${cityCode}-DEBRIEF`,
@@ -1645,7 +3177,7 @@ function sharedZoneActivitiesForEvent() {
       venue: eventProgramme.venue,
       sessions25,
       sessions26,
-      image: "events-ern-2026_img/ernest-zone-debrief.png"
+      image: "activities-ern-2026_img/avezzano-debriefing.png"
     }
   ];
 }
@@ -1670,9 +3202,10 @@ const programZoneOrder = ["entrance", "investigation", "eu", "debrief"];
 
 function activityZoneKey(activity) {
   if (activity.zone) return activity.zone;
-  if (activity.id === "AVE-004") return "entrance";
-  if (activity.id === "AVE-005") return "debrief";
-  if (activity.id === "AVE-006") return "eu";
+  const title = localise(activity.title).toLowerCase();
+  if (title.includes("entrance") || title.includes("ingresso") || title.includes("accueil")) return "entrance";
+  if (title.includes("eu explorer")) return "eu";
+  if (/^(ernest\s*-?\s*)?(debrief|debriefing|débrief|débriefing)(\s+area)?$/.test(title.trim())) return "debrief";
   return "investigation";
 }
 
@@ -1746,7 +3279,7 @@ function renderActivityCard(activity, currentDay = "all") {
 
 function renderActivityZone(zoneKey, activities, currentDay) {
   const zone = copy.zones?.[zoneKey];
-  const showInvestigationPlaceholder = zoneKey === "investigation" && eventKey !== "avezzano";
+  const showInvestigationPlaceholder = zoneKey === "investigation" && !activities.length && eventKey !== "avezzano";
   if (!zone || (!activities.length && !showInvestigationPlaceholder)) return "";
   const showZoneDescription = zoneKey === "investigation";
   const countLabel = activities.length === 1 ? copy.zoneActivitySingular : copy.zoneActivityPlural;
@@ -1782,7 +3315,7 @@ function renderActivityZone(zoneKey, activities, currentDay) {
 function hepscapeActivitiesForEvent() {
   const hepscapeEventKeys = ["pisa", "bari", "terni", "paris"];
   const baseActivity = programmeActivities2026.avezzano?.find((activity) => activity.id === "AVE-001");
-  if (!eventProgramme || !baseActivity || !hepscapeEventKeys.includes(eventKey)) return [];
+  if (!eventProgramme || !baseActivity || !hepscapeEventKeys.includes(eventKey) || (programmeActivities2026[eventKey] || []).length) return [];
 
   const cityCode = String(eventKey).toUpperCase().replace(/[^A-Z0-9]/g, "-");
   const pendingText = { en: "To be defined", it: "In definizione", fr: "À définir" };

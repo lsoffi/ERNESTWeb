@@ -53,6 +53,30 @@ Important: if you create a pull request and you do not merge it, all the changes
 
 Your changes are now saved to the repository in the branch `main` and they should be online on www.ernest-project.eu .
 
+---
+
+## Website analytics and public visit counter
+
+The website uses [GoatCounter](https://www.goatcounter.com/) for privacy-friendly analytics and for the public visit counter displayed in the footer. GoatCounter is configured in `site.js` with the site code:
+
+```js
+const GOATCOUNTER_CODE = "ernest-project";
+```
+
+This points to the GoatCounter dashboard at:
+
+https://ernest-project.goatcounter.com
+
+GoatCounter should be used only for aggregate website statistics and the public visit counter. It must not be used for marketing, profiling, or cross-site tracking. The cookie policy pages in English, Italian, and French describe this use.
+
+When maintaining the counter, check the following in GoatCounter:
+
+1. The account email is verified.
+2. The public visitor counter is enabled in the site settings. The setting is called **Allow adding visitor counts on your website**.
+
+Do not commit GoatCounter passwords or recovery information to this repository. Store credentials only in the project’s approved password manager or shared credential storage.
+
+
 #### Expert links
 - GitLab pipelines: https://gitlab.cern.ch/sdonato/ERNESTWeb/-/pipelines (used to update ernest-project.webtest.cern.ch)
 - GitLab mirroring: https://gitlab.cern.ch/sdonato/ERNESTWeb/-/settings/repository#js-push-remote-settings

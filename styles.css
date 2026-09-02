@@ -1881,6 +1881,19 @@ li {
   text-underline-offset: 0.16em;
 }
 
+.site-visit-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.site-visit-counter strong {
+  color: var(--text);
+  font-size: 1rem;
+}
+
 .footer-social-links {
   display: inline-flex;
   align-items: center;

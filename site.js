@@ -1,6 +1,8 @@
 (() => {
   const CONSENT_KEY = "ernest-cookie-consent";
   const THEME_KEY = "ernest-theme";
+  const GOATCOUNTER_CODE = "ernest-project";
+  const GOATCOUNTER_ENDPOINT = GOATCOUNTER_CODE ? `https://${GOATCOUNTER_CODE}.goatcounter.com` : "";
   const root = document.documentElement;
 
   const getSystemTheme = () =>
@@ -214,6 +216,59 @@
     });
   };
 
+  const visitCounterLabels = {
+    it: "Visite al sito",
+    fr: "Visites du site",
+    en: "Site visits",
+  };
+
+  const currentLanguage = () => {
+    const lang = root.getAttribute("lang") || document.documentElement.lang || "en";
+    return lang.toLowerCase().startsWith("it") ? "it" : lang.toLowerCase().startsWith("fr") ? "fr" : "en";
+  };
+
+  const injectVisitCounterMarkup = () => {
+    if (!GOATCOUNTER_CODE || document.querySelector(".site-visit-counter")) return null;
+    const footerLinks = document.querySelector(".footer-policy-links");
+    if (!footerLinks) return null;
+
+    const counter = document.createElement("span");
+    counter.className = "site-visit-counter";
+    counter.setAttribute("aria-live", "polite");
+    counter.innerHTML = `<span>${visitCounterLabels[currentLanguage()]}</span><strong data-visit-count>...</strong>`;
+    footerLinks.prepend(counter);
+    return counter.querySelector("[data-visit-count]");
+  };
+
+  const fetchVisitCount = async (countElement) => {
+    if (!countElement || !GOATCOUNTER_ENDPOINT) return;
+    try {
+      const response = await fetch(`${GOATCOUNTER_ENDPOINT}/counter/TOTAL.json`, { cache: "no-store" });
+      if (!response.ok) throw new Error("Visit counter unavailable");
+      const data = await response.json();
+      countElement.textContent = data.count || "--";
+    } catch {
+      countElement.closest(".site-visit-counter")?.setAttribute("hidden", "");
+    }
+  };
+
+  const initPrivacyFriendlyAnalytics = () => {
+    if (!GOATCOUNTER_CODE || document.querySelector("script[data-goatcounter]")) return;
+
+    window.goatcounter = {
+      ...(window.goatcounter || {}),
+      allow_local: location.hostname === "localhost" || location.hostname === "127.0.0.1",
+    };
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://gc.zgo.at/count.js";
+    script.dataset.goatcounter = `${GOATCOUNTER_ENDPOINT}/count`;
+    document.head.appendChild(script);
+
+    fetchVisitCount(injectVisitCounterMarkup());
+  };
+
   const initConsent = () => {
     buildConsentMarkup();
     bindConsentEvents();
@@ -224,5 +279,6 @@
     syncThemeWithConsent();
     initThemeToggles();
     initConsent();
+    initPrivacyFriendlyAnalytics();
   });
 })();
