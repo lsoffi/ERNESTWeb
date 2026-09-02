@@ -864,7 +864,7 @@ const programmeActivities2026 = {
         "it": "Avezzano",
         "fr": "Avezzano"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/avezzano-micron.png",
       "venue": {
         "en": "Castello Orsini",
         "it": "Castello Orsini",
@@ -876,20 +876,24 @@ const programmeActivities2026 = {
         "fr": "Giardini"
       },
       "title": {
-        "en": "Micron: Attività dimostrativa",
-        "it": "Micron: Attività dimostrativa",
-        "fr": "Micron: Attività dimostrativa"
+        "en": "NAND e AI: una sinergia fondamentale",
+        "it": "NAND e AI: una sinergia fondamentale",
+        "fr": "NAND e AI: una sinergia fondamentale"
       },
       "type": {
         "en": "Demonstration",
         "it": "Dimostrazione",
         "fr": "Démonstration"
       },
-      "description": "",
+      "description": {
+        "en": "L'intelligenza artificiale necessita di enormi quantità di dati per apprendere e operare. Le memorie NAND rappresentano il cuore pulsante di questa rivoluzione tecnologica: permettono di archiviare i dataset massivi utilizzati per addestrare i modelli AI e garantiscono accesso rapido alle informazioni durante l'inferenza. Dai data center cloud che ospitano gli LLM (Large Language Models), modelli di intelligenza artificiale, fino ai dispositivi edge come smartphone e auto autonome che eseguono AI localmente, le memorie NAND ad alte prestazioni sono essenziali. Maggiore è la velocità e la capacità dello storage, più complessi e potenti possono essere i modelli di intelligenza artificiale. Queste memorie vengono progettate anche qui, nel nostro sito di Avezzano, un polo di eccellenza nella ricerca e sviluppo, testimoniando l'impegno concreto nel promuovere innovazione e cultura scientifica sul territorio. In sintesi: senza memorie NAND avanzate, l'AI come la conosciamo oggi non sarebbe possibile. Chi lavora nello sviluppo di memorie sta letteralmente costruendo le fondamenta del futuro dell'intelligenza artificiale.",
+        "it": "L'intelligenza artificiale necessita di enormi quantità di dati per apprendere e operare. Le memorie NAND rappresentano il cuore pulsante di questa rivoluzione tecnologica: permettono di archiviare i dataset massivi utilizzati per addestrare i modelli AI e garantiscono accesso rapido alle informazioni durante l'inferenza. Dai data center cloud che ospitano gli LLM (Large Language Models), modelli di intelligenza artificiale, fino ai dispositivi edge come smartphone e auto autonome che eseguono AI localmente, le memorie NAND ad alte prestazioni sono essenziali. Maggiore è la velocità e la capacità dello storage, più complessi e potenti possono essere i modelli di intelligenza artificiale. Queste memorie vengono progettate anche qui, nel nostro sito di Avezzano, un polo di eccellenza nella ricerca e sviluppo, testimoniando l'impegno concreto nel promuovere innovazione e cultura scientifica sul territorio. In sintesi: senza memorie NAND avanzate, l'AI come la conosciamo oggi non sarebbe possibile. Chi lavora nello sviluppo di memorie sta letteralmente costruendo le fondamenta del futuro dell'intelligenza artificiale.",
+        "fr": "L'intelligenza artificiale necessita di enormi quantità di dati per apprendere e operare. Le memorie NAND rappresentano il cuore pulsante di questa rivoluzione tecnologica: permettono di archiviare i dataset massivi utilizzati per addestrare i modelli AI e garantiscono accesso rapido alle informazioni durante l'inferenza. Dai data center cloud che ospitano gli LLM (Large Language Models), modelli di intelligenza artificiale, fino ai dispositivi edge come smartphone e auto autonome che eseguono AI localmente, le memorie NAND ad alte prestazioni sono essenziali. Maggiore è la velocità e la capacità dello storage, più complessi e potenti possono essere i modelli di intelligenza artificiale. Queste memorie vengono progettate anche qui, nel nostro sito di Avezzano, un polo di eccellenza nella ricerca e sviluppo, testimoniando l'impegno concreto nel promuovere innovazione e cultura scientifica sul territorio. In sintesi: senza memorie NAND avanzate, l'AI come la conosciamo oggi non sarebbe possibile. Chi lavora nello sviluppo di memorie sta letteralmente costruendo le fondamenta del futuro dell'intelligenza artificiale."
+      },
       "topic": {
-        "en": "Interdisciplinary",
-        "it": "Interdisciplinary",
-        "fr": "Interdisciplinary"
+        "en": "Artificial intelligence, technology",
+        "it": "Intelligenza artificiale, tecnologia",
+        "fr": "Intelligence artificielle, technologie"
       },
       "age": "All Ages",
       "ageAdaptation": {
