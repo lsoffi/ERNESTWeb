@@ -3469,6 +3469,8 @@ function activitySortWeight(activity) {
   if (activity.zone === "eu") return 900;
   if (activity.zone === "debrief") return 910;
   if (activity.id === "AVE-004") return -100;
+  if (activity.id === "AVE-011") return 110;
+  if (activity.id === "AVE-016") return 111;
   if (activity.id === "AVE-006") return 900;
   if (activity.id === "AVE-005") return 910;
   return Number.parseInt(String(activity.id || "").replace(/\D/g, ""), 10) || 0;
