@@ -1535,6 +1535,72 @@ const programmeActivities2026 = {
       "notes": ""
     }
   ],
+  "cagliari": [
+    {
+      "id": "CAG-001",
+      "sourceActivityId": "72",
+      "city": {
+        "en": "Cagliari",
+        "it": "Cagliari",
+        "fr": "Cagliari"
+      },
+      "image": "activities-ern-2026_img/photon-escape-room.png",
+      "venue": {
+        "en": "Centro Culturale Teatrale La Vetreria, Pirri",
+        "it": "Centro Culturale Teatrale La Vetreria, Pirri",
+        "fr": "Centro Culturale Teatrale La Vetreria, Pirri"
+      },
+      "area": {
+        "en": "TBC",
+        "it": "TBC",
+        "fr": "TBC"
+      },
+      "title": {
+        "en": "A cavallo di un fotone",
+        "it": "A cavallo di un fotone",
+        "fr": "A cavallo di un fotone"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "description": {
+        "en": "Sei pronto a viaggiare nello spazio a bordo di un fotone? Parti dalle profondità del Sole e segui il viaggio della luce attraverso il Sistema solare, tra pianeti, corpi celesti e misteri da svelare. Per arrivare alla Terra dovrai superare enigmi, risolvere sfide di robotica e coding unplugged e mettere alla prova il tuo pensiero computazionale. Un’escape room scientifica in cui esplorare l’Universo significa anche imparare a ragionare, collaborare e trovare soluzioni.",
+        "it": "Sei pronto a viaggiare nello spazio a bordo di un fotone? Parti dalle profondità del Sole e segui il viaggio della luce attraverso il Sistema solare, tra pianeti, corpi celesti e misteri da svelare. Per arrivare alla Terra dovrai superare enigmi, risolvere sfide di robotica e coding unplugged e mettere alla prova il tuo pensiero computazionale. Un’escape room scientifica in cui esplorare l’Universo significa anche imparare a ragionare, collaborare e trovare soluzioni.",
+        "fr": "Prêt à voyager dans l’espace à bord d’un photon ? Depuis les profondeurs du Soleil, suivez le parcours de la lumière à travers le Système solaire, entre planètes, corps célestes et mystères à résoudre. Pour arriver jusqu’à la Terre, il faudra relever des énigmes, résoudre des défis de robotique et de coding unplugged, et mettre à l’épreuve votre pensée computationnelle. Une escape room scientifique où explorer l’Univers signifie aussi apprendre à raisonner, collaborer et trouver des solutions."
+      },
+      "topic": {
+        "en": "Physics, Astronomy",
+        "it": "Fisica, astronomia",
+        "fr": "Physique, astronomie"
+      },
+      "age": "11–14, 15–18, 18+",
+      "ageAdaptation": "",
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "",
+      "sessions25": "16-22",
+      "sessions26": "",
+      "maxParticipants": "20",
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration, Information desk",
+        "it": "Registrazione online, Desk informazioni",
+        "fr": "Inscription en ligne, Point information"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    }
+  ],
   "torino": [
     {
       "id": "TOR-001",
