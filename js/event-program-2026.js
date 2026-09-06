@@ -1340,7 +1340,7 @@ const programmeActivities2026 = {
         "it": "Torino",
         "fr": "Torino"
       },
-      "image": "escape-rooms_img/photon/img1.jpeg",
+      "image": "activities-ern-2026_img/photon-escape-room.png",
       "venue": {
         "en": "Castello del Valentino",
         "it": "Castello del Valentino",
@@ -1940,7 +1940,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-medico-affreschi.jpg",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -2256,7 +2256,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-scienza-in-gioco.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -2316,7 +2316,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-il-dato-e-tratto.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -2376,7 +2376,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-mof-energia-mobilita.jpg",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -2504,7 +2504,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-materiali-domani.jpg",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -2682,7 +2682,7 @@ const programmeActivities2026 = {
         "it": "Roma",
         "fr": "Roma"
       },
-      "image": "escape-rooms_img/photon/img1.jpeg",
+      "image": "activities-ern-2026_img/photon-escape-room.png",
       "venue": {
         "en": "Area di Ricerca del CNR a Tor Vergata",
         "it": "Area di Ricerca del CNR a Tor Vergata",
@@ -3391,17 +3391,38 @@ function hepscapeActivitiesForEvent() {
 
   const cityCode = String(eventKey).toUpperCase().replace(/[^A-Z0-9]/g, "-");
   const pendingText = { en: "To be defined", it: "In definizione", fr: "À définir" };
+  const bookingUrls = {
+    pisa: "https://www.eventbrite.com/e/biglietti-hepscape-ernest-pisa-2026-1991356933193"
+  };
+  const bookingLabels = {
+    pisa: {
+      en: "Book HEPscape in Pisa",
+      it: "Prenota HEPscape a Pisa",
+      fr: "Réserver HEPscape à Pise"
+    }
+  };
+  const images = {
+    pisa: "activities-ern-2026_img/pisa-hepscape.png"
+  };
+  const hasBookingUrl = Boolean(bookingUrls[eventKey]);
 
   return [{
     ...baseActivity,
     id: `${cityCode}-HEPSCAPE`,
     sourceActivityId: "",
     city: eventProgramme.city,
+    image: images[eventKey] || baseActivity.image,
     venue: eventProgramme.venue,
     area: copy.zones.investigation.title,
     sessions25: eventIncludesDay("25") ? pendingText : "",
     sessions26: eventIncludesDay("26") ? pendingText : "",
-    bookingMethod: pendingText,
+    bookingMethod: hasBookingUrl ? {
+      en: "Online registration",
+      it: "Registrazione online",
+      fr: "Inscription en ligne"
+    } : pendingText,
+    bookingUrl: bookingUrls[eventKey] || "",
+    bookingLabel: bookingLabels[eventKey] || "",
     accessibility: "",
     partner: ""
   }];
