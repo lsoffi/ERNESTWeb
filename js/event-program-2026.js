@@ -729,6 +729,74 @@ const programmeActivities2026 = {
       "notes": ""
     },
     {
+      "id": "AVE-016",
+      "sourceActivityId": "CSI-004",
+      "city": {
+        "en": "Avezzano",
+        "it": "Avezzano",
+        "fr": "Avezzano"
+      },
+      "image": "activities-ern-2026_img/avezzano-dadi-segreto.png",
+      "venue": {
+        "en": "Castello Orsini",
+        "it": "Castello Orsini",
+        "fr": "Castello Orsini"
+      },
+      "area": {
+        "en": "Giardini",
+        "it": "Giardini",
+        "fr": "Giardini"
+      },
+      "title": {
+        "en": "Dice Hide a Secret",
+        "it": "I dadi nascondono un segreto",
+        "fr": "Les dés cachent un secret"
+      },
+      "type": {
+        "en": "Classroom Science Investigation",
+        "it": "Classroom Science Investigation",
+        "fr": "Classroom Science Investigation"
+      },
+      "description": {
+        "en": "Two giant dice, many rolls and a signal to decode. Some sums seem to appear more often: is the detector broken, or does chance hide a regularity? A collective experiment begins. Each participant rolls two dice and adds the sum to the board. We predict the shape of the graph before the rolls reveal it.",
+        "it": "Due dadi giganti, tanti lanci e un segnale da decifrare. Alcune somme sembrano comparire più spesso: il rivelatore è guasto oppure il caso nasconde una regolarità? Parte un esperimento collettivo. Ogni partecipante lancia due dadi e aggiunge la somma al pannello. Prevediamo la forma del grafico prima che i lanci la rivelino.",
+        "fr": "Deux dés géants, de nombreux lancers et un signal à déchiffrer. Certaines sommes semblent apparaître plus souvent : le détecteur est-il en panne ou le hasard cache-t-il une régularité ? Une expérience collective commence. Chaque participant lance deux dés et ajoute la somme au panneau. Nous prédisons la forme du graphique avant que les lancers ne la révèlent."
+      },
+      "topic": {
+        "en": "Probability, data analysis",
+        "it": "Probabilità, analisi dati",
+        "fr": "Probabilités, analyse de données"
+      },
+      "age": "All Ages",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "",
+      "sessions25": "17-22",
+      "sessions26": "17-22",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
       "id": "AVE-012",
       "sourceActivityId": "12",
       "city": {
