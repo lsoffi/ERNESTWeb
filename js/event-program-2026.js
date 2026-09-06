@@ -797,6 +797,74 @@ const programmeActivities2026 = {
       "notes": ""
     },
     {
+      "id": "AVE-017",
+      "sourceActivityId": "",
+      "city": {
+        "en": "Avezzano",
+        "it": "Avezzano",
+        "fr": "Avezzano"
+      },
+      "image": "activities-ern-2026_img/avezzano-tutti-quantum.jpg",
+      "venue": {
+        "en": "Castello Orsini",
+        "it": "Castello Orsini",
+        "fr": "Castello Orsini"
+      },
+      "area": {
+        "en": "Giardini",
+        "it": "Giardini",
+        "fr": "Giardini"
+      },
+      "title": {
+        "en": "Tutti Quantum",
+        "it": "Tutti Quantum",
+        "fr": "Tutti Quantum"
+      },
+      "type": {
+        "en": "Board game",
+        "it": "Gioco da tavolo",
+        "fr": "Jeu de société"
+      },
+      "description": {
+        "en": "A short card and board game inspired by elementary particles. Players compete or cooperate to connect particles, build Feynman diagrams and discover, through play, simple rules behind quantum mechanics, relativity and real particle-physics phenomena.",
+        "it": "Un breve gioco di carte e da tavolo ispirato alle particelle elementari. I partecipanti possono sfidarsi o collaborare per collegare particelle, costruire diagrammi di Feynman e scoprire, giocando, alcune semplici regole della meccanica quantistica, della relatività e dei fenomeni reali della fisica delle particelle.",
+        "fr": "Un jeu court de cartes et de société inspiré des particules élémentaires. Les participants peuvent jouer en compétition ou en coopération pour relier des particules, construire des diagrammes de Feynman et découvrir, en jouant, quelques règles simples de la mécanique quantique, de la relativité et des phénomènes réels de la physique des particules."
+      },
+      "topic": {
+        "en": "Physics, Particle physics",
+        "it": "Fisica, fisica delle particelle",
+        "fr": "Physique, physique des particules"
+      },
+      "age": "8+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "15",
+      "sessions25": "17-22",
+      "sessions26": "17-22",
+      "maxParticipants": "2-4",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
+      "accessibility": "",
+      "partner": "Helvetiq · UNSOLVeD",
+      "notes": ""
+    },
+    {
       "id": "AVE-012",
       "sourceActivityId": "12",
       "city": {
@@ -1326,6 +1394,142 @@ const programmeActivities2026 = {
         "fr": "Oui"
       },
       "bookingMethod": "",
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "TER-002",
+      "sourceActivityId": "11",
+      "city": {
+        "en": "Terni",
+        "it": "Terni",
+        "fr": "Terni"
+      },
+      "image": "activities-ern-2026_img/avezzano-csi-higgs.png",
+      "venue": {
+        "en": "Biblioteca Comunale Terni",
+        "it": "Biblioteca Comunale Terni",
+        "fr": "Biblioteca Comunale Terni"
+      },
+      "area": {
+        "en": "sala",
+        "it": "sala",
+        "fr": "sala"
+      },
+      "title": {
+        "en": "CSI - Caccia al bosone di Higgs",
+        "it": "CSI - Caccia al bosone di Higgs",
+        "fr": "CSI - Caccia al bosone di Higgs"
+      },
+      "type": {
+        "en": "Talk, Hands-on Activity",
+        "it": "Incontro, Attività pratica",
+        "fr": "Rencontre, Activité pratique"
+      },
+      "description": {
+        "en": "Un’indagine scientifica a squadre in cui i partecipanti analizzano indizi, formulano ipotesi e affrontano semplici esperimenti per ricostruire le tracce del misterioso bosone di Higgs e scoprire come lavorano davvero i fisici delle particelle.",
+        "it": "Un’indagine scientifica a squadre in cui i partecipanti analizzano indizi, formulano ipotesi e affrontano semplici esperimenti per ricostruire le tracce del misterioso bosone di Higgs e scoprire come lavorano davvero i fisici delle particelle.",
+        "fr": "Un’indagine scientifique à équipes dans laquelle les participants analysent des indices, formulent des hypothèses et réalisent de petites expériences pour reconstruire les traces du mystérieux boson de Higgs et découvrir comment travaillent les physiciens des particules."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "15",
+      "sessions25": "14-20",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
+      "accessibility": "",
+      "partner": "",
+      "notes": ""
+    },
+    {
+      "id": "TER-003",
+      "sourceActivityId": "",
+      "city": {
+        "en": "Terni",
+        "it": "Terni",
+        "fr": "Terni"
+      },
+      "image": "",
+      "venue": {
+        "en": "Biblioteca Comunale Terni",
+        "it": "Biblioteca Comunale Terni",
+        "fr": "Biblioteca Comunale Terni"
+      },
+      "area": {
+        "en": "sala",
+        "it": "sala",
+        "fr": "sala"
+      },
+      "title": {
+        "en": "Rummy Quark",
+        "it": "Rummy Quark",
+        "fr": "Rummy Quark"
+      },
+      "type": {
+        "en": "Board game",
+        "it": "Gioco da tavola",
+        "fr": "Jeu de société"
+      },
+      "description": {
+        "en": "A board game inspired by the world of particles, designed to explore physics in a simple and playful way. Through combinations, strategy and small scientific clues, participants discover how quarks and other particles can join together to form more complex structures.",
+        "it": "Un gioco da tavola ispirato al mondo delle particelle, pensato per avvicinarsi alla fisica in modo semplice e divertente. Tra combinazioni, strategie e piccoli indizi scientifici, i partecipanti scoprono come quark e altre particelle possono unirsi per formare strutture più complesse.",
+        "fr": "Un jeu de société inspiré du monde des particules, conçu pour découvrir la physique de manière simple et ludique. Entre combinaisons, stratégie et petits indices scientifiques, les participants découvrent comment les quarks et d'autres particules peuvent s'assembler pour former des structures plus complexes."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Physics",
+        "fr": "Physics"
+      },
+      "age": "All Ages",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": "",
+      "sessions25": "14-20",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
       "accessibility": "",
       "partner": "",
       "notes": ""
