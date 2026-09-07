@@ -2024,6 +2024,48 @@ li {
   background: transparent;
 }
 
+.ernest-extra-list .event-detail-card {
+  gap: 0;
+  padding: 0;
+}
+
+.ernest-extra-list .event-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 24px 24px 0 0;
+  background: transparent;
+}
+
+.ernest-extra-list .ernest-extra-logo-image {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+}
+
+.ernest-extra-list .ernest-extra-photo-image {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+}
+
+.ernest-extra-list .event-image + .event-date {
+  padding-top: 28px;
+}
+
+.ernest-extra-list .event-detail-card > :not(.event-image) {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.ernest-extra-list .event-detail-card > :last-child {
+  margin-bottom: 24px;
+}
+
 .image-filter-defs {
   position: absolute;
   pointer-events: none;

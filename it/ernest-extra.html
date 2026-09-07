@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERNEST Extra | ERNEST</title>
+    <meta
+      name="description"
+      content="Scopri ERNEST Extra: eventi speciali, laboratori e attività di coinvolgimento del pubblico collegati a ERNEST oltre i programmi principali."
+    />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css?v=20260907-extra-4" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="Home ERNEST">
+            <img
+              src="../ERNEST_long_blue.svg"
+              data-light-src="../ERNEST_long_blue.svg"
+              data-dark-src="../ERNEST_long_yellow.svg"
+              alt="Logo del progetto ERNEST"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html">La Rete</a>
+              <a href="index.html#events" aria-current="page">Eventi</a>
+            </div>
+            <button class="theme-toggle" type="button" aria-label="Cambia tema colore" aria-pressed="false">
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div class="lang-switch" aria-label="Selettore lingua">
+              <a href="../ernest-extra.html" lang="en">EN</a>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <span class="lang-switch-current" aria-current="true">IT</span>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <a href="../fr/ernest-extra.html" lang="fr">FR</a>
+            </div>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">Programma eventi</p>
+            <h1>ERNEST Extra</h1>
+            <p class="lead">
+              Eventi speciali, laboratori e attività di coinvolgimento del pubblico collegati a
+              ERNEST, oltre la Notte Europea delle Ricercatrici e dei Ricercatori e Researchers at School.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section events-page-section">
+          <div class="section-heading">
+            <p class="section-kicker">ERNEST Extra</p>
+            <h2>Attività speciali oltre i programmi principali.</h2>
+            <p class="section-note">
+              Questa pagina raccoglierà eventi e attività collegati a ERNEST che non fanno parte
+              dei programmi principali della Notte Europea delle Ricercatrici e dei Ricercatori o di Researchers at School.
+            </p>
+          </div>
+
+          <div class="events-list events-list-full ernest-extra-list">
+
+
+            <article class="event-card event-detail-card">
+              <img class="event-image ernest-extra-photo-image" src="../activities-ern-2026_img/iceri2026-banner.jpg" alt="Banner della conferenza ICERI2026." loading="lazy" />
+              <p class="event-date">9-11 novembre 2026</p>
+              <h3>ERNEST: Building a European Ecosystem of Science Escape Rooms for Public Engagement and Scientific Literacy</h3>
+              <p>
+                ERNEST sarà presentato a ICERI2026 con un talk su come le science escape rooms
+                possano costruire un ecosistema europeo per public engagement, alfabetizzazione
+                scientifica e dialogo tra ricerca e società.
+              </p>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Conferenza</dt>
+                  <dd><a class="text-link event-inline-link" href="https://iated.org/iceri/" target="_blank" rel="noopener noreferrer">ICERI2026</a></dd>
+                </div>
+                <div>
+                  <dt>Luogo</dt>
+                  <dd>Siviglia, Spagna</dd>
+                </div>
+                <div>
+                  <dt>Attività</dt>
+                  <dd>Talk a conferenza</dd>
+                </div>
+              </dl>
+              <a class="text-link event-card-link-label" href="https://iated.org/iceri/" target="_blank" rel="noopener noreferrer">Vai al sito della conferenza</a>
+            </article>
+
+
+
+            <article class="event-card event-detail-card">
+              <img class="event-image ernest-extra-photo-image" src="../activities-ern-2026_img/fete-science-2026-village.png" alt="Grafica Village des Sciences per la Fête de la science." loading="lazy" />
+              <p class="event-date">10 ottobre 2026</p>
+              <h3>National Science Fair @ Fête de la science 2026</h3>
+              <p>
+                ERNEST partecipa alla Fête de la science 2026 all’École polytechnique di Palaiseau,
+                portando un’attività da science fair dentro un programma nazionale che mette in
+                dialogo ricerca, scoperta e pubblico.
+              </p>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>In collaborazione con</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.fetedelascience.fr/fete-de-la-science-2026" target="_blank" rel="noopener noreferrer">Fête de la science</a></dd>
+                </div>
+                <div>
+                  <dt>Luogo</dt>
+                  <dd>École polytechnique, Route de Saclay, 91120 Palaiseau, Francia</dd>
+                </div>
+                <div>
+                  <dt>Orario</dt>
+                  <dd>13:30-18:00</dd>
+                </div>
+              </dl>
+              <a class="text-link event-card-link-label" href="https://www.fetedelascience.fr/fete-de-la-science-2026" target="_blank" rel="noopener noreferrer">Vai alla pagina dell’evento</a>
+            </article>
+
+
+
+            <article class="event-card event-detail-card">
+              <img class="event-image event-image-contain ernest-extra-logo-image" src="../activities-ern-2026_img/lafuori-festival-2026.svg" alt="Identità visiva di La Fuori Festival 2026." loading="lazy" />
+              <p class="event-date">11-13 settembre 2026</p>
+              <h3>CSI - Classroom Science Investigation</h3>
+              <p>
+                ERNEST porta il format Classroom Science Investigation a La Fuori Festival,
+                tre giornate dedicate a scienza, immaginazione e cultura contemporanea.
+                In una location insolita, una piazza in una zona periferica di Roma, l’attività
+                segue il filo conduttore di ERNEST: portare la ricerca fuori dai suoi spazi abituali
+                e trasformare la scienza in un’indagine condivisa con chi vive la città.
+              </p>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>In collaborazione con</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.lafuorifestival.it/" target="_blank" rel="noopener noreferrer">La Fuori Festival</a></dd>
+                </div>
+                <div>
+                  <dt>Luogo</dt>
+                  <dd>Piazzale delle Gardenie, Roma</dd>
+                </div>
+                <div>
+                  <dt>Tema del festival</dt>
+                  <dd>Cyborg</dd>
+                </div>
+              </dl>
+              <a class="text-link event-card-link-label" href="https://www.lafuorifestival.it/" target="_blank" rel="noopener noreferrer">Vai al sito del festival</a>
+            </article>
+
+
+
+            <article class="event-card event-detail-card">
+              <img class="event-image ernest-extra-photo-image" src="../activities-ern-2026_img/monte-zugna-osservatorio.jpg" alt="Osservatorio astronomico di Monte Zugna." loading="lazy" />
+              <p class="event-date">12 agosto 2026</p>
+              <h3>Non solo stelle cadenti: Missione eclissi</h3>
+              <p>
+                ERNEST partecipa all’appuntamento di astronomia in quota dell’Osservatorio di Monte
+                Zugna con un laboratorio sull’eclissi solare e un’attività di sensibilizzazione sulla
+                European Researchers’ Night. Nel filo conduttore di ERNEST, la ricerca esce dai luoghi
+                abituali e diventa esperienza condivisa: osservare il cielo, sperimentare insieme e
+                dialogare con il pubblico in un contesto naturale e insolito.
+              </p>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>In collaborazione con</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.fondazionemcr.it/12agosto" target="_blank" rel="noopener noreferrer">Fondazione Museo Civico di Rovereto</a></dd>
+                </div>
+                <div>
+                  <dt>Luogo</dt>
+                  <dd>Osservatorio astronomico di Monte Zugna, Trento</dd>
+                </div>
+                <div>
+                  <dt>Attività</dt>
+                  <dd>Laboratorio sull’eclissi solare e awareness ERN</dd>
+                </div>
+              </dl>
+              <a class="text-link event-card-link-label" href="https://www.fondazionemcr.it/12agosto" target="_blank" rel="noopener noreferrer">Vai alla pagina dell’evento</a>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image ernest-extra-photo-image" src="../activities-ern-2026_img/acceler8escape-passion4learning.jpg" alt="Allestimento del workshop Acceler8Escape al Daresbury Laboratory." loading="lazy" />
+              <p class="event-date">9 luglio 2026</p>
+              <h3>Acceler8Escape workshop @ Passion4Learning Science Extravaganza</h3>
+              <p>
+                Acceler8Escape porta l’approccio escape room di ERNEST in un evento scientifico per
+                le scuole primarie, trasformando la scienza degli acceleratori in un workshop pratico
+                fatto di enigmi, collaborazione e scoperta.
+              </p>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>In collaborazione con</dt>
+                  <dd>Passion4Learning Science Extravaganza</dd>
+                </div>
+                <div>
+                  <dt>Luogo</dt>
+                  <dd>Daresbury Laboratory, Regno Unito</dd>
+                </div>
+                <div>
+                  <dt>Attività</dt>
+                  <dd>Evento scientifico per scuole primarie</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="eu-funding-mark" aria-label="Finanziato dall'Unione Europea">
+          <div class="eu-logo-box">
+            <img class="eu-logo-full" src="../EN_FundedbytheEU_RGB_POS.png" alt="Finanziato dall'Unione Europea">
+          </div>
+        </div>
+        <p class="funding-text">
+          ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dalla Commissione europea nell'ambito delle Azioni Marie Skłodowska-Curie. GA 101305138.
+        </p>
+        <div class="footer-policy-links">
+          <p>© 2026 ERNEST</p>
+          <a href="cookie-policy-eu.html">Cookie policy</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../site.js"></script>
+  </body>
+</html>
