@@ -3563,7 +3563,7 @@ const programmeActivities2026 = {
         "it": "Roma",
         "fr": "Roma"
       },
-      "image": "activities-ern-2026_img/photon-escape-room.png",
+      "image": "activities-ern-2026_img/roma-fotone.jpg",
       "venue": {
         "en": "Area di Ricerca del CNR a Tor Vergata",
         "it": "Area di Ricerca del CNR a Tor Vergata",
@@ -3594,7 +3594,11 @@ const programmeActivities2026 = {
         "it": "Astronomy, Physics, Computer Science",
         "fr": "Astronomy, Physics, Computer Science"
       },
-      "age": "11–14, 15–18",
+      "age": {
+        "it": "10–16 anni consigliati; aperta a tutte le età",
+        "en": "Recommended ages 10–16; open to all ages",
+        "fr": "Âge conseillé : 10–16 ans ; ouvert à tous les âges"
+      },
       "ageAdaptation": {
         "en": "Yes",
         "it": "Sì",
@@ -3605,8 +3609,8 @@ const programmeActivities2026 = {
         "it": "Sessioni a orario",
         "fr": "Sessions programmées"
       },
-      "duration": "45",
-      "sessions25": "19-22",
+      "duration": "60",
+      "sessions25": "19–20; 20–21; 21–22; 22–23",
       "sessions26": "",
       "maxParticipants": "25",
       "bookingRequired": {
@@ -3621,7 +3625,8 @@ const programmeActivities2026 = {
       },
       "accessibility": "",
       "partner": "",
-      "notes": ""
+      "notes": "",
+      "showSchedule": true
     },
     {
       "id": "ROM-005",
@@ -3631,16 +3636,16 @@ const programmeActivities2026 = {
         "it": "Roma",
         "fr": "Roma"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/roma-laboratori.png",
       "venue": {
         "en": "Area di Ricerca del CNR a Tor Vergata",
         "it": "Area di Ricerca del CNR a Tor Vergata",
         "fr": "Area di Ricerca del CNR a Tor Vergata"
       },
       "area": {
-        "en": "TBC",
-        "it": "TBC",
-        "fr": "TBC"
+        "it": "Laboratori",
+        "en": "Laboratories",
+        "fr": "Laboratoires"
       },
       "title": {
         "en": "Tour dei laboratori",
@@ -3665,27 +3670,30 @@ const programmeActivities2026 = {
       "age": "All Ages",
       "ageAdaptation": "",
       "format": {
-        "en": "Scheduled sessions",
         "it": "Sessioni a orario",
+        "en": "Scheduled sessions",
         "fr": "Sessions programmées"
       },
-      "duration": "",
-      "sessions25": "18-22",
-      "sessions26": "18-22",
-      "maxParticipants": "",
+      "duration": "60",
+      "sessions25": "18–23",
+      "sessions26": "",
+      "maxParticipants": "60",
       "bookingRequired": {
-        "en": "Yes",
         "it": "Sì",
+        "en": "Yes",
         "fr": "Oui"
       },
       "bookingMethod": {
-        "en": "Online registration",
-        "it": "Registrazione online",
-        "fr": "Inscription en ligne"
+        "it": "Registrazione online, Desk informazioni",
+        "en": "Online registration, Information desk",
+        "fr": "Inscription en ligne, Point information"
       },
       "accessibility": "",
       "partner": "",
-      "notes": ""
+      "notes": "",
+      "showSchedule": true,
+      "showBooking": true,
+      "showFormat": true
     },
     {
       "id": "ROM-006",
@@ -3695,16 +3703,16 @@ const programmeActivities2026 = {
         "it": "Roma",
         "fr": "Roma"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/roma-prato.jpg",
       "venue": {
         "en": "Area di Ricerca del CNR a Tor Vergata",
         "it": "Area di Ricerca del CNR a Tor Vergata",
         "fr": "Area di Ricerca del CNR a Tor Vergata"
       },
       "area": {
-        "en": "TBC",
-        "it": "TBC",
-        "fr": "TBC"
+        "it": "Prato",
+        "en": "Lawn",
+        "fr": "Pelouse"
       },
       "title": {
         "en": "Dal Sistema solare alle profondità del cosmo",
@@ -3734,14 +3742,15 @@ const programmeActivities2026 = {
         "fr": "Sessions programmées"
       },
       "duration": "",
-      "sessions25": "18-22",
-      "sessions26": "18-22",
+      "sessions25": "17:30–23:30",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": "",
       "bookingMethod": "",
       "accessibility": "",
       "partner": "",
-      "notes": ""
+      "notes": "",
+      "showSchedule": true
     },
     {
       "id": "ROM-007",
@@ -3751,16 +3760,16 @@ const programmeActivities2026 = {
         "it": "Roma",
         "fr": "Roma"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/roma-telescopio.png",
       "venue": {
         "en": "Area di Ricerca del CNR a Tor Vergata",
         "it": "Area di Ricerca del CNR a Tor Vergata",
         "fr": "Area di Ricerca del CNR a Tor Vergata"
       },
       "area": {
-        "en": "TBC",
-        "it": "TBC",
-        "fr": "TBC"
+        "it": "Telescopi",
+        "en": "Telescopes",
+        "fr": "Télescopes"
       },
       "title": {
         "en": "Osservazione del cielo al telescopio",
@@ -3790,14 +3799,15 @@ const programmeActivities2026 = {
         "fr": "Continu"
       },
       "duration": "",
-      "sessions25": "20-22",
-      "sessions26": "20-22",
+      "sessions25": "18:30–23:30",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": "",
       "bookingMethod": "",
       "accessibility": "",
       "partner": "",
-      "notes": ""
+      "notes": "",
+      "showSchedule": true
     }
   ],
   "pavia": [
@@ -4208,11 +4218,11 @@ function renderActivityCard(activity, currentDay = "all") {
     createDetail(copy.labels.topic, activity.topic),
     createDetail(copy.labels.age, activity.age),
     isEscapeRoom ? createDetail(copy.labels.ageAdaptation, activity.ageAdaptation) : "",
-    isEscapeRoom ? createDetail(copy.labels.format, activity.format) : "",
+    (isEscapeRoom || activity.showFormat) ? createDetail(copy.labels.format, activity.format) : "",
     createDetail(copy.labels.duration, duration ? (/^\d+$/.test(duration) ? `${duration} min` : duration) : ""),
     activityZoneKey(activity) === "investigation" && (isEscapeRoom || activity.showSchedule) ? createDetail(copy.labels.sessions, sessions) : "",
     createDetail(copy.labels.maxParticipants, activity.maxParticipants),
-    isEscapeRoom ? createDetail(copy.labels.booking, [localise(activity.bookingRequired), localise(activity.bookingMethod)].filter(Boolean).join(" · ")) : "",
+    (isEscapeRoom || activity.showBooking) ? createDetail(copy.labels.booking, [localise(activity.bookingRequired), localise(activity.bookingMethod)].filter(Boolean).join(" · ")) : "",
     createDetail(copy.labels.accessibility, activity.accessibility),
     createDetail(copy.labels.partner, activity.partner)
   ].filter(Boolean).join("");
@@ -4224,7 +4234,7 @@ function renderActivityCard(activity, currentDay = "all") {
         <div class="program-activity-tags">
           ${type ? `<span class="program-activity-tag">${type}</span>` : ""}
           ${topic ? `<span class="program-activity-tag">${topic}</span>` : ""}
-          ${isEscapeRoom && format ? `<span class="program-activity-tag">${format}</span>` : ""}
+          ${(isEscapeRoom || activity.showFormat) && format ? `<span class="program-activity-tag">${format}</span>` : ""}
         </div>
         <h3>${title || localise(activity.id)}</h3>
         ${localise(activity.description).trim() ? `<p class="program-activity-description">${localise(activity.description).trim()}</p>` : ""}
