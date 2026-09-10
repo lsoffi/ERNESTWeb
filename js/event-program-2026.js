@@ -1,5 +1,6 @@
 const eventProgrammes2026 = {
   avezzano: {
+    time: "17–23",
     city: { en: "Avezzano", it: "Avezzano", fr: "Avezzano" },
     date: { en: "25–26 September 2026", it: "25–26 settembre 2026", fr: "25–26 septembre 2026" },
     institution: {
@@ -11,6 +12,7 @@ const eventProgrammes2026 = {
     image: "Avezzano.png"
   },
   terni: {
+    time: "14–20",
     city: { en: "Terni", it: "Terni", fr: "Terni" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -48,6 +50,7 @@ const eventProgrammes2026 = {
     image: "BARI.png"
   },
   paris: {
+    time: "10–18",
     city: { en: "Paris / Palaiseau", it: "Parigi / Palaiseau", fr: "Paris / Palaiseau" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -59,6 +62,7 @@ const eventProgrammes2026 = {
     image: "CNRS.png"
   },
   napoli: {
+    time: "18–22",
     city: { en: "Naples", it: "Napoli", fr: "Naples" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -70,6 +74,7 @@ const eventProgrammes2026 = {
     image: "NAPOLI.png"
   },
   pavia: {
+    time: "8–23:30",
     city: { en: "Pavia", it: "Pavia", fr: "Pavie" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -92,6 +97,7 @@ const eventProgrammes2026 = {
     image: "UNIMAN.png"
   },
   roma: {
+    time: "17:30–23:30",
     city: { en: "Rome", it: "Roma", fr: "Rome" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -103,6 +109,7 @@ const eventProgrammes2026 = {
     image: "ROMA.png"
   },
   palermo: {
+    time: "18–23",
     city: { en: "Palermo", it: "Palermo", fr: "Palerme" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -114,6 +121,7 @@ const eventProgrammes2026 = {
     image: "PALERMO.png"
   },
   bologna: {
+    time: "17:30–23",
     city: { en: "Bologna", it: "Bologna", fr: "Bologne" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -121,10 +129,11 @@ const eventProgrammes2026 = {
       it: "Istituto Nazionale di Astrofisica",
       fr: "Institut national italien d'astrophysique"
     },
-    venue: { en: "Research Area", it: "Area di Ricerca", fr: "Zone de recherche" },
+    venue: { en: "Bologna Research Area", it: "Area territoriale di Ricerca di Bologna", fr: "Zone de recherche de Bologne" },
     image: "BOLOGNA.png"
   },
   padova: {
+    time: "17–23",
     city: { en: "Padua", it: "Padova", fr: "Padoue" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -147,6 +156,7 @@ const eventProgrammes2026 = {
     image: "CAGLIARI.png"
   },
   torino: {
+    time: { en: "25 September: 17–24 · 26 September: 10:30–19", it: "25 settembre: 17–24 · 26 settembre: 10:30–19", fr: "25 septembre : 17–24 · 26 septembre : 10:30–19" },
     city: { en: "Turin", it: "Torino", fr: "Turin" },
     date: { en: "25–26 September 2026", it: "25–26 settembre 2026", fr: "25–26 septembre 2026" },
     institution: {
@@ -162,6 +172,7 @@ const eventProgrammes2026 = {
     image: "UNITO.png"
   },
   alessandria: {
+    time: "21–23",
     city: { en: "Alessandria", it: "Alessandria", fr: "Alexandrie" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -197,6 +208,561 @@ const eventProgrammes2026 = {
 // Accessibility Notes -> accessibility
 // Extra site field for the card image -> image
 const programmeActivities2026 = {
+  "padova": [
+    {
+      "id": "PAD-76",
+      "sourceActivityId": "76",
+      "city": {
+        "en": "Padua",
+        "it": "Padova",
+        "fr": "Padoue"
+      },
+      "title": {
+        "en": "A cavallo di un fotone",
+        "it": "A cavallo di un fotone",
+        "fr": "A cavallo di un fotone"
+      },
+      "area": {
+        "en": "Sala Jappelli",
+        "it": "Sala Jappelli",
+        "fr": "Sala Jappelli"
+      },
+      "description": {
+        "it": "Vivi il viaggio dei fotoni – le particelle della luce – dalle profondità del Sole, dove iniziano la loro avventura, attraverso i pianeti e altri corpi celesti del Sistema solare, fino ai telescopi degli astronomi che, dalla Terra, osservano questi corpi per studiarli in dettaglio, comprenderne il funzionamento e realizzarne splendide immagini. Un'escape room che combina l'esplorazione dello spazio con la pratica del pensiero computazionale, tra sfide di robotica e coding unplugged.",
+        "en": "Follow the journey of photons — particles of light — from deep inside the Sun, through the planets and other celestial bodies of the Solar System, to astronomers’ telescopes on Earth. Astronomers observe these objects to study them in detail, understand how they work and create beautiful images. An escape room combining space exploration with computational thinking through robotics challenges and unplugged coding.",
+        "fr": "Suivez le voyage des photons — les particules de lumière — depuis les profondeurs du Soleil, à travers les planètes et les autres corps célestes du Système solaire, jusqu’aux télescopes des astronomes sur Terre. Ces observations permettent de les étudier en détail, de comprendre leur fonctionnement et d’en réaliser de magnifiques images. Une escape room qui associe exploration spatiale et pensée informatique, avec des défis de robotique et de programmation débranchée."
+      },
+      "topic": {
+        "en": "Astronomy, Physics, Computer Science",
+        "it": "Astronomia, Fisica, Informatica",
+        "fr": "Astronomie, Physique, Informatique"
+      },
+      "age": "6–10",
+      "duration": "45",
+      "maxParticipants": "",
+      "sessions25": "17–20",
+      "sessions26": "",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "type": {
+        "en": "Escape Room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration",
+        "it": "Registrazione online",
+        "fr": "Inscription en ligne"
+      },
+      "showSchedule": true,
+      "venue": {
+        "en": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "it": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
+      },
+      "partner": {
+        "en": "University of Padua",
+        "it": "Università di Padova",
+        "fr": "Université de Padoue"
+      },
+      "image": "activities-ern-2026_img/photon-escape-room.png",
+      "bookingUrl": "https://science4all.it/",
+      "bookingLabel": {
+        "en": "Book on Science4All",
+        "it": "Prenota su Science4All",
+        "fr": "Réserver sur Science4All"
+      }
+    },
+    {
+      "id": "PAD-78",
+      "sourceActivityId": "78",
+      "city": {
+        "en": "Padua",
+        "it": "Padova",
+        "fr": "Padoue"
+      },
+      "title": {
+        "en": "ERNEST Entrance",
+        "it": "ERNEST Entrance",
+        "fr": "ERNEST Entrance"
+      },
+      "area": {
+        "en": "Garden",
+        "it": "Giardino",
+        "fr": "Jardin"
+      },
+      "description": {
+        "en": "Start your European Researchers’ Night adventure here! Collect your ERNEST passport, discover the programme and get ready to explore research. The Entrance area is the starting point: find the information you need to enjoy the event, gather clues, meet researchers and take an active part in the experience.",
+        "it": "Inizia qui la tua avventura nella Notte Europea delle Ricercatrici e dei Ricercatori! Ritira il tuo passaporto ERNEST, scopri le attività in programma e preparati a esplorare il mondo della ricerca. L’area Entrance è il punto di partenza del percorso: qui troverai tutte le informazioni utili per vivere l’evento, raccogliere indizi, incontrare i ricercatori e diventare protagonista della tua esperienza.",
+        "fr": "Commencez ici votre aventure à la Nuit européenne des chercheuses et des chercheurs ! Retirez votre passeport ERNEST, découvrez le programme et préparez-vous à explorer la recherche. L’espace Entrance est le point de départ : vous y trouverez les informations pour profiter de l’événement, recueillir des indices, rencontrer les scientifiques et devenir acteur de votre expérience."
+      },
+      "topic": {
+        "en": "Interdisciplinary",
+        "it": "Interdisciplinare",
+        "fr": "Interdisciplinaire"
+      },
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
+      "duration": "",
+      "maxParticipants": "",
+      "sessions25": "17–23",
+      "sessions26": "",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "type": {
+        "en": "Talk",
+        "it": "Incontro",
+        "fr": "Rencontre"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "showSchedule": true,
+      "venue": {
+        "en": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "it": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
+      },
+      "zone": "entrance",
+      "image": "activities-ern-2026_img/avezzano-ingresso-ernest.png"
+    },
+    {
+      "id": "PAD-79",
+      "sourceActivityId": "79",
+      "city": {
+        "en": "Padua",
+        "it": "Padova",
+        "fr": "Padoue"
+      },
+      "title": {
+        "en": "2059 asteroid alert",
+        "it": "2059 asteroid alert",
+        "fr": "2059 asteroid alert"
+      },
+      "area": {
+        "en": "Sala Jappelli",
+        "it": "Sala Jappelli",
+        "fr": "Sala Jappelli"
+      },
+      "description": {
+        "en": "A science escape room inspired by real planetary defence missions. The activity turns the scientific method into a shared adventure, showing that protecting our planet is not science fiction but the result of ingenuity, logic and international cooperation.",
+        "it": "Escape room scientifica ispirata alle reali missioni di difesa planetaria. L’attività trasforma il metodo scientifico in un’avventura collettiva, dimostrando che la protezione del nostro pianeta non è fantascienza, ma il risultato di ingegno, logica e cooperazione internazionale.",
+        "fr": "Une escape room scientifique inspirée de véritables missions de défense planétaire. L’activité transforme la méthode scientifique en aventure collective, montrant que protéger notre planète relève de l’ingéniosité, de la logique et de la coopération internationale plutôt que de la science-fiction."
+      },
+      "topic": {
+        "en": "Astronomy, Physics",
+        "it": "Astronomia, Fisica",
+        "fr": "Astronomie, Physique"
+      },
+      "age": "15–18, 18+",
+      "duration": "60",
+      "maxParticipants": "",
+      "sessions25": "20–22",
+      "sessions26": "",
+      "ageAdaptation": "",
+      "type": {
+        "en": "Escape room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration",
+        "it": "Registrazione online",
+        "fr": "Inscription en ligne"
+      },
+      "showSchedule": true,
+      "venue": {
+        "en": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "it": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
+      },
+      "partner": {
+        "en": "University of Padua",
+        "it": "Università di Padova",
+        "fr": "Université de Padoue"
+      },
+      "image": "events-ern-2026_img/PADOVA.png",
+      "bookingUrl": "https://science4all.it/",
+      "bookingLabel": {
+        "en": "Book on Science4All",
+        "it": "Prenota su Science4All",
+        "fr": "Réserver sur Science4All"
+      }
+    },
+    {
+      "id": "PAD-80",
+      "sourceActivityId": "80",
+      "city": {
+        "en": "Padua",
+        "it": "Padova",
+        "fr": "Padoue"
+      },
+      "title": {
+        "en": "A tu per tu con l’Universo, tra storia e ricerca scientifica",
+        "it": "A tu per tu con l’Universo, tra storia e ricerca scientifica",
+        "fr": "A tu per tu con l’Universo, tra storia e ricerca scientifica"
+      },
+      "area": {
+        "en": "Inner courtyard and museum",
+        "it": "Cortile interno e museo",
+        "fr": "Cour intérieure et musée"
+      },
+      "description": {
+        "en": "INAF’s La Specola in Padua hosts a journey through astronomy’s past and present. The museum opens the Sala dell’Iscrizione to reveal the fascinating history of the Dembowski telescope. Throughout the evening, the inner courtyard hosts “In diretta con l’Astronomia”: conversations with astronomers from INAF and the University of Padua’s Department of Physics and Astronomy, with live connections to the Asiago Astrophysical Observatory. Visitors can also explore the laboratories where future instruments are designed and built to reveal the Universe’s secrets.",
+        "it": "La Specola di Padova, sede INAF, diventa il palcoscenico di un viaggio tra passato e presente dell’astronomia. Il Museo La Specola apre la Sala dell’Iscrizione, dove scoprire la storia affascinante del cannocchiale Dembowski; nel cortile interno, per tutta la serata, si svolgeranno invece gli incontri di “In diretta con l’Astronomia”, un ciclo di dialoghi con astronome e astronomi dell’INAF e del Dipartimento di Fisica e Astronomia dell’Università di Padova, accompagnati da collegamenti con l’Osservatorio Astrofisico di Asiago. Saranno aperti al pubblico anche i laboratori all’interno dei quali si progettano e costruiscono i futuri strumenti per svelare i segreti dell’Universo.",
+        "fr": "La Specola de Padoue, siège de l’INAF, accueille un voyage entre passé et présent de l’astronomie. Le musée ouvre la Sala dell’Iscrizione pour découvrir l’histoire fascinante de la lunette Dembowski. Toute la soirée, la cour intérieure accueille “In diretta con l’Astronomia”, des échanges avec les astronomes de l’INAF et du Département de physique et d’astronomie de l’Université de Padoue, accompagnés de liaisons avec l’Observatoire astrophysique d’Asiago. Les laboratoires où sont conçus et construits les futurs instruments destinés à dévoiler les secrets de l’Univers seront également ouverts."
+      },
+      "topic": {
+        "en": "Physics, Astronomy, Engineering, Computer Science",
+        "it": "Fisica, Astronomia, Ingegneria, Informatica",
+        "fr": "Physique, Astronomie, Ingénierie, Informatique"
+      },
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
+      "duration": "",
+      "maxParticipants": "",
+      "sessions25": "19–23",
+      "sessions26": "",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "type": {
+        "en": "Talk, lab visit",
+        "it": "Incontro, visita ai laboratori",
+        "fr": "Rencontre, visite des laboratoires"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "showSchedule": true,
+      "venue": {
+        "en": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "it": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
+      },
+      "partner": {
+        "en": "University of Padua",
+        "it": "Università di Padova",
+        "fr": "Université de Padoue"
+      },
+      "image": "events-ern-2026_img/PADOVA.png"
+    },
+    {
+      "id": "PAD-81",
+      "sourceActivityId": "81",
+      "city": {
+        "en": "Padua",
+        "it": "Padova",
+        "fr": "Padoue"
+      },
+      "title": {
+        "en": "Favole astronomiche",
+        "it": "Favole astronomiche",
+        "fr": "Favole astronomiche"
+      },
+      "area": {
+        "en": "Sala Pigne",
+        "it": "Sala Pigne",
+        "fr": "Sala Pigne"
+      },
+      "description": {
+        "en": "In this workshop for young children, astronomical stories, spectacular videos and more take little explorers on a journey through planets, stars and distant galaxies.",
+        "it": "In questo laboratorio dedicato ai più piccoli, attraverso la lettura di favole astronomiche, video spettacolari e molto altro, accompagneremo i piccoli esploratori in un viaggio tra pianeti, stelle e galassie lontane.",
+        "fr": "Dans cet atelier destiné aux tout-petits, des contes astronomiques, des vidéos spectaculaires et bien d’autres découvertes accompagnent les jeunes explorateurs dans un voyage parmi les planètes, les étoiles et les galaxies lointaines."
+      },
+      "topic": {
+        "en": "Interdisciplinary",
+        "it": "Interdisciplinare",
+        "fr": "Interdisciplinaire"
+      },
+      "age": "3–5",
+      "duration": "",
+      "maxParticipants": "",
+      "sessions25": "19–22",
+      "sessions26": "",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "type": {
+        "en": "Talk",
+        "it": "Incontro",
+        "fr": "Rencontre"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "showSchedule": true,
+      "venue": {
+        "en": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "it": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
+      },
+      "partner": {
+        "en": "University of Padua",
+        "it": "Università di Padova",
+        "fr": "Université de Padoue"
+      },
+      "image": "events-ern-2026_img/PADOVA.png"
+    },
+    {
+      "id": "PAD-82",
+      "sourceActivityId": "82",
+      "city": {
+        "en": "Padua",
+        "it": "Padova",
+        "fr": "Padoue"
+      },
+      "title": {
+        "en": "ERNEST EU Explorer",
+        "it": "ERNEST EU Explorer",
+        "fr": "ERNEST EU Explorer"
+      },
+      "area": {
+        "en": "Inner courtyard",
+        "it": "Cortile interno",
+        "fr": "Cour intérieure"
+      },
+      "description": {
+        "en": "Explore European research and discover how the European Union supports science, innovation and international collaboration. Learn about opportunities for researchers and citizens and the role of science in addressing the major challenges of our time.",
+        "it": "Esplora il mondo della ricerca europea e scopri come l’Unione Europea sostiene scienza, innovazione e collaborazione internazionale. Scopri le opportunità per ricercatori e cittadini e il ruolo della scienza nell’affrontare le grandi sfide del nostro tempo.",
+        "fr": "Explorez la recherche européenne et découvrez comment l’Union européenne soutient la science, l’innovation et la coopération internationale. Découvrez les possibilités offertes aux scientifiques et aux citoyens et le rôle de la science face aux grands défis de notre époque."
+      },
+      "topic": {
+        "en": "Interdisciplinary",
+        "it": "Interdisciplinare",
+        "fr": "Interdisciplinaire"
+      },
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
+      "duration": "",
+      "maxParticipants": "",
+      "sessions25": "19–23",
+      "sessions26": "",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "type": {
+        "en": "Talk",
+        "it": "Incontro",
+        "fr": "Rencontre"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "showSchedule": true,
+      "venue": {
+        "en": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "it": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
+      },
+      "zone": "eu",
+      "image": "activities-ern-2026_img/avezzano-eu-explorer.png"
+    },
+    {
+      "id": "PAD-83",
+      "sourceActivityId": "83",
+      "city": {
+        "en": "Padua",
+        "it": "Padova",
+        "fr": "Padoue"
+      },
+      "title": {
+        "en": "ERNEST EU Debriefing",
+        "it": "ERNEST EU Debriefing",
+        "fr": "ERNEST EU Debriefing"
+      },
+      "area": {
+        "en": "Garden",
+        "it": "Giardino",
+        "fr": "Jardin"
+      },
+      "description": {
+        "en": "Conclude your European Researchers’ Night journey by reflecting on your experiences during the event. Share what you discovered in the Debriefing area.",
+        "it": "Concludi il tuo viaggio nella Notte Europea delle Ricercatrici e dei Ricercatori ripercorrendo le esperienze vissute durante l’evento. Nell’area Debriefing potrai condividere ciò che hai scoperto.",
+        "fr": "Concluez votre parcours à la Nuit européenne des chercheuses et des chercheurs en revenant sur les expériences vécues. Dans l’espace Debriefing, partagez ce que vous avez découvert."
+      },
+      "topic": {
+        "en": "Interdisciplinary",
+        "it": "Interdisciplinare",
+        "fr": "Interdisciplinaire"
+      },
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
+      "duration": "",
+      "maxParticipants": "",
+      "sessions25": "19–23",
+      "sessions26": "",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "type": {
+        "en": "Talk",
+        "it": "Incontro",
+        "fr": "Rencontre"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": "",
+      "showSchedule": true,
+      "venue": {
+        "en": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "it": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
+      },
+      "zone": "debrief",
+      "image": "activities-ern-2026_img/avezzano-debriefing.png"
+    }
+  ],
+  "bologna": [
+    {
+      "id": "BOL-77",
+      "sourceActivityId": "77",
+      "city": {
+        "en": "Bologna",
+        "it": "Bologna",
+        "fr": "Bologne"
+      },
+      "title": {
+        "en": "A cavallo di un fotone",
+        "it": "A cavallo di un fotone",
+        "fr": "A cavallo di un fotone"
+      },
+      "area": {
+        "en": "Room 215 or 216",
+        "it": "Sala 215 o 216",
+        "fr": "Salle 215 ou 216"
+      },
+      "description": {
+        "en": "An astrophysics escape room in which you become a photon and retrace the long journey of light particles from inside the Sun through the Solar System to telescopes on Earth. There, astronomers studying the Universe capture them to create spectacular images of our cosmic neighbourhood. To overcome the challenges, participants will use logical thinking and unplugged coding to discover the Solar System and the physics of light.",
+        "it": "Un’escape room a tema astrofisico per immedesimarsi in un fotone e ripercorrere il lungo viaggio che porta le particelle di luce dall’interno del Sole attraverso il Sistema solare, fino a raggiungere i telescopi sulla Terra, dove vengono catturate dagli astronomi che studiano l’Universo per creare spettacolari immagini del nostro “vicinato cosmico”. Per superare le diverse sfide, i partecipanti dovranno mettere in campo le loro abilità logiche attraverso la pratica del coding unplugged, alla scoperta del Sistema solare e dei fenomeni fisici legati alla luce.",
+        "fr": "Une escape room d’astrophysique pour se mettre dans la peau d’un photon et retracer le long voyage des particules de lumière depuis l’intérieur du Soleil, à travers le Système solaire, jusqu’aux télescopes sur Terre. Les astronomes les y capturent pour créer de spectaculaires images de notre voisinage cosmique. Pour relever les défis, les participants mobiliseront leur logique et pratiqueront la programmation débranchée afin de découvrir le Système solaire et les phénomènes physiques liés à la lumière."
+      },
+      "topic": {
+        "en": "Astronomy, Physics",
+        "it": "Astronomia, Fisica",
+        "fr": "Astronomie, Physique"
+      },
+      "age": "11–14, 15–18",
+      "duration": "60",
+      "maxParticipants": "15",
+      "sessions25": "17:30–23:00",
+      "sessions26": "",
+      "ageAdaptation": "",
+      "type": {
+        "en": "Escape room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "bookingMethod": {
+        "en": "Online registration",
+        "it": "Registrazione online",
+        "fr": "Inscription en ligne"
+      },
+      "showSchedule": true,
+      "venue": {
+        "en": "Area territoriale di Ricerca di Bologna",
+        "it": "Area territoriale di Ricerca di Bologna",
+        "fr": "Area territoriale di Ricerca di Bologna"
+      },
+      "image": "activities-ern-2026_img/photon-escape-room.png"
+    }
+  ],
   "avezzano": [
     {
       "id": "AVE-018",
@@ -3509,7 +4075,7 @@ function normaliseDayFilter(day) {
 }
 
 function eventIncludesDay(day) {
-  const dateText = localise(eventProgramme?.date).toLowerCase();
+  const dateText = localise(eventProgramme?.date).toLowerCase().replace(/\b\d{4}\b/g, "");
   if (day === "26") return dateText.includes("26");
   return dateText.includes("25") || !dateText.includes("26");
 }
@@ -3623,8 +4189,10 @@ function renderActivityCard(activity, currentDay = "all") {
   const isEscapeRoom = type.toLowerCase().includes("escape room");
   const sessions25 = localise(activity.sessions25).trim();
   const sessions26 = localise(activity.sessions26).trim();
-  const sessions = isEscapeRoom
-    ? (currentDay === "25"
+  const sessions = (isEscapeRoom || activity.showSchedule)
+    ? (eventKey === "padova" && !sessions26
+        ? sessions25
+        : currentDay === "25"
         ? (sessions25 ? `${copy.day25}: ${sessions25}` : "")
         : currentDay === "26"
           ? (sessions26 ? `${copy.day26}: ${sessions26}` : "")
@@ -3640,7 +4208,7 @@ function renderActivityCard(activity, currentDay = "all") {
     isEscapeRoom ? createDetail(copy.labels.ageAdaptation, activity.ageAdaptation) : "",
     isEscapeRoom ? createDetail(copy.labels.format, activity.format) : "",
     createDetail(copy.labels.duration, duration ? (/^\d+$/.test(duration) ? `${duration} min` : duration) : ""),
-    isEscapeRoom ? createDetail(copy.labels.sessions, sessions) : "",
+    activityZoneKey(activity) === "investigation" && (isEscapeRoom || activity.showSchedule) ? createDetail(copy.labels.sessions, sessions) : "",
     createDetail(copy.labels.maxParticipants, activity.maxParticipants),
     isEscapeRoom ? createDetail(copy.labels.booking, [localise(activity.bookingRequired), localise(activity.bookingMethod)].filter(Boolean).join(" · ")) : "",
     createDetail(copy.labels.accessibility, activity.accessibility),
@@ -3751,7 +4319,7 @@ function renderActivities(day = "all") {
   if (!section || !grid || !filters) return;
 
   const activities = [
-    ...sharedZoneActivitiesForEvent(),
+    ...sharedZoneActivitiesForEvent().filter((shared) => !(programmeActivities2026[eventKey] || []).some((activity) => activity.zone === shared.zone)),
     ...hepscapeActivitiesForEvent(),
     ...(programmeActivities2026[eventKey] || [])
   ];
@@ -3813,5 +4381,6 @@ if (!eventProgramme) {
   setText("program-city", city);
   setText("program-institution", localise(eventProgramme.institution));
   setText("program-venue", localise(eventProgramme.venue));
+  setText("program-time", localise(eventProgramme.time) || localise({ en: "To be defined", it: "Da definire", fr: "À définir" }));
   renderActivities();
 }
