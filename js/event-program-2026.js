@@ -35,6 +35,7 @@ const eventProgrammes2026 = {
     image: "PISA.png"
   },
   bari: {
+    time: "10–22",
     city: { en: "Bari", it: "Bari", fr: "Bari" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -145,6 +146,7 @@ const eventProgrammes2026 = {
     image: "PADOVA.png"
   },
   cagliari: {
+    time: "16–22",
     city: { en: "Cagliari", it: "Cagliari", fr: "Cagliari" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
