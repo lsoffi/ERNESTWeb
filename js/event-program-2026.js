@@ -3718,7 +3718,7 @@ function hepscapeActivitiesForEvent() {
     }
   };
   const images = {
-    pisa: "activities-ern-2026_img/pisa-hepscape.png"
+    pisa: baseActivity.image
   };
   const hasBookingUrl = Boolean(bookingUrls[eventKey]);
 

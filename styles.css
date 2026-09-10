@@ -2545,12 +2545,14 @@ html[data-theme="dark"] .credits-disclosure {
 }
 
 .program-activity-card[data-activity-id="AVE-011"] .program-activity-media,
-.program-activity-card[data-activity-id="AVE-016"] .program-activity-media {
+.program-activity-card[data-activity-id="AVE-016"] .program-activity-media,
+.program-activity-card[data-activity-id="TER-002"] .program-activity-media {
   background: #fffbea;
 }
 
 .program-activity-card[data-activity-id="AVE-011"] .program-activity-media img,
-.program-activity-card[data-activity-id="AVE-016"] .program-activity-media img {
+.program-activity-card[data-activity-id="AVE-016"] .program-activity-media img,
+.program-activity-card[data-activity-id="TER-002"] .program-activity-media img {
   object-fit: contain;
   object-position: center;
   padding: 0.55rem;
