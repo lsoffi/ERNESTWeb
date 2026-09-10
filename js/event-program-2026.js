@@ -199,6 +199,49 @@ const eventProgrammes2026 = {
 const programmeActivities2026 = {
   "avezzano": [
     {
+      "id": "AVE-018",
+      "city": {
+        "en": "Avezzano",
+        "it": "Avezzano",
+        "fr": "Avezzano"
+      },
+      "image": "activities-ern-2026_img/avezzano-infn-game.png",
+      "title": {
+        "en": "INFN Game",
+        "it": "INFN Game",
+        "fr": "INFN Game"
+      },
+      "type": {
+        "en": "Scientific games",
+        "it": "Giochi scientifici",
+        "fr": "Jeux scientifiques"
+      },
+      "description": {
+        "en": "Discover physics through play with INFN Game. Visit the project website to explore its games, including I primi 20 minuti, Neutrino Arena and Labirinto di barioni.",
+        "it": "Scopri la fisica attraverso il gioco con INFN Game. Visita il sito del progetto per conoscere i suoi giochi, tra cui I primi 20 minuti, Neutrino Arena e Labirinto di barioni.",
+        "fr": "Découvrez la physique par le jeu avec INFN Game. Visitez le site du projet pour découvrir ses jeux, dont I primi 20 minuti, Neutrino Arena et Labirinto di barioni."
+      },
+      "topic": {
+        "en": "Particle physics",
+        "it": "Fisica delle particelle",
+        "fr": "Physique des particules"
+      },
+      "partner": "INFN",
+      "sessions25": "",
+      "sessions26": "",
+      "websiteUrl": "https://web.infn.it/game/",
+      "websiteLabel": {
+        "en": "Explore INFN Game",
+        "it": "Scopri INFN Game",
+        "fr": "Découvrir INFN Game"
+      },
+      "area": {
+        "en": "Gardens",
+        "it": "Giardini",
+        "fr": "Jardins"
+      }
+    },
+    {
       "id": "AVE-001",
       "sourceActivityId": "1",
       "city": {
@@ -3616,6 +3659,7 @@ function renderActivityCard(activity, currentDay = "all") {
         <h3>${title || localise(activity.id)}</h3>
         ${localise(activity.description).trim() ? `<p class="program-activity-description">${localise(activity.description).trim()}</p>` : ""}
         <dl class="program-activity-details">${details}</dl>
+        ${localise(activity.websiteUrl).trim() ? `<a class="text-link" href="${localise(activity.websiteUrl).trim()}" target="_blank" rel="noopener noreferrer">${localise(activity.websiteLabel).trim() || localise(activity.title).trim()}</a>` : ""}
         ${localise(activity.bookingUrl).trim() ? `<a class="button button-primary program-activity-booking" href="${localise(activity.bookingUrl).trim()}" target="_blank" rel="noopener noreferrer">${localise(activity.bookingLabel).trim() || localise(activity.bookingMethod).trim() || copy.labels.booking}</a>` : ""}
       </div>
     </article>`;
