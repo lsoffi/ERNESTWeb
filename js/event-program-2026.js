@@ -4330,7 +4330,11 @@ function renderActivities(day = "all") {
     return;
   }
 
-  const currentDay = normaliseDayFilter(day);
+  const availableDays = [
+    ["25", copy.day25],
+    ["26", copy.day26]
+  ].filter(([value]) => activities.some((activity) => activityHasDay(activity, value)));
+  const currentDay = availableDays.length === 1 ? availableDays[0][0] : normaliseDayFilter(day);
   const visibleActivities = activities
     .filter((activity) => activityHasDay(activity, currentDay))
     .toSorted((a, b) => activitySortWeight(a) - activitySortWeight(b));
@@ -4341,11 +4345,9 @@ function renderActivities(day = "all") {
   setText("program-activities-title", copy.activitiesTitle);
   setText("program-activities-copy", copy.activitiesCopy);
 
-  const filterOptions = [
-    ["all", copy.allActivities],
-    ["25", copy.day25],
-    ["26", copy.day26]
-  ].filter(([value]) => value === "all" || activities.some((activity) => activityHasDay(activity, value)));
+  const filterOptions = availableDays.length === 1
+    ? availableDays
+    : [["all", copy.allActivities], ...availableDays];
 
   filters.innerHTML = filterOptions
     .map(([value, label]) => `<button class="program-filter-button" type="button" data-day-filter="${value}" aria-pressed="${value === currentDay}">${label}</button>`)
