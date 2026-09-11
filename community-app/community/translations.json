@@ -214,7 +214,16 @@
     "Il totale somma il miglior risultato di ogni quiz. Sono inclusi gli account attivi con email confermata e almeno un quiz completato.": "The total adds up the best result in each quiz. Active accounts with a verified email and at least one completed quiz are included.",
     "ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dall'Unione europea nell'ambito delle azioni Marie Skłodowska-Curie. GA 101305138.": "ERNEST is a European Researchers' Night project funded by the European Commission under the Marie Skłodowska-Curie Actions. GA 101305138.",
     "Visite al sito": "Site visits",
-    "Accedi per vedere la classifica.": "Log in to view the leaderboard."
+    "Accedi per vedere la classifica.": "Log in to view the leaderboard.",
+    "Profilo creato!": "Profile created!",
+    "Controlla la tua email.": "Check your email.",
+    "Abbiamo inviato un link di conferma a:": "We sent a confirmation link to:",
+    "Apri l’email di ERNEST e clicca sul link.": "Open the email from ERNEST and click the link.",
+    "Conferma il tuo indirizzo nella pagina che si apre.": "Confirm your email address on the page that opens.",
+    "Torna qui e accedi con email e password.": "Come back here and log in with your email and password.",
+    "Non trovi l’email? Controlla la posta indesiderata. Puoi richiedere un nuovo link dalla finestra Accedi.": "Cannot find the email? Check your spam folder. You can request a new link from the login window.",
+    "Ho confermato l’email: accedi →": "I have confirmed my email: log in →",
+    "Intanto esplora i quiz": "Explore the quizzes while you wait"
   },
   "fr": {
     "Navigazione principale": "Navigation principale",
@@ -431,6 +440,15 @@
     "Il totale somma il miglior risultato di ogni quiz. Sono inclusi gli account attivi con email confermata e almeno un quiz completato.": "Le total additionne le meilleur résultat de chaque quiz. Les comptes actifs avec une adresse e-mail confirmée et au moins un quiz terminé sont inclus.",
     "ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dall'Unione europea nell'ambito delle azioni Marie Skłodowska-Curie. GA 101305138.": "ERNEST est un projet de la Nuit européenne des chercheuses et des chercheurs financé par l’Union européenne dans le cadre des actions Marie Skłodowska-Curie. GA 101305138.",
     "Visite al sito": "Visites du site",
-    "Accedi per vedere la classifica.": "Connectez-vous pour voir le classement."
+    "Accedi per vedere la classifica.": "Connectez-vous pour voir le classement.",
+    "Profilo creato!": "Profil créé !",
+    "Controlla la tua email.": "Consultez votre boîte mail.",
+    "Abbiamo inviato un link di conferma a:": "Nous avons envoyé un lien de confirmation à :",
+    "Apri l’email di ERNEST e clicca sul link.": "Ouvrez l’e-mail d’ERNEST et cliquez sur le lien.",
+    "Conferma il tuo indirizzo nella pagina che si apre.": "Confirmez votre adresse sur la page qui s’ouvre.",
+    "Torna qui e accedi con email e password.": "Revenez ici et connectez-vous avec votre adresse e-mail et votre mot de passe.",
+    "Non trovi l’email? Controlla la posta indesiderata. Puoi richiedere un nuovo link dalla finestra Accedi.": "Vous ne trouvez pas l’e-mail ? Vérifiez vos courriers indésirables. Vous pouvez demander un nouveau lien depuis la fenêtre de connexion.",
+    "Ho confermato l’email: accedi →": "J’ai confirmé mon e-mail : se connecter →",
+    "Intanto esplora i quiz": "En attendant, explorez les quiz"
   }
 }
