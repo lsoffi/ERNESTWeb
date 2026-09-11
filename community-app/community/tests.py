@@ -86,3 +86,43 @@ class CommunityTests(TestCase):
         unknown=self.post('mail/reset',{'email':'absent@example.org'}).json()
         self.assertEqual(known,unknown)
         self.assertNotIn('preview_url',known)
+
+class AdminTests(TestCase):
+    def setUp(self):
+        from .models import AccountEmail
+        self.member = User.objects.create_user('member', email='member@example.org', password='test-only-Strong-738!')
+        AccountEmail.objects.create(user=self.member, address=self.member.email, verified=True)
+        self.manager = User.objects.create_superuser('manager', password='test-only-Strong-482!')
+
+    def test_access_and_private_fields(self):
+        self.assertEqual(self.client.get('/admin/auth/user/').status_code, 302)
+        self.client.force_login(self.member)
+        self.assertEqual(self.client.get('/admin/auth/user/').status_code, 302)
+        self.client.force_login(self.manager)
+        response = self.client.get(f'/admin/auth/user/{self.member.pk}/change/')
+        self.assertEqual(response.status_code, 200)
+        self.assertNotContains(response, self.member.password)
+        self.assertNotContains(response, 'name="is_superuser"')
+        self.assertNotContains(response, 'name="password"')
+
+    def test_totals_and_disable(self):
+        from .admin import MemberAdmin, community_admin
+        from django.test import RequestFactory
+        for quiz, score, finished in [('luce',10,True),('luce',30,True),('particelle',20,True),('indizi',10,False)]:
+            Attempt.objects.create(user=self.member,session_key='test',quiz=quiz,score=score,finished=finished)
+        admin = MemberAdmin(User, community_admin)
+        obj = admin.get_queryset(RequestFactory().get('/')).get(pk=self.member.pk)
+        self.assertEqual(admin.completed_quizzes(obj),2)
+        self.assertEqual(admin.total_score(obj),50)
+        self.client.force_login(self.manager)
+        result = self.client.post(f'/admin/auth/user/{obj.pk}/change/', {'_save':'Salva'})
+        self.assertEqual(result.status_code,302)
+        obj.refresh_from_db()
+        self.assertFalse(obj.is_active)
+
+    def test_admin_csrf_and_throttle(self):
+        strict=Client(enforce_csrf_checks=True)
+        self.assertEqual(strict.post('/admin/login/',{'username':'manager','password':'wrong'}).status_code,403)
+        for _ in range(11):
+            result=self.client.post('/admin/login/',{'username':'manager','password':'wrong'})
+        self.assertEqual(result.status_code,429)
