@@ -126,3 +126,22 @@ class AdminTests(TestCase):
         for _ in range(11):
             result=self.client.post('/admin/login/',{'username':'manager','password':'wrong'})
         self.assertEqual(result.status_code,429)
+
+@override_settings(SECURE_SSL_REDIRECT=True, SESSION_COOKIE_SECURE=True, CSRF_COOKIE_SECURE=True)
+class AccountHTTPSFormTests(TestCase):
+    def test_verify_with_csrf_and_same_origin_referrer(self):
+        from django.core import signing
+        from .models import AccountEmail
+        user=User.objects.create_user('pending',email='pending@example.org',is_active=False)
+        AccountEmail.objects.create(user=user,address=user.email)
+        token=signing.dumps({'user':user.pk,'email':user.email},salt='ernest-verify')
+        client=Client(enforce_csrf_checks=True)
+        page=client.get('/account/verify/', {'token':token},secure=True)
+        self.assertEqual(page['Referrer-Policy'],'same-origin')
+        self.assertContains(page,'content="same-origin"')
+        self.assertContains(page,'action="/account/verify/"')
+        csrf=client.cookies['csrftoken'].value
+        self.assertEqual(client.post('/account/verify/',{'token':token},secure=True,HTTP_REFERER='https://testserver/account/verify/').status_code,403)
+        result=client.post('/account/verify/',{'token':token,'csrfmiddlewaretoken':csrf},secure=True,HTTP_REFERER='https://testserver/account/verify/')
+        self.assertContains(result,'Email confermata')
+        user.refresh_from_db();self.assertTrue(user.is_active)

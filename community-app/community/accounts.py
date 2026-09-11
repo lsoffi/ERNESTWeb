@@ -11,6 +11,7 @@ from django.db import transaction
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.http import require_http_methods, require_POST
+from django.views.decorators.cache import never_cache
 from .models import AccountEmail
 
 
@@ -61,6 +62,7 @@ def request_mail(request, purpose):
             logging.getLogger(__name__).error('Account email delivery failed')
     return response('Se l’indirizzo corrisponde a un account idoneo, riceverai un link. Controlla anche la posta indesiderata.',url)
 
+@never_cache
 @require_http_methods(['GET','POST'])
 def verify(request):
     token = request.POST.get('token') if request.method == 'POST' else request.GET.get('token')
@@ -78,6 +80,7 @@ def verify(request):
     except (signing.BadSignature, AccountEmail.DoesNotExist, KeyError, TypeError): pass
     return render(request,'account.html',{'kind':'verify','valid':valid,'done':valid and request.method=='POST','token':token})
 
+@never_cache
 @require_http_methods(['GET','POST'])
 def reset(request):
     uid = request.POST.get('uid') if request.method == 'POST' else request.GET.get('uid')

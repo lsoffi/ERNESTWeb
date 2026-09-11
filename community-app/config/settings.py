@@ -50,6 +50,6 @@ EMAIL_USE_SSL = os.environ.get("EMAIL_USE_SSL", "0") == "1"
 EMAIL_USE_TLS = not EMAIL_USE_SSL
 EMAIL_TIMEOUT = 10
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'ERNEST Preview <preview@localhost>')
-SECURE_REFERRER_POLICY = 'no-referrer'
+SECURE_REFERRER_POLICY = 'same-origin'
 
 ACCOUNTS_ENABLED = os.environ.get("ACCOUNTS_ENABLED", "1" if DEBUG else "0") == "1"
