@@ -247,3 +247,6 @@ La voce **Classifica** è accessibile a tutti nelle tre lingue. Mostra un istogr
 Per ogni account attivo con email confermata e almeno un quiz completato si sommano i migliori risultati dei singoli quiz. I tentativi incompleti e quelli degli ospiti non entrano nella distribuzione. Ripetere lo stesso quiz non moltiplica i punti.
 
 Chi accede vede inoltre il proprio punteggio, la posizione sul totale dei partecipanti e la propria fascia evidenziata. Gli utenti con lo stesso punteggio condividono la posizione (ad esempio 1, 1, 3). La risposta dell’API `/api/leaderboard/` contiene solo conteggi aggregati e, per l’utente autenticato, il suo risultato personale; non contiene identificatori degli altri iscritti e non viene memorizzata nelle cache condivise.
+
+
+Il banner inferiore riprende il logo UE, la dichiarazione di finanziamento e lo stile del sito ERNEST. Il contatore mostra il totale pubblico del sito principale, letto senza caricare il suo script di tracciamento; se il servizio non risponde il contatore viene nascosto. Il collegamento «Cookie policy» apre la pagina del sito principale nella lingua scelta: non sostituisce una specifica informativa della community.

@@ -211,7 +211,9 @@
     "Completa un quiz e accedi con un account confermato per vedere la tua posizione.": "Complete a quiz and log in with a verified account to see your rank.",
     "Distribuzione dei punteggi": "Score distribution",
     "Partecipanti": "Participants",
-    "Il totale somma il miglior risultato di ogni quiz. Sono inclusi gli account attivi con email confermata e almeno un quiz completato.": "The total adds up the best result in each quiz. Active accounts with a verified email and at least one completed quiz are included."
+    "Il totale somma il miglior risultato di ogni quiz. Sono inclusi gli account attivi con email confermata e almeno un quiz completato.": "The total adds up the best result in each quiz. Active accounts with a verified email and at least one completed quiz are included.",
+    "ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dall'Unione europea nell'ambito delle azioni Marie Skłodowska-Curie. GA 101305138.": "ERNEST is a European Researchers' Night project funded by the European Commission under the Marie Skłodowska-Curie Actions. GA 101305138.",
+    "Visite al sito": "Site visits"
   },
   "fr": {
     "Navigazione principale": "Navigation principale",
@@ -425,6 +427,8 @@
     "Completa un quiz e accedi con un account confermato per vedere la tua posizione.": "Terminez un quiz et connectez-vous avec un compte confirmé pour voir votre position.",
     "Distribuzione dei punteggi": "Distribution des scores",
     "Partecipanti": "Participants",
-    "Il totale somma il miglior risultato di ogni quiz. Sono inclusi gli account attivi con email confermata e almeno un quiz completato.": "Le total additionne le meilleur résultat de chaque quiz. Les comptes actifs avec une adresse e-mail confirmée et au moins un quiz terminé sont inclus."
+    "Il totale somma il miglior risultato di ogni quiz. Sono inclusi gli account attivi con email confermata e almeno un quiz completato.": "Le total additionne le meilleur résultat de chaque quiz. Les comptes actifs avec une adresse e-mail confirmée et au moins un quiz terminé sont inclus.",
+    "ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dall'Unione europea nell'ambito delle azioni Marie Skłodowska-Curie. GA 101305138.": "ERNEST est un projet de la Nuit européenne des chercheuses et des chercheurs financé par l’Union européenne dans le cadre des actions Marie Skłodowska-Curie. GA 101305138.",
+    "Visite al sito": "Visites du site"
   }
 }
