@@ -10,7 +10,7 @@ async function api(path,data){
  let value;try{value=await response.json()}catch{throw Error(t('Connessione non disponibile. Riprova.'))}
  if(!response.ok)throw Error(value.error||t('Operazione non riuscita. Riprova.'));return value;
 }
-function sync(value){name=value.name;completed=value.completed;document.querySelector('#access').textContent=name?t('Esci ({name})',{name}):t('Accedi')+' ↗'}
+function sync(value){name=value.name;completed=value.completed;document.querySelector('[data-nav=leaderboard]').hidden=!name;document.querySelector('#access').textContent=name?t('Esci ({name})',{name}):t('Accedi')+' ↗'}
 function openAuth(){if(!accountsEnabled){alert(t('Gli account saranno disponibili prossimamente. Intanto puoi provare tutti i quiz.'));return;}document.querySelector('#auth-error').textContent='';document.querySelector('#mail-preview').hidden=true;auth.showModal()}
 document.querySelector('#access').onclick=async()=>{if(!name)return openAuth();try{sync(await api('logout',{}));current=null;location.hash='home';render()}catch(e){alert(e.message)}};
 document.querySelector('.close').onclick=()=>auth.close();
@@ -40,6 +40,8 @@ document.querySelectorAll('[data-lang]').forEach(button=>button.onclick=()=>{
 
 async function leaderboard(){
  current=null;
+ if(!name){app.innerHTML=translateHTML('<section class="profile-head"><h1>Classifica</h1><p>Accedi per vedere la classifica.</p><button class="primary" id="ranking-login">Accedi →</button></section>');document.querySelector('#ranking-login').onclick=openAuth;return;}
+
  app.textContent=t('Caricamento classifica…');
  try{
   const value=await api('leaderboard');

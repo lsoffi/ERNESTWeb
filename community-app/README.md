@@ -242,7 +242,7 @@ Quando si modifica un testo italiano o si aggiunge un quiz, aggiornare anche ent
 
 ## Classifica e distribuzione dei punteggi
 
-La voce **Classifica** è accessibile a tutti nelle tre lingue. Mostra un istogramma orizzontale con il numero di partecipanti per fascia di 10 punti. La tabella rende leggibili anche i valori numerici. Non vengono pubblicati elenchi di nickname, email o punteggi individuali.
+La voce **Classifica** è accessibile solo agli utenti autenticati, nelle tre lingue. Anche l’API rifiuta le richieste senza login. Mostra un istogramma orizzontale con il numero di partecipanti per fascia di 10 punti. La tabella rende leggibili anche i valori numerici. Non vengono pubblicati elenchi di nickname, email o punteggi individuali.
 
 Per ogni account attivo con email confermata e almeno un quiz completato si sommano i migliori risultati dei singoli quiz. I tentativi incompleti e quelli degli ospiti non entrano nella distribuzione. Ripetere lo stesso quiz non moltiplica i punti.
 

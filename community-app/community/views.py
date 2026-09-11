@@ -140,6 +140,10 @@ def answer(request):
 
 @require_GET
 def leaderboard(request):
+    if not request.user.is_authenticated:
+        result = error('Accedi per vedere la classifica.', 401)
+        result['Cache-Control'] = 'private, no-store'
+        return result
     best = Attempt.objects.filter(
         finished=True, user__is_active=True, user__accountemail__verified=True
     ).values('user_id', 'quiz').annotate(best=Max('score'))
