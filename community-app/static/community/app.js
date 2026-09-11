@@ -28,6 +28,7 @@ window.addEventListener('hashchange',render);api('state').then(value=>{quizzes=v
 document.querySelectorAll('[data-lang]').forEach(button=>button.onclick=()=>{
  if(busy)return;
  language=button.dataset.lang;
+ const url=new URL(location.href);url.searchParams.delete("lang");history.replaceState(null,"",url);
  document.cookie='django_language='+language+'; Path=/; Max-Age=31536000; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'');
  translateChrome();sync({name,completed});
  document.querySelector('#auth-title').textContent=t(mode==='login'?'Bentornato, esploratore.':'La tua prossima scoperta.');
