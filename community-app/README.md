@@ -238,3 +238,12 @@ Le email di conferma e recupero password vengono generate nella lingua attiva al
 - `templates/account.html` usa lo stesso catalogo per conferma email e recupero password. I messaggi standard dei moduli Django usano le traduzioni di Django.
 
 Quando si modifica un testo italiano o si aggiunge un quiz, aggiornare anche entrambe le traduzioni mantenendo invariati i segnaposto, ad esempio `{name}` e `{score}`. I test verificano la copertura dei contenuti dei quiz e la lingua delle email. Il pannello amministrativo rimane uno strumento distinto: le etichette personalizzate del pannello sono in italiano.
+
+
+## Classifica e distribuzione dei punteggi
+
+La voce **Classifica** è accessibile a tutti nelle tre lingue. Mostra un istogramma orizzontale con il numero di partecipanti per fascia di 10 punti. La tabella rende leggibili anche i valori numerici. Non vengono pubblicati elenchi di nickname, email o punteggi individuali.
+
+Per ogni account attivo con email confermata e almeno un quiz completato si sommano i migliori risultati dei singoli quiz. I tentativi incompleti e quelli degli ospiti non entrano nella distribuzione. Ripetere lo stesso quiz non moltiplica i punti.
+
+Chi accede vede inoltre il proprio punteggio, la posizione sul totale dei partecipanti e la propria fascia evidenziata. Gli utenti con lo stesso punteggio condividono la posizione (ad esempio 1, 1, 3). La risposta dell’API `/api/leaderboard/` contiene solo conteggi aggregati e, per l’utente autenticato, il suo risultato personale; non contiene identificatori degli altri iscritti e non viene memorizzata nelle cache condivise.

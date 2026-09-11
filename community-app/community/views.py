@@ -136,3 +136,25 @@ def answer(request):
         attempt.finished = len(attempt.answers) == len(QUIZ_MAP[attempt.quiz]['questions'])
         attempt.save()
     return JsonResponse({'correct': q[2], 'explanation': q[3], 'score': attempt.score, 'finished': attempt.finished, **profile(request)})
+
+
+@require_GET
+def leaderboard(request):
+    best = Attempt.objects.filter(
+        finished=True, user__is_active=True, user__accountemail__verified=True
+    ).values('user_id', 'quiz').annotate(best=Max('score'))
+    totals = {}
+    for row in best:
+        totals[row['user_id']] = totals.get(row['user_id'], 0) + row['best']
+    # Fixed score bands publish aggregate counts only, never member identifiers.
+    maximum = max(len(QUIZZES) * 30, max(totals.values(), default=0))
+    bands = [{'minimum': n, 'maximum': n + 9, 'count': 0} for n in range(0, maximum + 1, 10)]
+    for score in totals.values():
+        bands[score // 10]['count'] += 1
+    mine = None
+    if request.user.is_authenticated and request.user.pk in totals:
+        score = totals[request.user.pk]
+        mine = {'score': score, 'rank': 1 + sum(total > score for total in totals.values())}
+    result = JsonResponse({'bands': bands, 'participants': len(totals), 'mine': mine})
+    result['Cache-Control'] = 'private, no-store'
+    return result

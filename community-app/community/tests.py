@@ -178,3 +178,26 @@ class LanguageTests(TestCase):
                     texts.extend([question[0],*question[1],question[3]])
                 for text in texts:
                     self.assertIn(text,catalog,(language,text))
+
+class LeaderboardTests(TestCase):
+    def test_distribution_is_aggregate_and_rank_is_private(self):
+        from .models import AccountEmail
+        for nickname, scores, active, verified in [('alice',[10,30],True,True),('bob',[30],True,True),('carol',[10],True,True),('hidden',[30],False,True),('pending',[30],True,False)]:
+            user=User.objects.create_user(nickname,email=nickname+'@example.org',is_active=active)
+            AccountEmail.objects.create(user=user,address=user.email,verified=verified)
+            for score in scores: Attempt.objects.create(user=user,session_key='test',quiz='luce',score=score,finished=True)
+            Attempt.objects.create(user=user,session_key='test',quiz='particelle',score=30,finished=False)
+        Attempt.objects.create(session_key='guest',quiz='luce',score=30,finished=True)
+        response=self.client.get('/api/leaderboard/')
+        data=response.json()
+        self.assertEqual(data['participants'],3)
+        self.assertIsNone(data['mine'])
+        self.assertEqual(data['bands'][1]['count'],1)
+        self.assertEqual(data['bands'][3]['count'],2)
+        self.assertNotIn('alice',response.content.decode())
+        self.assertNotIn('@example.org',response.content.decode())
+        for nickname,rank in [('alice',1),('bob',1),('carol',3)]:
+            self.client.force_login(User.objects.get(username=nickname))
+            response=self.client.get('/api/leaderboard/')
+            self.assertEqual(response.json()['mine']['rank'],rank)
+            self.assertEqual(response['Cache-Control'],'private, no-store')
