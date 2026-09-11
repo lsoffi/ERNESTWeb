@@ -12,6 +12,8 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.http import require_http_methods, require_POST
 from django.views.decorators.cache import never_cache
+from .i18n import tr
+from django.utils.translation import get_language
 from .models import AccountEmail
 
 
@@ -26,20 +28,20 @@ def email_address(value):
 def deliver(user, purpose):
     if purpose == 'verify':
         token = signing.dumps({'user':user.pk, 'email':user.email}, salt='ernest-verify')
-        path = '/account/verify/?' + urlencode({'token':token})
+        path = '/account/verify/?' + urlencode({'token':token, 'lang':get_language().split('-')[0]})
         subject = 'Conferma la tua email — ERNEST'
         text = 'Conferma il tuo indirizzo email entro 24 ore per attivare il profilo ERNEST.'
     else:
-        path = '/account/reset/?' + urlencode({'uid':user.pk, 'token':default_token_generator.make_token(user)})
+        path = '/account/reset/?' + urlencode({'uid':user.pk, 'token':default_token_generator.make_token(user), 'lang':get_language().split('-')[0]})
         subject = 'Reimposta la password — ERNEST'
         text = 'Puoi scegliere una nuova password entro un’ora. Se non hai richiesto il cambio, ignora questa email.'
     url = settings.PUBLIC_BASE_URL.rstrip('/') + path
-    send_mail(subject, text+'\n\n'+url, settings.DEFAULT_FROM_EMAIL, [user.email])
+    send_mail(tr(subject), tr(text)+'\n\n'+url, settings.DEFAULT_FROM_EMAIL, [user.email])
     return url
 
 
 def response(message, url=None):
-    data = {'message':message}
+    data = {'message':tr(message)}
     if settings.DEBUG and url: data['preview_url'] = url
     return JsonResponse(data)
 

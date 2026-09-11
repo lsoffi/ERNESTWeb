@@ -15,13 +15,14 @@ from django.shortcuts import render
 from django.utils import timezone
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.decorators.http import require_GET, require_POST
+from .i18n import tr
 from .models import Attempt, RateBucket, AccountEmail
 from .accounts import email_address, deliver, response as mail_response
 
 QUIZZES = json.loads(Path(__file__).with_name('quizzes.json').read_text())
 QUIZ_MAP = {q['id']: q for q in QUIZZES}
 
-def error(message, status=400): return JsonResponse({'error': message}, status=status)
+def error(message, status=400): return JsonResponse({'error': tr(message)}, status=status)
 
 def body(request):
     try:

@@ -139,9 +139,42 @@ class AccountHTTPSFormTests(TestCase):
         page=client.get('/account/verify/', {'token':token},secure=True)
         self.assertEqual(page['Referrer-Policy'],'same-origin')
         self.assertContains(page,'content="same-origin"')
-        self.assertContains(page,'action="/account/verify/"')
+        self.assertContains(page,'action="/account/verify/?lang=it"')
         csrf=client.cookies['csrftoken'].value
         self.assertEqual(client.post('/account/verify/',{'token':token},secure=True,HTTP_REFERER='https://testserver/account/verify/').status_code,403)
         result=client.post('/account/verify/',{'token':token,'csrfmiddlewaretoken':csrf},secure=True,HTTP_REFERER='https://testserver/account/verify/')
         self.assertContains(result,'Email confermata')
         user.refresh_from_db();self.assertTrue(user.is_active)
+
+@override_settings(EMAIL_BACKEND='django.core.mail.backends.locmem.EmailBackend')
+class LanguageTests(TestCase):
+    def test_language_selection_and_account_pages(self):
+        for language, text in [('it','Il tuo account'),('fr','Votre compte'),('en','Your account')]:
+            response=self.client.get('/account/verify/', {'lang':language})
+            self.assertContains(response, f'<html lang="{language}">')
+            self.assertContains(response, text)
+            self.assertEqual(response.cookies['django_language'].value, language)
+            self.assertContains(self.client.get('/'),f'<html lang="{language}">')
+
+    def test_email_uses_selected_language(self):
+        from django.utils import translation
+        from .accounts import deliver
+        from .i18n import CATALOGS
+        user=User.objects.create_user('languageuser',email='language@example.org')
+        for language in ['fr','en']:
+            with translation.override(language):
+                for purpose, subject in [('verify','Conferma la tua email — ERNEST'),('reset','Reimposta la password — ERNEST')]:
+                    url=deliver(user,purpose)
+                    self.assertEqual(mail.outbox[-1].subject,CATALOGS[language][subject])
+                    self.assertEqual(parse_qs(urlsplit(url).query)['lang'],[language])
+
+    def test_quiz_translation_coverage(self):
+        from .views import QUIZZES
+        from .i18n import CATALOGS
+        for language,catalog in CATALOGS.items():
+            for quiz in QUIZZES:
+                texts=[quiz['title'],quiz['desc'],quiz['topic']]
+                for question in quiz['questions']:
+                    texts.extend([question[0],*question[1],question[3]])
+                for text in texts:
+                    self.assertIn(text,catalog,(language,text))

@@ -220,3 +220,21 @@ L’app include protezione CSRF, password gestite tramite hashing Django, cookie
 - [CERN Databases and Analytics](https://information-technology.web.cern.ch/about/organisation/databases-analytics) — servizi database e ripartizione delle attività infrastrutturali.
 - [Guida CERN DBOD](https://cern.ch/dbod-user-guide) — procedure del servizio; alcune risorse possono richiedere accesso CERN.
 - [DPO INFN](https://dpo.infn.it/) e [Data Privacy at CERN](https://privacy.web.cern.ch/) — riferimenti istituzionali sulla protezione dei dati.
+
+
+## Lingue: italiano, francese e inglese
+
+Il selettore **IT · FR · EN** nell’intestazione cambia la lingua della community: navigazione, profilo, quiz, risposte, spiegazioni e moduli di accesso. La prima visita usa una lingua supportata del browser, oppure l’italiano; la scelta manuale viene ricordata per un anno nel cookie `django_language` del browser. Non è una preferenza salvata nel profilo e può quindi essere diversa su un altro dispositivo.
+
+Si può cambiare lingua anche durante un quiz: la domanda corrente, la risposta selezionata e il punteggio restano invariati. Ogni quiz conserva lo stesso identificatore nelle tre lingue, quindi i risultati non vengono duplicati.
+
+Le email di conferma e recupero password vengono generate nella lingua attiva al momento della richiesta. Il link include la lingua per aprire la pagina corretta anche in un altro browser; anche queste pagine hanno il selettore.
+
+### Aggiornare le traduzioni
+
+- `community/translations.json` contiene le traduzioni inglesi e francesi, con il testo italiano come chiave. Copre sia l’interfaccia sia i contenuti dei quiz e le email.
+- `community/i18n.py` applica il catalogo lato Django e conserva la lingua dei link email.
+- `static/community/i18n.js` traduce l’interfaccia pubblica e gestisce il selettore insieme ad `app.js`.
+- `templates/account.html` usa lo stesso catalogo per conferma email e recupero password. I messaggi standard dei moduli Django usano le traduzioni di Django.
+
+Quando si modifica un testo italiano o si aggiunge un quiz, aggiornare anche entrambe le traduzioni mantenendo invariati i segnaposto, ad esempio `{name}` e `{score}`. I test verificano la copertura dei contenuti dei quiz e la lingua delle email. Il pannello amministrativo rimane uno strumento distinto: le etichette personalizzate del pannello sono in italiano.
