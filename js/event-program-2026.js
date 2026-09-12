@@ -4095,7 +4095,7 @@ function eventIncludesDay(day) {
 function sharedZoneActivitiesForEvent() {
   if (!eventProgramme) return [];
   const sessions25 = eventIncludesDay("25") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
-  const sessions26 = eventKey !== "avezzano" && eventIncludesDay("26") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
+  const sessions26 = eventIncludesDay("26") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
   const cityCode = String(eventKey || "ernest").toUpperCase().replace(/[^A-Z0-9]/g, "-");
   const allAges = { en: "All ages", it: "Tutte le età", fr: "Tous les âges" };
 
