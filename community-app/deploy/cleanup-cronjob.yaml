@@ -23,8 +23,8 @@ spec:
           automountServiceAccountToken: false
           containers:
             - name: cleanup
-              # Verified application image: build ernest-test-17, commit 57cc9a6.
-              image: image-registry.openshift-image-registry.svc:5000/ernest-community/ernest-test@sha256:dfccd1106522417699f598d8ab953184abaa807a85c2747e21a9a492ff44ebf3
+              # Verified application image: build ernest-test-18, commit 516a160.
+              image: image-registry.openshift-image-registry.svc:5000/ernest-community/ernest-test@sha256:a90938bcd65a5abcd221bceb190087c284a9559b27abb6c65af1aabe31f9363d
               imagePullPolicy: IfNotPresent
               workingDir: /opt/app-root/src
               command: ['python', 'manage.py', 'cleanup_community']
