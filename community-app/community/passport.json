@@ -1,0 +1,26 @@
+[
+  {
+    "id": "observe",
+    "label": "Osservare"
+  },
+  {
+    "id": "think",
+    "label": "Ragionare"
+  },
+  {
+    "id": "idea",
+    "label": "Ideare"
+  },
+  {
+    "id": "experiment",
+    "label": "Sperimentare"
+  },
+  {
+    "id": "collaborate",
+    "label": "Collaborare"
+  },
+  {
+    "id": "europe",
+    "label": "Dimensione Internazionale"
+  }
+]

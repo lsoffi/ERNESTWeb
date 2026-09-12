@@ -1,1 +1,242 @@
-[{"id":"luce","topic":"Astronomia","title":"A cavallo di un fotone","desc":"Dal cuore del Sole alla Terra: segui il viaggio della luce e metti alla prova la tua curiosità.","image":"photon-escape-room.png","questions":[["Quanto impiega circa la luce a viaggiare dal Sole alla Terra?",["8 minuti","Un secondo","24 ore"],0,"La luce percorre i circa 150 milioni di chilometri tra Sole e Terra in poco più di 8 minuti."],["Che cosa è un fotone?",["Una particella di luce","Un piccolo pianeta","Un tipo di telescopio"],0,"Il fotone è il quanto della radiazione elettromagnetica, di cui la luce visibile fa parte."],["Nel vuoto, quale luce viaggia più velocemente?",["La luce rossa","La luce blu","Viaggiano alla stessa velocità"],2,"Nel vuoto tutte le onde elettromagnetiche si propagano alla stessa velocità."]]},{"id":"particelle","topic":"Fisica","title":"Piccole particelle, grandi idee","desc":"Entra nel mondo dell’infinitamente piccolo. Quanto conosci gli ingredienti dell’Universo?","image":"avezzano-hepscape-2026.jpg","questions":[["Quale particella ha carica elettrica negativa?",["Il protone","L’elettrone","Il neutrone"],1,"L’elettrone ha carica negativa; il protone positiva e il neutrone è elettricamente neutro."],["Dove si trova il CERN?",["Vicino a Ginevra","A Roma","A Londra"],0,"Il CERN si trova nei pressi di Ginevra, al confine tra Svizzera e Francia."],["A che cosa serve un acceleratore di particelle?",["A ingrandire gli atomi","A portare particelle a energie elevate","A fermare la luce"],1,"Gli acceleratori usano campi elettromagnetici per accelerare particelle cariche."]]},{"id":"indizi","topic":"Metodo scientifico","title":"La scienza degli indizi","desc":"Osserva, formula un’ipotesi e cerca le prove. Un piccolo allenamento da detective scientifico.","image":"avezzano-csi-higgs.png","questions":[["Un esperimento contraddice la tua ipotesi. Che cosa fai?",["Ignori il risultato","Rivedi l’ipotesi e controlli la prova","Cambi i dati"],1,"I risultati sono un’occasione per controllare il metodo e migliorare o abbandonare un’ipotesi."],["Perché ripetere un esperimento?",["Per verificarne la riproducibilità","Per ottenere per forza il risultato voluto","Per evitare le misure"],0,"Ripetere le prove aiuta a valutare quanto i risultati siano affidabili."],["Due fenomeni avvengono insieme. Questo dimostra che uno causa l’altro?",["Sempre","Solo se accadono di notte","No, servono altre prove"],2,"Una correlazione da sola non dimostra un rapporto di causa ed effetto."]]}]
+[
+  {
+    "id": "luce",
+    "topic": "Astronomia",
+    "title": "A cavallo di un fotone",
+    "desc": "Dal cuore del Sole alla Terra: segui il viaggio della luce e metti alla prova la tua curiosità.",
+    "image": "photon-escape-room.png",
+    "questions": [
+      [
+        "Quanto impiega circa la luce a viaggiare dal Sole alla Terra?",
+        [
+          "8 minuti",
+          "Un secondo",
+          "24 ore"
+        ],
+        0,
+        "La luce percorre i circa 150 milioni di chilometri tra Sole e Terra in poco più di 8 minuti."
+      ],
+      [
+        "Che cosa è un fotone?",
+        [
+          "Una particella di luce",
+          "Un piccolo pianeta",
+          "Un tipo di telescopio"
+        ],
+        0,
+        "Il fotone è il quanto della radiazione elettromagnetica, di cui la luce visibile fa parte."
+      ],
+      [
+        "Nel vuoto, quale luce viaggia più velocemente?",
+        [
+          "La luce rossa",
+          "La luce blu",
+          "Viaggiano alla stessa velocità"
+        ],
+        2,
+        "Nel vuoto tutte le onde elettromagnetiche si propagano alla stessa velocità."
+      ]
+    ],
+    "stamp": "idea"
+  },
+  {
+    "id": "particelle",
+    "topic": "Fisica",
+    "title": "Piccole particelle, grandi idee",
+    "desc": "Entra nel mondo dell’infinitamente piccolo. Quanto conosci gli ingredienti dell’Universo?",
+    "image": "avezzano-hepscape-2026.jpg",
+    "questions": [
+      [
+        "Quale particella ha carica elettrica negativa?",
+        [
+          "Il protone",
+          "L’elettrone",
+          "Il neutrone"
+        ],
+        1,
+        "L’elettrone ha carica negativa; il protone positiva e il neutrone è elettricamente neutro."
+      ],
+      [
+        "Dove si trova il CERN?",
+        [
+          "Vicino a Ginevra",
+          "A Roma",
+          "A Londra"
+        ],
+        0,
+        "Il CERN si trova nei pressi di Ginevra, al confine tra Svizzera e Francia."
+      ],
+      [
+        "A che cosa serve un acceleratore di particelle?",
+        [
+          "A ingrandire gli atomi",
+          "A portare particelle a energie elevate",
+          "A fermare la luce"
+        ],
+        1,
+        "Gli acceleratori usano campi elettromagnetici per accelerare particelle cariche."
+      ]
+    ],
+    "stamp": "experiment"
+  },
+  {
+    "id": "indizi",
+    "topic": "Metodo scientifico",
+    "title": "La scienza degli indizi",
+    "desc": "Osserva, formula un’ipotesi e cerca le prove. Un piccolo allenamento da detective scientifico.",
+    "image": "avezzano-csi-higgs.png",
+    "questions": [
+      [
+        "Un esperimento contraddice la tua ipotesi. Che cosa fai?",
+        [
+          "Ignori il risultato",
+          "Rivedi l’ipotesi e controlli la prova",
+          "Cambi i dati"
+        ],
+        1,
+        "I risultati sono un’occasione per controllare il metodo e migliorare o abbandonare un’ipotesi."
+      ],
+      [
+        "Perché ripetere un esperimento?",
+        [
+          "Per verificarne la riproducibilità",
+          "Per ottenere per forza il risultato voluto",
+          "Per evitare le misure"
+        ],
+        0,
+        "Ripetere le prove aiuta a valutare quanto i risultati siano affidabili."
+      ],
+      [
+        "Due fenomeni avvengono insieme. Questo dimostra che uno causa l’altro?",
+        [
+          "Sempre",
+          "Solo se accadono di notte",
+          "No, servono altre prove"
+        ],
+        2,
+        "Una correlazione da sola non dimostra un rapporto di causa ed effetto."
+      ]
+    ],
+    "stamp": "observe"
+  },
+  {
+    "id": "logica",
+    "stamp": "think",
+    "image": "avezzano-csi-higgs.png",
+    "topic": "Logica",
+    "title": "Allena il cervello, trova la strada",
+    "desc": "Sequenze, istruzioni e indizi: tre piccoli enigmi ispirati alle escape room scientifiche di ERNEST.",
+    "questions": [
+      [
+        "Il codice segue questa sequenza: 2, 4, 8, 16. Se ogni numero raddoppia, quale viene dopo?",
+        [
+          "18",
+          "24",
+          "32"
+        ],
+        2,
+        "Raddoppiare significa moltiplicare per due: 16 × 2 = 32. Cercare una regola aiuta a risolvere una sequenza."
+      ],
+      [
+        "Un robot deve avanzare di due caselle e poi girare a destra. Quali istruzioni gli dai?",
+        [
+          "Avanza, gira a destra, avanza",
+          "Avanza, avanza, gira a destra",
+          "Gira a destra, avanza, avanza"
+        ],
+        1,
+        "In un algoritmo conta anche l’ordine delle istruzioni. Le stesse azioni in un ordine diverso possono portare altrove."
+      ],
+      [
+        "La chiave è in una delle scatole A, B o C. Sai con certezza che non è in A e non è in C. Dove cerchi?",
+        [
+          "Nella scatola A",
+          "Nella scatola B",
+          "Nella scatola C"
+        ],
+        1,
+        "Escludendo A e C resta B. La deduzione funziona perché le informazioni sono certe e le tre possibilità comprendono tutti i casi."
+      ]
+    ]
+  },
+  {
+    "id": "squadra",
+    "stamp": "collaborate",
+    "image": "photon-escape-room.png",
+    "topic": "Collaborazione",
+    "title": "La scoperta è un gioco di squadra",
+    "desc": "Come in una missione ERNEST, ogni persona porta un pezzo del puzzle. Metti alla prova il tuo spirito di squadra.",
+    "questions": [
+      [
+        "Ogni membro della squadra ha un indizio diverso. Qual è il primo passo più utile?",
+        [
+          "Tenere segreto il proprio indizio",
+          "Condividere gli indizi e collegarli",
+          "Scegliere una risposta senza leggere"
+        ],
+        1,
+        "Condividere le informazioni permette alla squadra di vedere collegamenti che una sola persona potrebbe non trovare."
+      ],
+      [
+        "Due gruppi misurano lo stesso fenomeno e ottengono risultati diversi. Come collaborano per capire perché?",
+        [
+          "Confrontano strumenti, procedure e incertezze",
+          "Cancellano il risultato meno gradito",
+          "Decidono che ha ragione chi parla più forte"
+        ],
+        0,
+        "Confrontare come sono state fatte le misure aiuta a individuare differenze, errori o effetti da approfondire."
+      ],
+      [
+        "Una persona della squadra non riesce a seguire la spiegazione. Cosa aiuta il gruppo a proseguire insieme?",
+        [
+          "Ignorare le sue domande",
+          "Procedere senza coinvolgerla",
+          "Ascoltare la domanda e provare un esempio"
+        ],
+        2,
+        "Ascoltare e spiegare in modi diversi aiuta tutti a contribuire. Una domanda può far emergere un passaggio poco chiaro anche agli altri."
+      ]
+    ]
+  },
+  {
+    "id": "europa",
+    "stamp": "europe",
+    "image": "avezzano-hepscape-2026.jpg",
+    "topic": "Ricerca europea",
+    "title": "EU Explorer: la ricerca senza confini",
+    "desc": "Dalla Notte dei Ricercatori alle sfide condivise: esplora il valore di una ricerca che mette in contatto persone e Paesi.",
+    "questions": [
+      [
+        "Qual è uno degli obiettivi della Notte Europea delle Ricercatrici e dei Ricercatori?",
+        [
+          "Avvicinare il pubblico alla ricerca e a chi la svolge",
+          "Riservare la scienza soltanto agli specialisti",
+          "Sostituire tutti gli esperimenti con gare"
+        ],
+        0,
+        "Incontri, giochi e laboratori creano occasioni per conoscere la ricerca, fare domande e dialogare con ricercatrici e ricercatori."
+      ],
+      [
+        "Perché gruppi di ricerca di Paesi diversi possono trarre vantaggio dal lavorare insieme?",
+        [
+          "Per evitare di verificare i risultati",
+          "Per mettere in comune competenze, strumenti e prospettive",
+          "Per ottenere sempre risposte identiche"
+        ],
+        1,
+        "La collaborazione permette di combinare risorse e conoscenze complementari. I risultati devono comunque essere verificati."
+      ],
+      [
+        "Quale sfida trae particolare beneficio dalla collaborazione tra Paesi?",
+        [
+          "Scegliere il colore del proprio quaderno",
+          "Decidere il soprannome di una squadra",
+          "Studiare il cambiamento climatico"
+        ],
+        2,
+        "Il clima non si ferma ai confini. Confrontare osservazioni e modelli prodotti in luoghi diversi aiuta a studiarlo."
+      ]
+    ]
+  }
+]

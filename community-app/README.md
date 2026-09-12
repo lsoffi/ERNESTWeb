@@ -254,3 +254,27 @@ Il banner inferiore riprende il logo UE, la dichiarazione di finanziamento e lo 
 ## Sicurezza, verifiche e pubblicazione
 
 [SECURITY.md](SECURITY.md) descrive secondo fattore amministrativo, limiti di accesso, log, verifica del database, aggiornamenti con dipendenze bloccate, controlli automatici e rollback. Distingue i controlli presenti nel codice da quelli che richiedono attivazione o verifica nell’ambiente CERN.
+
+
+## Passaporto online
+
+La pagina «Il mio passaporto» riprende le sei icone del passaporto cartaceo. Un quiz completato assegna il timbro associato, anche con zero punti. I punti premiano le risposte corrette; i timbri premiano il completamento. Ripetere un quiz non duplica il timbro e, se più quiz condividono un’icona, basta completarne uno.
+
+| Icona | Quiz dimostrativo |
+| --- | --- |
+| Osservare | La scienza degli indizi |
+| Ragionare | Allena il cervello, trova la strada |
+| Ideare | A cavallo di un fotone |
+| Sperimentare | Piccole particelle, grandi idee |
+| Collaborare | La scoperta è un gioco di squadra |
+| Dimensione Internazionale | EU Explorer: la ricerca senza confini |
+
+L’associazione è una prima proposta editoriale, modificabile attraverso il campo `stamp` di `community/quizzes.json`. `community/passport.json` definisce icone e ordine. Tutti i testi dei sei quiz sono tradotti in inglese e francese nel catalogo condiviso. I nuovi quiz sono contenuti dimostrativi originali ispirati a logica, collaborazione e divulgazione ERNEST; non riproducono quesiti ufficiali degli eventi. Il quiz europeo riprende la finalità divulgativa descritta dalla [Commissione europea per MSCA and Citizens](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/msca-and-citizens).
+
+I timbri vengono calcolati dal server a partire dai tentativi completati già conservati: non occorrono nuove tabelle o migrazioni e i risultati precedenti contano subito. Cambiare l’associazione di un quiz cambia anche l’icona derivata dai risultati precedenti. Gli ospiti mantengono il passaporto nella sessione; accedendo nello stesso browser trasferiscono i relativi tentativi al proprio profilo. I timbri online non attestano la presenza a un evento fisico.
+
+Le icone utilizzano la tavola ufficiale `31.png` fornita in `ERNEST-icone.zip`, conservata senza modifiche in `static/community/passport-official.png`. I riquadri SVG selezionano le sei icone dalla tavola; il segno di completamento è un elemento separato dell’interfaccia.
+
+La copertina animata usa il fronte destro della tavola ufficiale `32.png`, conservata intatta in `static/community/passport-cover-official.png`. Il nickname viene inserito come testo nel primo campo; gli ospiti vedono un’etichetta generica. Un clic apre il passaporto, un pulsante lo richiude. L’interfaccia supporta tastiera e riduzione del movimento. Un breve fruscio viene sintetizzato localmente con Web Audio soltanto dopo un gesto di apertura/chiusura; il pulsante dedicato permette di silenziarlo per la pagina corrente, senza servizi audio esterni.
+
+L’interno mantiene una doppia pagina illustrata con piega centrale, tre timbri per pagina e numeri di pagina. Copertina, comandi audio, istruzioni, etichette e contenuti dei quiz seguono la lingua IT/EN/FR selezionata; il nickname non viene tradotto. Il lettering incluso nelle immagini ufficiali resta parte dell’immagine originale.

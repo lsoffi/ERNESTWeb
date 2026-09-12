@@ -21,6 +21,12 @@ from .accounts import email_address, deliver, response as mail_response
 
 QUIZZES = json.loads(Path(__file__).with_name('quizzes.json').read_text())
 QUIZ_MAP = {q['id']: q for q in QUIZZES}
+PASSPORT = json.loads(Path(__file__).with_name('passport.json').read_text())
+
+def passport_for(completed):
+    return [{**icon, 'quizzes': [q['id'] for q in QUIZZES if q.get('stamp') == icon['id']],
+             'earned': any(q['id'] in completed for q in QUIZZES if q.get('stamp') == icon['id'])}
+            for icon in PASSPORT]
 
 def error(message, status=400): return JsonResponse({'error': tr(message)}, status=status)
 
@@ -38,7 +44,8 @@ def owned(request):
 
 def profile(request):
     results = owned(request).filter(finished=True).values('quiz').annotate(best=Max('score'))
-    return {'name': request.user.username if request.user.is_authenticated else '', 'completed': {r['quiz']: r['best'] for r in results}}
+    completed = {r['quiz']: r['best'] for r in results}
+    return {'name': request.user.username if request.user.is_authenticated else '', 'completed': completed, 'passport': passport_for(completed)}
 
 @ensure_csrf_cookie
 @require_GET
