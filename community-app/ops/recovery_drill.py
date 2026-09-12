@@ -95,6 +95,9 @@ def run():
     report['checks']['backup_migrates_and_preserves_registered_results'] = True
     report['durations_seconds']['migrate_and_retention'] = round(time.monotonic()-started, 3)
 
+    STAGE = 'collect_static'
+    call_command('collectstatic', interactive=False, stdout=io.StringIO(), verbosity=0)
+
     with tempfile.TemporaryDirectory(prefix='ernest-recovery-') as work:
         work = Path(work)
         # The child process has no SMTP credentials and serves loopback only.
@@ -116,6 +119,10 @@ def run():
                             with urllib.request.urlopen(request, timeout=2) as response:
                                 state = json.load(response)
                                 assert response.status == 200 and len(state['quizzes']) == len(QUIZZES)
+                            for asset in ('/', '/static/community/style.css', '/static/community/app.js', '/static/community/ERNEST_long_blue.svg'):
+                                asset_request = urllib.request.Request('http://127.0.0.1:18080'+asset, headers={'X-Forwarded-Proto':'https'})
+                                with urllib.request.urlopen(asset_request, timeout=2) as response:
+                                    assert response.status == 200 and response.read()
                             break
                         except OSError:
                             time.sleep(.2)
