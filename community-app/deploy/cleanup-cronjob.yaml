@@ -1,0 +1,56 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: ernest-retention
+  namespace: ernest-community
+spec:
+  schedule: '*/15 * * * *'
+  suspend: true  # Enable after validating the image and a dry run.
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 600
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      activeDeadlineSeconds: 600
+      template:
+        metadata:
+          labels:
+            app: ernest-retention
+        spec:
+          restartPolicy: Never
+          automountServiceAccountToken: false
+          containers:
+            - name: cleanup
+              # Replace with the verified application image digest before applying.
+              image: image-registry.openshift-image-registry.svc:5000/ernest-community/ernest-test:latest
+              imagePullPolicy: Always
+              workingDir: /opt/app-root/src
+              command: ['python', 'manage.py', 'cleanup_community']
+              env:
+                - name: MYSQL_HOST
+                  value: dbod-ernest-community.cern.ch
+                - name: MYSQL_PORT
+                  value: '5557'
+                - name: MYSQL_DATABASE
+                  value: ernest_community
+                - name: MYSQL_USER
+                  value: ernest_app
+              envFrom:
+                - secretRef:
+                    name: ernest-django
+                - secretRef:
+                    name: ernest-mysql
+              resources:
+                requests:
+                  cpu: 50m
+                  memory: 128Mi
+                limits:
+                  cpu: 500m
+                  memory: 256Mi
+              securityContext:
+                allowPrivilegeEscalation: false
+                capabilities:
+                  drop: ['ALL']
+                runAsNonRoot: true

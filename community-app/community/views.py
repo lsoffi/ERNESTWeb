@@ -17,6 +17,7 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.decorators.http import require_GET, require_POST
 from .i18n import tr
 from .models import Attempt, RateBucket, AccountEmail
+from .retention import GUEST_TTL
 from .accounts import email_address, deliver, response as mail_response
 
 QUIZZES = json.loads(Path(__file__).with_name('quizzes.json').read_text())
@@ -40,7 +41,7 @@ def owned(request):
     if request.user.is_authenticated:
         return Attempt.objects.filter(user=request.user)
     if not request.session.session_key: return Attempt.objects.none()
-    return Attempt.objects.filter(user=None, session_key=request.session.session_key)
+    return Attempt.objects.filter(user=None, session_key=request.session.session_key, created__gt=timezone.now()-GUEST_TTL)
 
 def profile(request):
     results = owned(request).filter(finished=True).values('quiz').annotate(best=Max('score'))
@@ -105,7 +106,7 @@ def auth(request, mode):
         if entry is None or user is None: return error('Email o password non corrette, oppure email non ancora confermata.',401)
     login(request, user)
     if old_session:
-        Attempt.objects.filter(user=None, session_key=old_session).update(user=user)
+        Attempt.objects.filter(user=None, session_key=old_session, created__gt=timezone.now()-GUEST_TTL).update(user=user)
     return JsonResponse(profile(request))
 
 @require_POST
@@ -138,6 +139,8 @@ def answer(request):
         attempt.answers.append(choice)
         attempt.score += 10 if choice == q[2] else 0
         attempt.finished = len(attempt.answers) == len(QUIZ_MAP[attempt.quiz]['questions'])
+        if attempt.finished:
+            attempt.answers = []
         attempt.save()
     return JsonResponse({'correct': q[2], 'explanation': q[3], 'score': attempt.score, 'finished': attempt.finished, **profile(request)})
 

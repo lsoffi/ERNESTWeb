@@ -288,3 +288,31 @@ I testi della community nelle tre lingue si rivolgono alle persone senza attribu
 Il profilo mostra «A che punto sei?» con quattro fasce fisse: Curiosità (0–39), Scoperta (40–89), Esplorazione (90–139), Nuove frontiere (140+). La fase deriva dalla somma dei migliori risultati per quiz, anche in modalità ospite; non richiede nuovi dati nel database. La tabella evidenzia la fase attuale anche con una dicitura testuale e indica i punti mancanti alla successiva. Testi disponibili in IT, EN e FR.
 
 I filtri dei quiz usano i nomi delle sei icone del passaporto. Sulle schede compare solo il simbolo ufficiale, con nome accessibile e collegamento al passaporto. I timbri conquistati mostrano una sagoma arancione semitrasparente derivata dal gatto ERNEST e un doppio anello con effetto inchiostro. Ogni quiz usa un’immagine diversa. Le tre foto aggiunte provengono dall’archivio del sito ERNEST: `escape-rooms_img/photon/img3.jpeg` (logica), `escape-rooms_img/mastem/img2.jpg` (collaborazione), `activities-ern-2026_img/acceler8escape-passion4learning.jpg` (dimensione internazionale). Sono immagini illustrative delle attività, non certificazioni di partecipazione.
+
+### Conservazione delle risposte ai quiz
+
+Al completamento, le singole risposte sono eliminate nella stessa transazione che salva punteggio e completamento. Profilo, classifica e timbri usano i risultati e restano disponibili. Le risposte di un quiz in corso servono al controllo della sequenza; il tentativo scade dopo due ore. `cleanup_community` elimina anche le risposte dei tentativi scaduti, compresi quelli degli account registrati: la rimozione periodica richiede la pianificazione del comando.
+
+La migrazione `0003_clear_unneeded_answers` pulisce le risposte pregresse dei tentativi completati o scaduti, preservando punteggi, completamento e associazioni. La cancellazione non è reversibile. Dopo il rilascio di tutti i processi aggiornati, eseguire nuovamente `cleanup_community` per coprire eventuali scritture della versione precedente durante il rilascio. I backup storici non vengono modificati: dopo un ripristino eseguire la pulizia prima di riaprire il servizio, anche se la migrazione risulta già applicata.
+
+### Scadenze e pulizia automatica
+
+La policy è centralizzata in `community/retention.py`:
+
+| Dati | Scadenza |
+| --- | --- |
+| Account con email non confermata | 7 giorni dalla registrazione |
+| Tentativi ospiti non associati a un account | 24 ore dalla creazione |
+| Risposte individuali | Al completamento; quelle abbandonate alla scadenza del tentativo di 2 ore |
+| Account, email, risultati e timbri | Fine del 30 aprile 2028, fuso Europe/Rome |
+| Sessioni e contatori tecnici | Sessioni scadute e contatori oltre la finestra di conservazione |
+
+Alla fine del progetto le API, la conferma email e l’amministrazione restituiscono 410; la pulizia cancella tutti gli account, compresi quelli amministrativi, i dispositivi OTP, i risultati e le sessioni. Un’eventuale proroga deve essere decisa e pubblicata **prima** della scadenza. I timbri sono derivati dai risultati e vengono eliminati insieme a essi.
+
+`python manage.py cleanup_community --dry-run` mostra solo conteggi aggregati. Senza `--dry-run` applica le cancellazioni in transazione; è ripetibile senza effetti aggiuntivi. Non invia email e non stampa indirizzi, nickname o risposte.
+
+Il CronJob CERN in `deploy/cleanup-cronjob.yaml` esegue la pulizia ogni 15 minuti. La cancellazione fisica avviene al primo passaggio riuscito dopo la scadenza (normalmente entro 15 minuti); in caso di guasto avverrà alla ripresa del servizio. La conferma di account oltre 7 giorni e il recupero di tentativi ospiti oltre 24 ore sono già impediti dall’applicazione.
+
+Per verificare il funzionamento in PaaS: aprire **CronJobs → ernest-retention → Jobs**, controllare l’ultimo Job `Complete` e il log JSON con `completed_at` e `dry_run: false`. Un Job fallito o nessuna esecuzione riuscita recente richiede un controllo dei log e delle credenziali. Non basta la sola presenza del CronJob. Dopo ogni nuovo rilascio allineare l’immagine del CronJob alla versione applicativa verificata.
+
+Le copie di backup CERN seguono la conservazione del servizio: questa pulizia opera sul database attivo. Dopo un ripristino eseguire la pulizia prima di riaprire il servizio al pubblico.

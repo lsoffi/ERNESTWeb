@@ -15,6 +15,8 @@ from django.views.decorators.cache import never_cache
 from .i18n import tr
 from django.utils.translation import get_language
 from .models import AccountEmail
+from django.utils import timezone
+from .retention import UNVERIFIED_TTL
 
 
 def email_address(value):
@@ -56,7 +58,7 @@ def request_mail(request, purpose):
         return error('Troppi invii richiesti. Riprova tra dieci minuti.',429)
     entry = AccountEmail.objects.select_related('user').filter(address=email).first()
     url = None
-    if entry and ((purpose == 'verify' and not entry.verified) or (purpose == 'reset' and entry.verified and entry.user.is_active)):
+    if entry and ((purpose == 'verify' and not entry.verified and entry.user.date_joined > timezone.now()-UNVERIFIED_TTL) or (purpose == 'reset' and entry.verified and entry.user.is_active)):
         try: url = deliver(entry.user,purpose)
         except Exception:
             # Do not disclose account existence or mail-provider details.
@@ -72,7 +74,7 @@ def verify(request):
     try:
         data = signing.loads(token or '',salt='ernest-verify',max_age=86400)
         with transaction.atomic():
-            entry = AccountEmail.objects.select_for_update().get(user_id=data['user'],address=data['email'],verified=False)
+            entry = AccountEmail.objects.select_for_update().get(user_id=data['user'],address=data['email'],verified=False,user__date_joined__gt=timezone.now()-UNVERIFIED_TTL)
             valid = True
             if request.method == 'POST':
                 entry.verified = True
