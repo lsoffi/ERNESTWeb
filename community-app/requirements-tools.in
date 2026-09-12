@@ -1,2 +1,4 @@
 pip-tools==7.6.1
 pip-audit==2.10.1
+# Keep the tools lock usable on Python 3.12 when refreshed from newer Python.
+typing-extensions==4.16.0
