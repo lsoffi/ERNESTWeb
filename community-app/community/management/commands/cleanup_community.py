@@ -5,7 +5,7 @@ from django.core.management.base import BaseCommand
 from django.db import transaction
 from django.db.models import Q
 from django.utils import timezone
-from community.models import Attempt, RateBucket, AccountEmail
+from community.models import Attempt, RateBucket, AccountEmail, PrivacyOperation
 from community.retention import PROJECT_END, UNVERIFIED_TTL, GUEST_TTL, ANSWER_TTL
 
 
@@ -35,12 +35,14 @@ class Command(BaseCommand):
             sessions = Session.objects.all() if ended else Session.objects.filter(expire_date__lte=now)
             report = dict(dry_run=options['dry_run'], project_ended=ended,
                           users=users.count(), answer_payloads=answers.count(),
-                          attempts=attempts.count(), rate_buckets=rates.count(), sessions=sessions.count())
+                          attempts=attempts.count(), rate_buckets=rates.count(), sessions=sessions.count(), privacy_operations=PrivacyOperation.objects.count() if ended else 0)
             if not options['dry_run']:
                 answers.update(answers=[])
                 attempts.delete()
                 users.delete()  # Cascades to email records, results and OTP devices.
                 rates.delete()
                 sessions.delete()
+                if ended:
+                    PrivacyOperation.objects.all().delete()
         report['completed_at'] = now.isoformat()
         self.stdout.write(json.dumps(report, sort_keys=True))

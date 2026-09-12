@@ -75,7 +75,7 @@ Per disattivare un account, aprire la sua scheda, togliere la spunta **Attivo** 
 
 **Attempts** mostra i singoli tentativi: utente, quiz, punteggio, completamento e data di creazione. Un tentativo senza utente associato appartiene a una sessione ospite. La sezione è di sola lettura.
 
-Il pannello non mostra password o relativi hash e non consente di modificare i punteggi. In questa versione non permette di creare o cancellare utenti, modificare i quiz o assegnare ruoli amministrativi. L’assegnazione dei permessi resta un’operazione dei manutentori autorizzati.
+Il pannello non mostra password o relativi hash e non consente di modificare i punteggi. La cancellazione e la rettifica di nickname/email sono disponibili alla sola referente configurata tramite gli strumenti privacy verificati. Il pannello non permette di creare utenti, modificare i quiz o assegnare ruoli amministrativi. L’assegnazione dei permessi resta un’operazione dei manutentori autorizzati.
 
 ### CERN PaaS: per gestire l’applicazione
 
@@ -201,9 +201,9 @@ CERN fornisce i servizi infrastrutturali; il team mantiene codice, dipendenze ap
 python manage.py cleanup_community
 ```
 
-Rimuove tentativi ospiti più vecchi di 24 ore, sessioni scadute e contatori temporanei obsoleti. Va eseguito nell’ambiente autorizzato e pianificato se si vuole una pulizia automatica: la sola presenza del comando non implica che sia già schedulato. Non cancella gli account o i tentativi associati agli utenti registrati.
+Applica le scadenze descritte nella sezione «Scadenze e pulizia automatica», inclusi account non confermati e fine progetto. Il CronJob CERN e la verifica operativa sono documentati in quella sezione.
 
-Devono essere definite e verificate le procedure per conservazione e cancellazione degli account, backup e ripristino, controllo degli accessi e gestione degli incidenti. La disattivazione nel pannello non equivale alla cancellazione richiesta da un interessato.
+Per le richieste sui dati personali seguire [la procedura operativa](PRIVACY_OPERATIONS.md). La disattivazione ordinaria nel pannello non equivale alla cancellazione. La verifica completa del ripristino DBOD e la gestione dei backup restano distinte dagli strumenti applicativi.
 
 ## Privacy e stato del servizio
 
@@ -318,3 +318,7 @@ Per verificare il funzionamento in PaaS: aprire **CronJobs → ernest-retention 
 Le copie di backup CERN seguono la conservazione del servizio: questa pulizia opera sul database attivo. Dopo un ripristino eseguire la pulizia prima di riaprire il servizio al pubblico.
 
 Verifica operativa del 12 settembre 2026: applicazione pubblicata con build `ernest-test-17` (commit `57cc9a6`); migrazione `0003_clear_unneeded_answers` completata sul database CERN. Il controllo preliminare rilevava 19 tentativi con risposte da rimuovere e 5 tentativi ospiti scaduti. Dopo migrazione e pulizia, il Job pianificato `ernest-retention-29820765`, avviato dal calendario delle 22:45 Europe/Rome, è terminato correttamente alle 22:45:02 con `dry_run: false` e zero dati residui da ripulire. Frequenza definitiva: ogni 15 minuti, CronJob non sospeso. Verificata inoltre risposta HTTP 200 dell’API pubblica. I test automatici coprono anche le scadenze future e il mantenimento dei punteggi: 40 superati, 2 test di concorrenza MySQL non eseguiti nella suite locale SQLite.
+
+### Strumenti riservati per richieste privacy
+
+Dalla scheda di un utente, **Gestisci una richiesta verificata** permette alla sola referente configurata di esportare i dati, rettificare nickname/email o cancellare account e risultati. Richiede secondo fattore, riferimento della richiesta, verifica documentata e conferma dell’account. **Operazioni privacy** mostra esito, ricevuta e data del riscontro. Procedura, limiti e istruzioni per eventuali ripristini: [PRIVACY_OPERATIONS.md](PRIVACY_OPERATIONS.md).

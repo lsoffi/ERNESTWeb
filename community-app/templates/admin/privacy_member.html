@@ -1,0 +1,15 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h2>{{ subject.username }}</h2>
+<p>Email memorizzata: <strong>{{ subject.email }}</strong>. Usa questa casella per la verifica, non il Reply-To di un messaggio ricevuto.</p>
+<p>Prima di operare: ricevi una conferma riferita alla richiesta dalla casella verificata, oppure documenta un’autenticazione adeguata o il metodo alternativo concordato. La sola conoscenza del nickname non basta. Non chiedere password, codici o documenti di identità come passaggio standard.</p>
+<p>Le spunte registrano una verifica che devi avere già eseguito: non verificano automaticamente chi ti ha scritto. Conserva il riscontro nella corrispondenza riservata usando il riferimento della richiesta; non incollare qui il messaggio.</p>
+<form method="post">{% csrf_token %}
+{{ form.as_p }}
+<p><strong>La cancellazione elimina account, risultati e timbri dal database attivo. È irreversibile e non cancella direttamente i backup o i log dei fornitori.</strong></p>
+<input type="submit" value="Esegui l’operazione verificata">
+</form>
+<h2>Operazioni già registrate</h2>
+<ul>{% for operation in operations %}<li><a href="{% url 'otpadmin:community_privacyoperation_change' operation.pk %}">{{ operation.reference }} — {{ operation.action }} — {{ operation.performed_at }}</a></li>{% empty %}<li>Nessuna operazione registrata.</li>{% endfor %}</ul>
+<p>Dopo l’operazione, verifica la ricevuta e invia il riscontro alla persona attraverso il canale verificato. Nella ricevuta annota la data effettiva di risposta. Un download riuscito non equivale alla consegna alla persona.</p>
+{% endblock %}

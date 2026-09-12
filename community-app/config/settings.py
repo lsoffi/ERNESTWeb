@@ -77,3 +77,6 @@ LOGGING = {
         'community': {'handlers': ['console'], 'level': 'INFO', 'propagate': False},
     },
 }
+
+# Empty disables private privacy tools; configure only the designated operator.
+PRIVACY_OPERATOR_USERNAME = os.environ.get('PRIVACY_OPERATOR_USERNAME', '')
