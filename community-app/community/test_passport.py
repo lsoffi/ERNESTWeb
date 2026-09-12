@@ -41,13 +41,13 @@ class PassportTests(TestCase):
 
     def test_passport_labels_and_book_controls_are_translated(self):
         from .i18n import CATALOGS
-        controls = ['ERNEST / IL MIO PASSAPORTO', 'Ogni scoperta lascia un segno.',
+        controls = ['ERNEST / IL TUO PASSAPORTO', 'Ogni scoperta lascia un segno.',
                     'Il tuo viaggio nella scienza, una pagina alla volta.',
                     'Passaporto online', 'Apri il tuo passaporto', '← Chiudi il passaporto',
                     'Tocca la copertina per sfogliare il passaporto.',
                     'Suono della pagina: attivo', 'Suono della pagina: disattivato',
                     'PASSAPORTO ONLINE', 'PASSAPORTO DI', 'Timbri raccolti',
-                    'Esploratore ospite', 'Timbro conquistato', 'Da conquistare']
+                    'Ospite', 'Timbro conquistato', 'Da conquistare']
         for language in ('en', 'fr'):
             for label in [icon['label'] for icon in PASSPORT] + controls:
                 self.assertTrue(CATALOGS[language].get(label), (language, label))

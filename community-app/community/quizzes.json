@@ -83,7 +83,7 @@
     "id": "indizi",
     "topic": "Metodo scientifico",
     "title": "La scienza degli indizi",
-    "desc": "Osserva, formula un’ipotesi e cerca le prove. Un piccolo allenamento da detective scientifico.",
+    "desc": "Osserva, formula un’ipotesi e cerca le prove. Un piccolo allenamento di indagine scientifica.",
     "image": "avezzano-csi-higgs.png",
     "questions": [
       [
@@ -168,7 +168,7 @@
     "desc": "Come in una missione ERNEST, ogni persona porta un pezzo del puzzle. Metti alla prova il tuo spirito di squadra.",
     "questions": [
       [
-        "Ogni membro della squadra ha un indizio diverso. Qual è il primo passo più utile?",
+        "Ogni persona della squadra ha un indizio diverso. Qual è il primo passo più utile?",
         [
           "Tenere segreto il proprio indizio",
           "Condividere gli indizi e collegarli",
@@ -195,7 +195,7 @@
           "Ascoltare la domanda e provare un esempio"
         ],
         2,
-        "Ascoltare e spiegare in modi diversi aiuta tutti a contribuire. Una domanda può far emergere un passaggio poco chiaro anche agli altri."
+        "Ascoltare e spiegare in modi diversi permette a ogni persona di contribuire. Una domanda può chiarire un passaggio per tutta la squadra."
       ]
     ]
   },
@@ -205,13 +205,13 @@
     "image": "avezzano-hepscape-2026.jpg",
     "topic": "Ricerca europea",
     "title": "EU Explorer: la ricerca senza confini",
-    "desc": "Dalla Notte dei Ricercatori alle sfide condivise: esplora il valore di una ricerca che mette in contatto persone e Paesi.",
+    "desc": "Dalla Notte Europea delle Ricercatrici e dei Ricercatori alle sfide condivise: esplora il valore di una ricerca che mette in contatto persone e Paesi.",
     "questions": [
       [
         "Qual è uno degli obiettivi della Notte Europea delle Ricercatrici e dei Ricercatori?",
         [
           "Avvicinare il pubblico alla ricerca e a chi la svolge",
-          "Riservare la scienza soltanto agli specialisti",
+          "Riservare la scienza soltanto a chi ha competenze specialistiche",
           "Sostituire tutti gli esperimenti con gare"
         ],
         0,

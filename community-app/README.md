@@ -278,3 +278,11 @@ Le icone utilizzano la tavola ufficiale `31.png` fornita in `ERNEST-icone.zip`, 
 La copertina animata usa il fronte destro della tavola ufficiale `32.png`, conservata intatta in `static/community/passport-cover-official.png`. Il nickname viene inserito come testo nel primo campo; gli ospiti vedono un’etichetta generica. Un clic apre il passaporto, un pulsante lo richiude. L’interfaccia supporta tastiera e riduzione del movimento. Un breve fruscio viene sintetizzato localmente con Web Audio soltanto dopo un gesto di apertura/chiusura; il pulsante dedicato permette di silenziarlo per la pagina corrente, senza servizi audio esterni.
 
 L’interno mantiene una doppia pagina illustrata con piega centrale, tre timbri per pagina e numeri di pagina. Copertina, comandi audio, istruzioni, etichette e contenuti dei quiz seguono la lingua IT/EN/FR selezionata; il nickname non viene tradotto. Il lettering incluso nelle immagini ufficiali resta parte dell’immagine originale.
+
+### Linguaggio inclusivo
+
+I testi della community nelle tre lingue si rivolgono alle persone senza attribuire un genere: formule come «Che bello ritrovarti», «Ospite» e «Esplorazione» descrivono azioni e percorsi. Per i riferimenti alla ricerca si usano termini collettivi o «ricercatrici e ricercatori». La stessa scelta vale per quiz, messaggi di accesso, email e testi accessibili. Non si raccoglie il genere e i nickname restano invariati. Anche i nuovi contenuti e le traduzioni devono seguire questi criteri, con formulazioni naturali senza asterischi o schwa.
+
+### Fasi del percorso
+
+Il profilo mostra «A che punto sei?» con quattro fasce fisse: Curiosità (0–39), Scoperta (40–89), Esplorazione (90–139), Nuove frontiere (140+). La fase deriva dalla somma dei migliori risultati per quiz, anche in modalità ospite; non richiede nuovi dati nel database. La tabella evidenzia la fase attuale anche con una dicitura testuale e indica i punti mancanti alla successiva. Testi disponibili in IT, EN e FR.

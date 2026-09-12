@@ -83,7 +83,7 @@ def auth(request, mode):
             return error(' '.join(exc.messages))
         # Hash in both cases; avoid the username uniqueness validator's public leak.
         candidate.set_password(password)
-        message = 'Richiesta ricevuta. Se puoi creare un nuovo account con questi dati, riceverai un’email di conferma. Se sei già registrato, accedi o recupera la password.'
+        message = 'Richiesta ricevuta. Se puoi creare un nuovo account con questi dati, riceverai un’email di conferma. Se hai già un account, accedi o recupera la password.'
         if AccountEmail.objects.filter(address=email).exists() or User.objects.filter(username=name).exists():
             return mail_response(message)
         try:

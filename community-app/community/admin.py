@@ -9,7 +9,7 @@ from .models import Attempt
 class CommunityAdminSite(OTPAdminSite):
     site_header = 'ERNEST — Gestione community'
     site_title = 'ERNEST amministrazione'
-    index_title = 'Iscritti e risultati'
+    index_title = 'Account e risultati'
     site_url = '/'
 
     def login(self, request, extra_context=None):
