@@ -324,3 +324,7 @@ Verifica operativa del 12 settembre 2026: applicazione pubblicata con build `ern
 Dalla scheda di un utente, **Gestisci una richiesta verificata** permette alla sola referente configurata di esportare i dati, rettificare nickname/email o cancellare account e risultati. Richiede secondo fattore, riferimento della richiesta, verifica documentata e conferma dell’account. **Operazioni privacy** mostra esito, ricevuta e data del riscontro. Procedura, limiti e istruzioni per eventuali ripristini: [PRIVACY_OPERATIONS.md](PRIVACY_OPERATIONS.md).
 
 Verifica tecnica del 12 settembre 2026: build `ernest-test-18`, commit applicativo `516a160`; migrazione `0004_privacyoperation` applicata su CERN, registro inizialmente vuoto. Verificati requisiti dell’account designato, API pubblica HTTP 200 e reindirizzamento al login per accesso anonimo agli strumenti. Suite locale: 48 test superati, 2 test MySQL di concorrenza non eseguiti in SQLite. Nessuna richiesta privacy è stata eseguita sui profili dei partecipanti durante la verifica. L’accesso effettivo agli strumenti dipende dall’impostazione riservata `PRIVACY_OPERATOR_USERNAME`, disabilitata per impostazione predefinita.
+
+### Prova di recupero
+
+Il 12 settembre 2026 è stato verificato il recupero separato su un clone di backup CERN DBOD: riavvio dell’app, disponibilità della grafica, conservazione dei risultati e riapplicazione di una cancellazione sintetica. [Esiti e procedura della prova](RECOVERY_REHEARSAL.md). La community in uso non è stata ripristinata né modificata dalla prova.

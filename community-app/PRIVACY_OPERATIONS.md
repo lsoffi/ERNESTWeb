@@ -42,7 +42,7 @@ python manage.py reapply_privacy_deletions /percorso/riservato/ricevuta.json --a
 python manage.py cleanup_community
 ```
 
-Il primo comando verifica firme e conteggi senza modifiche. Il secondo riapplica solo cancellazioni già attestate, confrontando identificativo **e data di creazione**; ignora account già assenti. Una ricevuta alterata non è accettata. Occorre la chiave di firma dell’app che ha emesso la ricevuta (gestita tramite i Secret CERN e gli eventuali meccanismi di rotazione): se manca, la verifica si arresta, senza aggirarla. Questo strumento è stato testato su dati sintetici; non equivale a una prova completa di ripristino del servizio DBOD.
+Il primo comando verifica firme e conteggi senza modifiche. Il secondo riapplica solo cancellazioni già attestate, confrontando identificativo **e data di creazione**; ignora account già assenti. Una ricevuta alterata non è accettata. Occorre la chiave di firma dell’app che ha emesso la ricevuta (gestita tramite i Secret CERN e gli eventuali meccanismi di rotazione): se manca, la verifica si arresta, senza aggirarla. Il 12 settembre 2026 è stata completata una prova su un clone ottenuto da un backup CERN DBOD, con riavvio dell’app e riapplicazione di una cancellazione sintetica. Esiti, confini della prova e procedura ripetibile: [RECOVERY_REHEARSAL.md](RECOVERY_REHEARSAL.md).
 
 ## Configurazione tecnica
 
