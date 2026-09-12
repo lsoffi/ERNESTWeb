@@ -334,7 +334,8 @@
     "Le soglie sono fisse. Il totale somma il miglior risultato di ogni quiz.": "Thresholds are fixed. Your total adds up your best result for each quiz.",
     "Dai un nome al tuo profilo.": "Give your profile a name.",
     "Il tuo passaporto": "Your passport",
-    "ERNEST / IL TUO PASSAPORTO": "ERNEST / YOUR PASSPORT"
+    "ERNEST / IL TUO PASSAPORTO": "ERNEST / YOUR PASSPORT",
+    "Timbro del passaporto": "Passport stamp"
   },
   "fr": {
     "Navigazione principale": "Navigation principale",
@@ -671,6 +672,7 @@
     "Le soglie sono fisse. Il totale somma il miglior risultato di ogni quiz.": "Les seuils sont fixes. Le total additionne votre meilleur résultat à chaque quiz.",
     "Dai un nome al tuo profilo.": "Donnez un nom à votre profil.",
     "Il tuo passaporto": "Votre passeport",
-    "ERNEST / IL TUO PASSAPORTO": "ERNEST / VOTRE PASSEPORT"
+    "ERNEST / IL TUO PASSAPORTO": "ERNEST / VOTRE PASSEPORT",
+    "Timbro del passaporto": "Tampon du passeport"
   }
 }

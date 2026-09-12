@@ -122,7 +122,7 @@
   {
     "id": "logica",
     "stamp": "think",
-    "image": "avezzano-csi-higgs.png",
+    "image": "quiz-logica-fotone.jpeg",
     "topic": "Logica",
     "title": "Allena il cervello, trova la strada",
     "desc": "Sequenze, istruzioni e indizi: tre piccoli enigmi ispirati alle escape room scientifiche di ERNEST.",
@@ -162,7 +162,7 @@
   {
     "id": "squadra",
     "stamp": "collaborate",
-    "image": "photon-escape-room.png",
+    "image": "quiz-squadra-mastem.jpg",
     "topic": "Collaborazione",
     "title": "La scoperta è un gioco di squadra",
     "desc": "Come in una missione ERNEST, ogni persona porta un pezzo del puzzle. Metti alla prova il tuo spirito di squadra.",
@@ -202,7 +202,7 @@
   {
     "id": "europa",
     "stamp": "europe",
-    "image": "avezzano-hepscape-2026.jpg",
+    "image": "quiz-europa-acceler8escape.jpg",
     "topic": "Ricerca europea",
     "title": "EU Explorer: la ricerca senza confini",
     "desc": "Dalla Notte Europea delle Ricercatrici e dei Ricercatori alle sfide condivise: esplora il valore di una ricerca che mette in contatto persone e Paesi.",
