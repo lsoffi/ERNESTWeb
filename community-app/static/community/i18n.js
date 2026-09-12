@@ -54,6 +54,6 @@ function translateChrome(){
  for(const [node,source] of chromeNodes)if(node.isConnected)node.textContent=translateText(source);
  for(const [el,attr,source] of chromeAttrs)el.setAttribute(attr,t(source));
  document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===language)));
- document.querySelector('[data-site-return]').href='https://ernest-project.eu/'+(language==='en'?'':language+'/')+'index.html';
+ document.querySelector('[data-site-return]').href='https://www.ernest-project.eu/'+(language==='en'?'':language+'/')+'index.html';
 }
 translateChrome();
