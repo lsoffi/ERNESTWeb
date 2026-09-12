@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /community-app
+    target-branch: codex/community-cern-preview
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: /
+    target-branch: codex/community-cern-preview
+    schedule:
+      interval: weekly

@@ -55,7 +55,7 @@ function registrationSuccess(value){
  document.querySelector('#registration-email').textContent=document.querySelector('#email').value;
  document.querySelector('#auth-fields').hidden=true;
  document.querySelector('#registration-success').hidden=false;
- const preview=document.querySelector('#success-preview');preview.hidden=!value.preview_url;if(value.preview_url)preview.href=value.preview_url;
+ const preview=document.querySelector('#success-preview');preview.hidden=true;
  document.querySelector('#registration-success-title').focus();
 }
 document.querySelector('#success-login').onclick=()=>{document.querySelector('#auth-fields').hidden=false;document.querySelector('#registration-success').hidden=true;document.querySelector('#login-tab').click();document.querySelector('#password').focus()};

@@ -52,7 +52,7 @@ def request_mail(request, purpose):
     if purpose not in {'verify', 'reset'}: return error('Operazione non valida.',404)
     try: email = email_address(body(request).get('email'))
     except ValidationError: return error('Inserisci un indirizzo email valido.')
-    if limited('mail-ip:'+request.META.get('REMOTE_ADDR',''),20) or limited('mail:'+email,3):
+    if limited('mail:'+email,3):
         return error('Troppi invii richiesti. Riprova tra dieci minuti.',429)
     entry = AccountEmail.objects.select_related('user').filter(address=email).first()
     url = None

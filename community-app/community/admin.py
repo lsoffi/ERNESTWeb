@@ -1,26 +1,26 @@
 from django.contrib import admin
+from django_otp.admin import OTPAdminSite
 from django.contrib.auth.models import User
 from django.db.models import Prefetch
 from django.http import HttpResponse
 from .models import Attempt
 
 
-class CommunityAdminSite(admin.AdminSite):
+class CommunityAdminSite(OTPAdminSite):
     site_header = 'ERNEST — Gestione community'
     site_title = 'ERNEST amministrazione'
     index_title = 'Iscritti e risultati'
     site_url = '/'
 
     def login(self, request, extra_context=None):
-        if request.method == 'POST':
-            from .views import limited
-            name = request.POST.get('username', '').strip().lower()
-            if limited('admin-ip:' + request.META.get('REMOTE_ADDR', ''), 40) or limited('admin-name:' + name, 10):
-                return HttpResponse('Troppi tentativi. Riprova tra dieci minuti.', status=429)
-        return super().login(request, extra_context)
+        response = super().login(request, extra_context)
+        if request.user.is_authenticated and request.session.get('otp_device_id'):
+            request.session.set_expiry(30 * 60)
+        return response
 
 
-community_admin = CommunityAdminSite(name='community_admin')
+
+community_admin = CommunityAdminSite(name='otpadmin')
 
 
 @admin.register(User, site=community_admin)

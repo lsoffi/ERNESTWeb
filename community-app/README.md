@@ -59,7 +59,7 @@ I partecipanti usano un account **ERNEST**, creato con la propria email. **Non s
 
 L’accesso è riservato agli account della community ai quali siano stati assegnati i permessi necessari. Essere un utente registrato non dà accesso al pannello.
 
-Nella schermata amministrativa si usa il **nickname in minuscolo** e la password della community. Nel normale modulo di accesso della community si usano invece **email e password**.
+In questa revisione il pannello richiede il **nickname in minuscolo**, la password della community e un codice del proprio autenticatore TOTP. Il secondo fattore va attivato per ogni amministratore prima di pubblicare questa revisione; la procedura è in [SECURITY.md](SECURITY.md). Nel normale modulo di accesso della community si usano invece **email e password**.
 
 **Utenti** mostra:
 
@@ -114,7 +114,7 @@ La persistenza dei dati e il backup sono due cose diverse: MySQL conserva i dati
 1. **Una visitatrice apre ERNEST Community.** Sceglie “A cavallo di un fotone” senza registrarsi.
 2. **Risponde alle domande.** Il server controlla le risposte, attribuisce i punti e restituisce una spiegazione.
 3. **Decide di conservare i progressi.** Apre “Accedi”, sceglie “Registrati” e inserisce nickname, email e password con conferma.
-4. **Riceve la mail di verifica.** Apre il link e preme “Conferma email”. Il link dura 24 ore; la sola apertura non attiva il profilo, così una scansione automatica della posta non basta a confermarlo.
+4. **Vede una conferma generica della richiesta.** Se i dati sono disponibili riceve la mail di verifica; un’email o un nickname già utilizzati non creano né modificano un account. Apre il link e preme “Conferma email”. Il link dura 24 ore; la sola apertura non attiva il profilo, così una scansione automatica della posta non basta a confermarlo.
 5. **Accede con email e password.** I tentativi ospiti della sessione dalla quale effettua l’accesso vengono associati al suo account. Per recuperare quelli appena svolti deve tornare nello stesso browser e nella stessa sessione; la conferma email da sola non li trasferisce.
 6. **Consulta “Il mio percorso”.** Vede quiz completati e punteggi. Una volta associati all’account, i progressi sono disponibili anche accedendo da un altro dispositivo.
 7. **Ripete un quiz per migliorare.** Il totale usa il miglior tentativo completato per ogni quiz: ripeterlo non accumula punti illimitati.
@@ -250,3 +250,7 @@ Chi accede vede inoltre il proprio punteggio, la posizione sul totale dei partec
 
 
 Il banner inferiore riprende il logo UE, la dichiarazione di finanziamento e lo stile del sito ERNEST. Mostra anche il copyright; contatore visite e collegamento alla cookie policy sono al momento omessi.
+
+## Sicurezza, verifiche e pubblicazione
+
+[SECURITY.md](SECURITY.md) descrive secondo fattore amministrativo, limiti di accesso, log, verifica del database, aggiornamenti con dipendenze bloccate, controlli automatici e rollback. Distingue i controlli presenti nel codice da quelli che richiedono attivazione o verifica nell’ambiente CERN.

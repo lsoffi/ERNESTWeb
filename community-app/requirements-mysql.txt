@@ -1,2 +1,2 @@
+# Compatibility entry point: the complete production lock includes MySQL.
 -r requirements.txt
-mysqlclient>=2.2,<3

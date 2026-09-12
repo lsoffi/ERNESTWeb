@@ -1,12 +1,12 @@
-import hashlib
 import json
 import re
-import time
 from datetime import timedelta
 from pathlib import Path
 from django.conf import settings
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
+from django.contrib.auth.password_validation import validate_password
+from .security import limited, rate_error
 from django.core.exceptions import ValidationError
 from django.db import transaction, IntegrityError
 from django.db.models import Max
@@ -29,17 +29,6 @@ def body(request):
         value = json.loads(request.body)
         return value if isinstance(value, dict) else {}
     except (ValueError, UnicodeDecodeError): return {}
-
-def limited(key, limit, period=600):
-    key = hashlib.sha256(key.encode()).hexdigest()
-    window = int(time.time()) // period
-    with transaction.atomic():
-        bucket, _ = RateBucket.objects.get_or_create(key=key)
-        bucket = RateBucket.objects.select_for_update().get(pk=key)
-        bucket.count = bucket.count + 1 if bucket.window == window else 1
-        bucket.window = window
-        bucket.save()
-        return bucket.count > limit
 
 def owned(request):
     if request.user.is_authenticated:
@@ -68,8 +57,8 @@ def auth(request, mode):
     data = body(request)
     try: email = email_address(data.get('email'))
     except ValidationError: return error('Inserisci un indirizzo email valido.')
-    if limited('auth-ip:' + request.META.get('REMOTE_ADDR', ''), 40) or limited('auth-email:' + email, 10):
-        return error('Troppi tentativi. Riprova tra dieci minuti.', 429)
+    if limited('auth-email:' + email, 10):
+        return rate_error()
     password = data.get('password', '')
     if not isinstance(password, str) or len(password) > 256: return error('Password non valida.')
     old_session = request.session.session_key
@@ -78,22 +67,30 @@ def auth(request, mode):
         if not isinstance(name,str) or not re.fullmatch(r'[a-z0-9_]{3,24}', name.strip().lower()):
             return error('Scegli un nickname di 3–24 lettere, numeri o underscore.')
         name = name.strip().lower()
-        if AccountEmail.objects.filter(address=email).exists():
-            return mail_response('Se hai già un account, accedi o usa il recupero password. Puoi anche richiedere un nuovo link di conferma.')
-        form = UserCreationForm({'username':name,'password1':password,'password2':data.get('password2','')})
-        if not form.is_valid(): return error(' '.join(str(e) for es in form.errors.values() for e in es))
+        if data.get('password2') != password:
+            return error('Le password non coincidono.')
+        candidate = User(username=name, email=email, is_active=False)
+        try:
+            validate_password(password, candidate)
+        except ValidationError as exc:
+            return error(' '.join(exc.messages))
+        # Hash in both cases; avoid the username uniqueness validator's public leak.
+        candidate.set_password(password)
+        message = 'Richiesta ricevuta. Se puoi creare un nuovo account con questi dati, riceverai un’email di conferma. Se sei già registrato, accedi o recupera la password.'
+        if AccountEmail.objects.filter(address=email).exists() or User.objects.filter(username=name).exists():
+            return mail_response(message)
         try:
             with transaction.atomic():
-                user = form.save(commit=False)
-                user.email = email
-                user.is_active = False
-                user.save()
-                AccountEmail.objects.create(user=user,address=email)
-        except IntegrityError: return error('Impossibile creare il profilo con questi dati. Prova ad accedere o scegli un altro nickname.')
-        try: url = deliver(user,'verify')
+                candidate.save()
+                AccountEmail.objects.create(user=candidate, address=email)
+        except IntegrityError:
+            return mail_response(message)
+        try:
+            deliver(candidate, 'verify')
         except Exception:
-            return error('Profilo creato, ma invio non riuscito. Usa “Reinvia conferma” per riprovare.',503)
-        return mail_response('Controlla la posta e conferma il tuo indirizzo prima di accedere.',url)
+            import logging
+            logging.getLogger(__name__).error('mail_delivery_failed')
+        return mail_response(message)
     else:
         entry = AccountEmail.objects.select_related('user').filter(address=email,verified=True).first()
         # Run the password hasher even for an unknown email.

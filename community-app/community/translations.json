@@ -223,7 +223,13 @@
     "Torna qui e accedi con email e password.": "Come back here and log in with your email and password.",
     "Non trovi l’email? Controlla la posta indesiderata. Puoi richiedere un nuovo link dalla finestra Accedi.": "Cannot find the email? Check your spam folder. You can request a new link from the login window.",
     "Ho confermato l’email: accedi →": "I have confirmed my email: log in →",
-    "Intanto esplora i quiz": "Explore the quizzes while you wait"
+    "Intanto esplora i quiz": "Explore the quizzes while you wait",
+    "Richiesta ricevuta.": "Request received.",
+    "Se puoi creare un nuovo account, riceverai un link di conferma a:": "If a new account can be created, you will receive a confirmation link at:",
+    "Se sei già registrato, accedi o usa il recupero password.": "If you already have an account, log in or reset your password.",
+    "Richiesta ricevuta. Se puoi creare un nuovo account con questi dati, riceverai un’email di conferma. Se sei già registrato, accedi o recupera la password.": "Request received. If a new account can be created with these details, you will receive a confirmation email. If you already have an account, log in or reset your password.",
+    "Le password non coincidono.": "The passwords do not match.",
+    "Richiesta troppo grande.": "Request too large."
   },
   "fr": {
     "Navigazione principale": "Navigation principale",
@@ -449,6 +455,12 @@
     "Torna qui e accedi con email e password.": "Revenez ici et connectez-vous avec votre adresse e-mail et votre mot de passe.",
     "Non trovi l’email? Controlla la posta indesiderata. Puoi richiedere un nuovo link dalla finestra Accedi.": "Vous ne trouvez pas l’e-mail ? Vérifiez vos courriers indésirables. Vous pouvez demander un nouveau lien depuis la fenêtre de connexion.",
     "Ho confermato l’email: accedi →": "J’ai confirmé mon e-mail : se connecter →",
-    "Intanto esplora i quiz": "En attendant, explorez les quiz"
+    "Intanto esplora i quiz": "En attendant, explorez les quiz",
+    "Richiesta ricevuta.": "Demande reçue.",
+    "Se puoi creare un nuovo account, riceverai un link di conferma a:": "Si un nouveau compte peut être créé, vous recevrez un lien de confirmation à :",
+    "Se sei già registrato, accedi o usa il recupero password.": "Si vous avez déjà un compte, connectez-vous ou réinitialisez votre mot de passe.",
+    "Richiesta ricevuta. Se puoi creare un nuovo account con questi dati, riceverai un’email di conferma. Se sei già registrato, accedi o recupera la password.": "Demande reçue. Si un nouveau compte peut être créé avec ces informations, vous recevrez un e-mail de confirmation. Si vous avez déjà un compte, connectez-vous ou réinitialisez votre mot de passe.",
+    "Le password non coincidono.": "Les mots de passe ne correspondent pas.",
+    "Richiesta troppo grande.": "Requête trop volumineuse."
   }
 }

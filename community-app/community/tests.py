@@ -12,7 +12,7 @@ class CommunityTests(TestCase):
         return (client or self.client).post('/api/'+path+'/', json.dumps(data), content_type='application/json')
     def register(self, name='explorer'):
         result = self.post('auth/register', {'email': name+'@example.org', 'username': name, 'password': 'Test-cosmic-239!', 'password2': 'Test-cosmic-239!'})
-        if mail.outbox and 'Controlla la posta' in result.json().get('message',''):
+        if mail.outbox and 'Richiesta ricevuta' in result.json().get('message',''):
             url = mail.outbox[-1].body.splitlines()[-1]
             token = parse_qs(urlsplit(url).query)['token'][0]
             self.client.post('/account/verify/', {'token':token})
@@ -94,11 +94,19 @@ class AdminTests(TestCase):
         AccountEmail.objects.create(user=self.member, address=self.member.email, verified=True)
         self.manager = User.objects.create_superuser('manager', password='test-only-Strong-482!')
 
+    def verify_manager_mfa(self):
+        from django_otp.plugins.otp_totp.models import TOTPDevice
+        device=TOTPDevice.objects.create(user=self.manager,confirmed=True)
+        session=self.client.session
+        session['otp_device_id']=device.persistent_id
+        session.save()
+
     def test_access_and_private_fields(self):
         self.assertEqual(self.client.get('/admin/auth/user/').status_code, 302)
         self.client.force_login(self.member)
         self.assertEqual(self.client.get('/admin/auth/user/').status_code, 302)
         self.client.force_login(self.manager)
+        self.verify_manager_mfa()
         response = self.client.get(f'/admin/auth/user/{self.member.pk}/change/')
         self.assertEqual(response.status_code, 200)
         self.assertNotContains(response, self.member.password)
@@ -115,6 +123,7 @@ class AdminTests(TestCase):
         self.assertEqual(admin.completed_quizzes(obj),2)
         self.assertEqual(admin.total_score(obj),50)
         self.client.force_login(self.manager)
+        self.verify_manager_mfa()
         result = self.client.post(f'/admin/auth/user/{obj.pk}/change/', {'_save':'Salva'})
         self.assertEqual(result.status_code,302)
         obj.refresh_from_db()
