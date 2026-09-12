@@ -795,7 +795,7 @@ const programmeActivities2026 = {
         "fr": "Physique des particules"
       },
       "partner": "INFN",
-      "sessions25": "",
+      "sessions25": { "en": "Open", "it": "Aperto", "fr": "Ouvert" },
       "sessions26": "",
       "websiteUrl": "https://web.infn.it/game/",
       "websiteLabel": {
@@ -935,7 +935,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1003,7 +1003,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1071,7 +1071,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1139,7 +1139,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1191,7 +1191,7 @@ const programmeActivities2026 = {
       "format": "",
       "duration": "",
       "sessions25": "TBD",
-      "sessions26": "TBD",
+      "sessions26": "",
       "maxParticipants": "150",
       "bookingRequired": {
         "en": "Yes",
@@ -1255,7 +1255,7 @@ const programmeActivities2026 = {
       },
       "duration": "45",
       "sessions25": "TBD",
-      "sessions26": "TBD",
+      "sessions26": "",
       "maxParticipants": "150",
       "bookingRequired": {
         "en": "Yes",
@@ -1323,7 +1323,7 @@ const programmeActivities2026 = {
       },
       "duration": "15",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1391,7 +1391,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1459,7 +1459,7 @@ const programmeActivities2026 = {
       },
       "duration": "15",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "2-4",
       "bookingRequired": {
         "en": "No",
@@ -1523,7 +1523,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1587,7 +1587,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1655,7 +1655,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -1723,7 +1723,7 @@ const programmeActivities2026 = {
       },
       "duration": "",
       "sessions25": "17-22",
-      "sessions26": "17-22",
+      "sessions26": "",
       "maxParticipants": "",
       "bookingRequired": {
         "en": "No",
@@ -4095,7 +4095,7 @@ function eventIncludesDay(day) {
 function sharedZoneActivitiesForEvent() {
   if (!eventProgramme) return [];
   const sessions25 = eventIncludesDay("25") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
-  const sessions26 = eventIncludesDay("26") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
+  const sessions26 = eventKey !== "avezzano" && eventIncludesDay("26") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
   const cityCode = String(eventKey || "ernest").toUpperCase().replace(/[^A-Z0-9]/g, "-");
   const allAges = { en: "All ages", it: "Tutte le età", fr: "Tous les âges" };
 
