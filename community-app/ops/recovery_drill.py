@@ -29,6 +29,23 @@ def guard():
         raise RuntimeError('Do not mount the SMTP secret in a recovery drill')
 
 
+def serialize_snapshot(objects):
+    # Django's default JSON encoder truncates datetimes to milliseconds. A
+    # recovery snapshot must preserve the exact identity timestamp used by the
+    # signed deletion receipt, as a native MySQL backup does.
+    from datetime import datetime
+    from django.core import serializers
+    from django.core.serializers.json import DjangoJSONEncoder
+
+    class ExactDateTimeEncoder(DjangoJSONEncoder):
+        def default(self, value):
+            if isinstance(value, datetime):
+                return value.isoformat()
+            return super().default(value)
+
+    return serializers.serialize('json', objects, cls=ExactDateTimeEncoder)
+
+
 STAGE = 'guard'
 
 def run():
@@ -145,7 +162,7 @@ def run():
                 # A synthetic-only logical backup from before a deletion. Real
                 # participant data never leaves the clone or appears in this file.
                 STAGE = 'synthetic_backup'
-                snapshot = serializers.serialize('json', [user, user.accountemail,
+                snapshot = serialize_snapshot([user, user.accountemail,
                     *Attempt.objects.filter(user=user), Session.objects.get(pk=client.session.session_key)])
                 operation = PrivacyOperation.objects.create(reference=name, subject=user,
                     subject_id_at_request=user.pk, subject_joined_at=user.date_joined,
@@ -160,12 +177,15 @@ def run():
                 # Reintroduce only the synthetic account from its older backup.
                 STAGE = 'synthetic_restore'
                 for obj in serializers.deserialize('json', snapshot): obj.save()
-                assert User.objects.filter(pk=user_id).exists()
+                assert User.objects.filter(pk=user_id, date_joined=operation.subject_joined_at).exists()
                 STAGE = 'deletion_replay'
                 call_command('reapply_privacy_deletions', str(receipt), stdout=io.StringIO())
                 assert User.objects.filter(pk=user_id).exists()
+                STAGE = 'deletion_apply'
                 call_command('reapply_privacy_deletions', str(receipt), apply=True, stdout=io.StringIO())
+                STAGE = 'deletion_repeat'
                 call_command('reapply_privacy_deletions', str(receipt), apply=True, stdout=io.StringIO())
+                STAGE = 'deletion_readback'
                 assert not User.objects.filter(pk=user_id).exists()
                 assert not AccountEmail.objects.filter(user_id=user_id).exists()
                 assert not Attempt.objects.filter(user_id=user_id).exists()
