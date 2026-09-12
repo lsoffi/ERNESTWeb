@@ -5,7 +5,7 @@ metadata:
   namespace: ernest-community
 spec:
   schedule: '*/15 * * * *'
-  suspend: true  # Enable after validating the image and a dry run.
+  suspend: false
   concurrencyPolicy: Forbid
   startingDeadlineSeconds: 600
   successfulJobsHistoryLimit: 3
@@ -23,9 +23,9 @@ spec:
           automountServiceAccountToken: false
           containers:
             - name: cleanup
-              # Replace with the verified application image digest before applying.
-              image: image-registry.openshift-image-registry.svc:5000/ernest-community/ernest-test:latest
-              imagePullPolicy: Always
+              # Verified application image: build ernest-test-17, commit 57cc9a6.
+              image: image-registry.openshift-image-registry.svc:5000/ernest-community/ernest-test@sha256:dfccd1106522417699f598d8ab953184abaa807a85c2747e21a9a492ff44ebf3
+              imagePullPolicy: IfNotPresent
               workingDir: /opt/app-root/src
               command: ['python', 'manage.py', 'cleanup_community']
               env:
