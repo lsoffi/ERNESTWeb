@@ -2571,6 +2571,17 @@ html[data-theme="dark"] .credits-disclosure {
   padding: 0.55rem;
 }
 
+.program-activity-card[data-activity-id="AVE-019"] .program-activity-media {
+  aspect-ratio: auto;
+}
+
+.program-activity-card[data-activity-id="AVE-019"] .program-activity-media img {
+  height: auto;
+  box-sizing: border-box;
+  object-fit: contain;
+  object-position: center;
+}
+
 .program-activity-card[data-activity-id="AVE-007"] .program-activity-media img {
   object-position: center 24%;
 }
