@@ -2053,6 +2053,16 @@ li {
   padding: 0;
 }
 
+.ernest-extra-list .event-image[src$="iceri2026-banner.jpg"] {
+  object-position: left center;
+}
+
+.ernest-extra-list .ernest-extra-conference-image {
+  object-fit: contain;
+  object-position: center;
+  background: var(--page-bg);
+}
+
 .ernest-extra-list .event-image + .event-date {
   padding-top: 28px;
 }
