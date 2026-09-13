@@ -1479,7 +1479,7 @@ const programmeActivities2026 = {
       },
       "title": {
         "en": "Dice Hide a Secret",
-        "it": "I dadi nascondono un segreto",
+        "it": "CSI - I dadi nascondono un segreto",
         "fr": "Les dés cachent un secret"
       },
       "type": {
@@ -1496,6 +1496,94 @@ const programmeActivities2026 = {
         "en": "Probability, data analysis",
         "it": "Probabilità, analisi dati",
         "fr": "Probabilités, analyse de données"
+      },
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "sessions25": "17-22",
+      "sessions26": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "bookingMethod": {
+        "en": "Not applicable",
+        "it": "Non applicabile",
+        "fr": "Non applicable"
+      },
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
+    },
+    {
+      "id": "AVE-019",
+      "sourceActivityId": "CSI-005",
+      "city": {
+        "en": "Avezzano",
+        "it": "Avezzano",
+        "fr": "Avezzano"
+      },
+      "image": "activities-ern-2026_img/avezzano-operazione-oro.png",
+      "venue": {
+        "en": "Castello Orsini",
+        "it": "Castello Orsini",
+        "fr": "Castello Orsini"
+      },
+      "area": {
+        "en": "Gardens",
+        "it": "Giardini",
+        "fr": "Jardins"
+      },
+      "title": {
+        "en": "CSI - Operation Gold: the Secret Is in the Nucleus",
+        "it": "CSI - Operazione oro: il segreto è nel nucleo",
+        "fr": "CSI - Opération or : le secret est dans le noyau"
+      },
+      "type": {
+        "en": "Classroom Science Investigation",
+        "it": "Classroom Science Investigation",
+        "fr": "Classroom Science Investigation"
+      },
+      "description": {
+        "it": "Hai davanti un modello di nucleo di piombo. La missione: trasformarlo in oro togliendo alcune palline. Quali? La tavola periodica custodisce l’indizio decisivo. Osserva, formula un’ipotesi e mettila alla prova, poi scopri con chi conduce il gioco come l’esperimento ALICE ha osservato la trasformazione del piombo in oro all’LHC.",
+        "en": "You have a model of a lead nucleus in front of you. Your mission: turn it into gold by removing some balls. Which ones? The periodic table holds the crucial clue. Observe, form a hypothesis and test it, then discover with the facilitator how the ALICE experiment observed the transformation of lead into gold at the LHC.",
+        "fr": "Devant vous se trouve un modèle de noyau de plomb. Votre mission : le transformer en or en retirant quelques billes. Lesquelles ? Le tableau périodique cache l’indice décisif. Observez, formulez une hypothèse et testez-la, puis découvrez avec la personne qui anime le jeu comment l’expérience ALICE a observé la transformation du plomb en or au LHC."
+      },
+      "topic": {
+        "it": "Nuclei atomici, elementi e LHC",
+        "en": "Atomic nuclei, elements and the LHC",
+        "fr": "Noyaux atomiques, éléments et LHC"
       },
       "age": {
         "en": "All ages",
@@ -4424,6 +4512,7 @@ function activitySortWeight(activity) {
   if (activity.id === "AVE-018") return 2.5; // INFN Game immediately after INFN Kids (AVE-002).
   if (activity.id === "AVE-011") return 110;
   if (activity.id === "AVE-016") return 111;
+  if (activity.id === "AVE-019") return 112;
   if (activity.id === "AVE-006") return 900;
   if (activity.id === "AVE-005") return 910;
   return Number.parseInt(String(activity.id || "").replace(/\D/g, ""), 10) || 0;
@@ -4440,8 +4529,14 @@ function activityZoneKey(activity) {
   return "investigation";
 }
 
-function createDetail(label, value) {
+// Keep provisional data for day filters, but omit unconfirmed values from public cards.
+function confirmedText(value) {
   const text = localise(value).trim();
+  return /^(?:da confermare|da definire|in definizione|to be confirmed|to be defined|à confirmer|à définir|tbc|tbd)$/i.test(text) ? "" : text;
+}
+
+function createDetail(label, value) {
+  const text = confirmedText(value);
   if (!text) return "";
   return `<div><dt>${label}</dt><dd>${text}</dd></div>`;
 }
@@ -4459,14 +4554,14 @@ function activityImageMarkup(activity) {
 }
 
 function renderActivityCard(activity, currentDay = "all") {
-  const title = localise(activity.title).trim();
-  const type = localise(activity.type).trim();
-  const topic = localise(activity.topic).trim();
-  const format = localise(activity.format).trim();
-  const duration = localise(activity.duration).trim();
+  const title = confirmedText(activity.title).trim();
+  const type = confirmedText(activity.type).trim();
+  const topic = confirmedText(activity.topic).trim();
+  const format = confirmedText(activity.format).trim();
+  const duration = confirmedText(activity.duration).trim();
   const isEscapeRoom = type.toLowerCase().includes("escape room");
-  const sessions25 = localise(activity.sessions25).trim();
-  const sessions26 = localise(activity.sessions26).trim();
+  const sessions25 = confirmedText(activity.sessions25).trim();
+  const sessions26 = confirmedText(activity.sessions26).trim();
   const sessions = (isEscapeRoom || activity.showSchedule)
     ? (eventKey === "padova" && !sessions26
         ? sessions25
@@ -4488,7 +4583,7 @@ function renderActivityCard(activity, currentDay = "all") {
     createDetail(copy.labels.duration, duration ? (/^\d+$/.test(duration) ? `${duration} min` : duration) : ""),
     activityZoneKey(activity) === "investigation" && (isEscapeRoom || activity.showSchedule) ? createDetail(copy.labels.sessions, sessions) : "",
     (eventKey !== "avezzano" || activity.id === "AVE-001") ? createDetail(copy.labels.maxParticipants, activity.maxParticipants) : "",
-    (eventKey === "avezzano" ? ["AVE-001", "AVE-010"].includes(activity.id) : (isEscapeRoom || activity.showBooking)) ? createDetail(copy.labels.booking, [...new Set([localise(activity.bookingRequired), localise(activity.bookingMethod)].filter(Boolean))].join(" · ")) : "",
+    (eventKey === "avezzano" ? ["AVE-001", "AVE-010"].includes(activity.id) : (isEscapeRoom || activity.showBooking)) ? createDetail(copy.labels.booking, [...new Set([confirmedText(activity.bookingRequired), confirmedText(activity.bookingMethod)].filter(Boolean))].join(" · ")) : "",
     (eventKey !== "avezzano" || activity.id === "AVE-001") ? createDetail(copy.labels.accessibility, activity.accessibility) : "",
     createDetail(copy.labels.partner, activity.partner)
   ].filter(Boolean).join("");
@@ -4502,12 +4597,12 @@ function renderActivityCard(activity, currentDay = "all") {
           ${topic ? `<span class="program-activity-tag">${topic}</span>` : ""}
           ${(isEscapeRoom || activity.showFormat) && format ? `<span class="program-activity-tag">${format}</span>` : ""}
         </div>
-        <h3>${title || localise(activity.id)}</h3>
-        ${localise(activity.description).trim() ? `<p class="program-activity-description">${localise(activity.description).trim()}</p>` : ""}
+        <h3>${title || confirmedText(activity.id)}</h3>
+        ${confirmedText(activity.description).trim() ? `<p class="program-activity-description">${confirmedText(activity.description).trim()}</p>` : ""}
         <dl class="program-activity-details">${details}</dl>
         ${activity.imageCredit ? `<p class="program-activity-photo-credit"><small>${activity.imageCredit}</small></p>` : ""}
-        ${localise(activity.websiteUrl).trim() ? `<a class="text-link" href="${localise(activity.websiteUrl).trim()}" target="_blank" rel="noopener noreferrer">${localise(activity.websiteLabel).trim() || localise(activity.title).trim()}</a>` : ""}
-        ${localise(activity.bookingUrl).trim() ? `<a class="button button-primary program-activity-booking" href="${localise(activity.bookingUrl).trim()}" target="_blank" rel="noopener noreferrer">${localise(activity.bookingLabel).trim() || localise(activity.bookingMethod).trim() || copy.labels.booking}</a>` : ""}
+        ${confirmedText(activity.websiteUrl).trim() ? `<a class="text-link" href="${confirmedText(activity.websiteUrl).trim()}" target="_blank" rel="noopener noreferrer">${confirmedText(activity.websiteLabel).trim() || confirmedText(activity.title).trim()}</a>` : ""}
+        ${confirmedText(activity.bookingUrl).trim() ? `<a class="button button-primary program-activity-booking" href="${confirmedText(activity.bookingUrl).trim()}" target="_blank" rel="noopener noreferrer">${confirmedText(activity.bookingLabel).trim() || confirmedText(activity.bookingMethod).trim() || copy.labels.booking}</a>` : ""}
       </div>
     </article>`;
 }
@@ -4662,6 +4757,6 @@ if (!eventProgramme) {
   setText("program-city", city);
   setText("program-institution", localise(eventProgramme.institution));
   setText("program-venue", localise(eventProgramme.venue));
-  setText("program-time", localise(eventProgramme.time) || localise({ en: "To be defined", it: "Da definire", fr: "À définir" }));
+  setText("program-time", confirmedText(eventProgramme.time));
   renderActivities();
 }
