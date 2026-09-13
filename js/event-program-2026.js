@@ -878,9 +878,9 @@ const programmeActivities2026 = {
       "notes": "",
       "bookingUrl": "https://l.infn.it/prenotazioni-hepscape-avezzano2026",
       "bookingLabel": {
-        "en": "Book HEPscape in Avezzano",
-        "it": "Prenota HEPscape ad Avezzano",
-        "fr": "Réserver HEPscape à Avezzano"
+        "en": "Book HEPscape! in Avezzano",
+        "it": "Prenota HEPscape! ad Avezzano",
+        "fr": "Réserver HEPscape! à Avezzano"
       }
     },
     {
@@ -949,6 +949,12 @@ const programmeActivities2026 = {
       },
       "accessibility": "",
       "partner": "",
+      "websiteUrl": "https://web.infn.it/infn-kids/",
+      "websiteLabel": {
+        "en": "Explore INFN Kids",
+        "it": "Scopri INFN Kids",
+        "fr": "Découvrir INFN Kids"
+      },
       "notes": ""
     },
     {
@@ -959,7 +965,9 @@ const programmeActivities2026 = {
         "it": "Avezzano",
         "fr": "Avezzano"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/avezzano-esa-juice-earth.png",
+      "imagePosition": "center bottom",
+      "imageCredit": "ESA/Juice/JMC · Simeon Schmauß & Mark McCaughrean · <a href=\"https://www.esa.int/ESA_Multimedia/Images/2024/08/Juice_images_Earth_during_lunar-Earth_flyby\" target=\"_blank\" rel=\"noopener noreferrer\">ESA</a> · <a href=\"https://creativecommons.org/licenses/by-sa/3.0/igo/\" target=\"_blank\" rel=\"noopener noreferrer\">CC BY-SA 3.0 IGO</a>",
       "venue": {
         "en": "Castello Orsini",
         "it": "Castello Orsini",
@@ -1040,7 +1048,7 @@ const programmeActivities2026 = {
       },
       "title": {
         "en": "Giant Experiments in VR",
-        "it": "Giant Experiments in VR",
+        "it": "Alla scoperta dei grandi esperimenti scientifici con la realtà virtuale",
         "fr": "Giant Experiments in VR"
       },
       "type": {
@@ -1156,58 +1164,6 @@ const programmeActivities2026 = {
       "notes": ""
     },
     {
-      "id": "AVE-009",
-      "sourceActivityId": "9",
-      "city": {
-        "en": "Avezzano",
-        "it": "Avezzano",
-        "fr": "Avezzano"
-      },
-      "image": "",
-      "venue": {
-        "en": "Castello Orsini",
-        "it": "Castello Orsini",
-        "fr": "Castello Orsini"
-      },
-      "area": {
-        "en": "Teatro",
-        "it": "Teatro",
-        "fr": "Teatro"
-      },
-      "title": {
-        "en": "Seminario Telespazio",
-        "it": "Seminario Telespazio",
-        "fr": "Seminario Telespazio"
-      },
-      "type": {
-        "en": "Talk",
-        "it": "Incontro",
-        "fr": "Rencontre"
-      },
-      "description": "",
-      "topic": "",
-      "age": "",
-      "ageAdaptation": "",
-      "format": "",
-      "duration": "",
-      "sessions25": "TBD",
-      "sessions26": "",
-      "maxParticipants": "150",
-      "bookingRequired": {
-        "en": "Yes",
-        "it": "Sì",
-        "fr": "Oui"
-      },
-      "bookingMethod": {
-        "en": "Online registration",
-        "it": "Registrazione online",
-        "fr": "Inscription en ligne"
-      },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
-    },
-    {
       "id": "AVE-010",
       "sourceActivityId": "10",
       "city": {
@@ -1228,7 +1184,7 @@ const programmeActivities2026 = {
       },
       "title": {
         "en": "Seminario LHC",
-        "it": "Seminario LHC",
+        "it": "Seminario LHC: viaggio nei segreti dell’Universo",
         "fr": "Seminario LHC"
       },
       "type": {
@@ -1490,7 +1446,8 @@ const programmeActivities2026 = {
         "it": "Avezzano",
         "fr": "Avezzano"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/avezzano-castello-orsini-colonna.jpg",
+      "imageCredit": "© Rudy Massaro · <a href=\"https://commons.wikimedia.org/wiki/File:Avezzano_castello_Orsini-Colonna.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a> · <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"noopener noreferrer\">CC BY-SA 4.0</a>",
       "venue": {
         "en": "Castello Orsini",
         "it": "Castello Orsini",
@@ -1502,9 +1459,9 @@ const programmeActivities2026 = {
         "fr": "Giardini"
       },
       "title": {
-        "en": "Attività dimostrative/Esperimenti",
-        "it": "Attività dimostrative/Esperimenti",
-        "fr": "Attività dimostrative/Esperimenti"
+        "en": "Demonstrations/Experiments by local schools",
+        "it": "Attività dimostrative/Esperimenti da parte delle scuole del territorio",
+        "fr": "Démonstrations/Expériences proposées par les écoles du territoire"
       },
       "type": {
         "en": "Hands-on Activity",
@@ -4163,6 +4120,7 @@ function activitySortWeight(activity) {
   if (activity.zone === "eu") return 900;
   if (activity.zone === "debrief") return 910;
   if (activity.id === "AVE-004") return -100;
+  if (activity.id === "AVE-018") return 2.5; // INFN Game immediately after INFN Kids (AVE-002).
   if (activity.id === "AVE-011") return 110;
   if (activity.id === "AVE-016") return 111;
   if (activity.id === "AVE-006") return 900;
@@ -4196,7 +4154,7 @@ function activityImageMarkup(activity) {
     return `<div class="program-activity-image-placeholder">${copy.imagePlaceholder}</div>`;
   }
   const src = selectedImage.startsWith("http") || selectedImage.startsWith(assetPrefix) ? selectedImage : `${assetPrefix}${selectedImage}`;
-  return `<img src="${src}" alt="${title}">`;
+  return `<img src="${src}" alt="${title}"${activity.imagePosition ? ` style="object-position: ${activity.imagePosition}"` : ""}>`;
 }
 
 function renderActivityCard(activity, currentDay = "all") {
@@ -4246,6 +4204,7 @@ function renderActivityCard(activity, currentDay = "all") {
         <h3>${title || localise(activity.id)}</h3>
         ${localise(activity.description).trim() ? `<p class="program-activity-description">${localise(activity.description).trim()}</p>` : ""}
         <dl class="program-activity-details">${details}</dl>
+        ${activity.imageCredit ? `<p class="program-activity-photo-credit"><small>${activity.imageCredit}</small></p>` : ""}
         ${localise(activity.websiteUrl).trim() ? `<a class="text-link" href="${localise(activity.websiteUrl).trim()}" target="_blank" rel="noopener noreferrer">${localise(activity.websiteLabel).trim() || localise(activity.title).trim()}</a>` : ""}
         ${localise(activity.bookingUrl).trim() ? `<a class="button button-primary program-activity-booking" href="${localise(activity.bookingUrl).trim()}" target="_blank" rel="noopener noreferrer">${localise(activity.bookingLabel).trim() || localise(activity.bookingMethod).trim() || copy.labels.booking}</a>` : ""}
       </div>
@@ -4299,9 +4258,9 @@ function hepscapeActivitiesForEvent() {
   };
   const bookingLabels = {
     pisa: {
-      en: "Book HEPscape in Pisa",
-      it: "Prenota HEPscape a Pisa",
-      fr: "Réserver HEPscape à Pise"
+      en: "Book HEPscape! in Pisa",
+      it: "Prenota HEPscape! a Pisa",
+      fr: "Réserver HEPscape! à Pise"
     }
   };
   const images = {
