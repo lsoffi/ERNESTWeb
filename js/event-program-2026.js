@@ -795,7 +795,11 @@ const programmeActivities2026 = {
         "fr": "Physique des particules"
       },
       "partner": "INFN",
-      "sessions25": { "en": "Open", "it": "Aperto", "fr": "Ouvert" },
+      "sessions25": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions26": "",
       "websiteUrl": "https://web.infn.it/game/",
       "websiteLabel": {
@@ -807,7 +811,56 @@ const programmeActivities2026 = {
         "en": "Gardens",
         "it": "Giardini",
         "fr": "Jardins"
-      }
+      },
+      "venue": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "age": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "ageAdaptation": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "format": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "bookingRequired": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "bookingMethod": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-001",
@@ -824,9 +877,9 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Teatro",
+        "en": "Theatre",
         "it": "Teatro",
-        "fr": "Teatro"
+        "fr": "Théâtre"
       },
       "title": {
         "en": "HEPscape!",
@@ -839,16 +892,20 @@ const programmeActivities2026 = {
         "fr": "Escape room"
       },
       "description": {
-        "en": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica.",
+        "en": "Enter the control room of a major CERN experiment and become part of the research team. Work with your team to solve puzzles, analyse real data, reconstruct a particle detector and complete a mission inspired by the work of physicists. An immersive experience combining play, logic and scientific research to discover how discoveries in physics are made.",
         "it": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica.",
-        "fr": "Entra nella Control Room di un grande esperimento del CERN e diventa parte del team di ricerca. Collaborando con la tua squadra dovrai risolvere enigmi, analizzare dati reali, ricostruire un rivelatore di particelle e completare una missione ispirata al lavoro dei fisici. Un'esperienza immersiva che unisce gioco, logica e autentica ricerca scientifica per scoprire come nasce una nuova scoperta in fisica."
+        "fr": "Entrez dans la salle de contrôle d’une grande expérience du CERN et rejoignez l’équipe de recherche. En équipe, résolvez des énigmes, analysez des données réelles, reconstituez un détecteur de particules et accomplissez une mission inspirée du travail des physiciennes et physiciens. Une expérience immersive mêlant jeu, logique et recherche scientifique pour comprendre comment naît une découverte en physique."
       },
       "topic": {
         "en": "Physics",
-        "it": "Physics",
-        "fr": "Physics"
+        "it": "Fisica",
+        "fr": "Physique"
       },
-      "age": "All Ages",
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
       "ageAdaptation": {
         "en": "Yes",
         "it": "Sì",
@@ -869,19 +926,27 @@ const programmeActivities2026 = {
         "fr": "Oui"
       },
       "bookingMethod": {
-        "en": "Online registration",
-        "it": "Registrazione online",
-        "fr": "Inscription en ligne"
+        "en": "Click the link to book",
+        "it": "Clicca sul link per prenotare",
+        "fr": "Cliquez sur le lien pour réserver"
       },
-      "accessibility": "",
-      "partner": "",
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
       "notes": "",
       "bookingUrl": "https://l.infn.it/prenotazioni-hepscape-avezzano2026",
       "bookingLabel": {
         "en": "Book HEPscape! in Avezzano",
         "it": "Prenota HEPscape! ad Avezzano",
         "fr": "Réserver HEPscape! à Avezzano"
-      }
+      },
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-002",
@@ -898,9 +963,9 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
         "en": "INFN Kids",
@@ -913,14 +978,14 @@ const programmeActivities2026 = {
         "fr": "Activité pratique"
       },
       "description": {
-        "en": "Un'area dedicata ai più piccoli con giochi, esperimenti e attività interattive per scoprire la scienza divertendosi. Attraverso laboratori pratici e sfide, bambini e famiglie potranno esplorare i principi della fisica e conoscere il lavoro dei ricercatori dell'INFN.",
+        "en": "An area for young children with games, experiments and interactive activities to discover science through play. Hands-on workshops and challenges invite children and families to explore the principles of physics and learn about the work of INFN researchers.",
         "it": "Un'area dedicata ai più piccoli con giochi, esperimenti e attività interattive per scoprire la scienza divertendosi. Attraverso laboratori pratici e sfide, bambini e famiglie potranno esplorare i principi della fisica e conoscere il lavoro dei ricercatori dell'INFN.",
-        "fr": "Un'area dedicata ai più piccoli con giochi, esperimenti e attività interattive per scoprire la scienza divertendosi. Attraverso laboratori pratici e sfide, bambini e famiglie potranno esplorare i principi della fisica e conoscere il lavoro dei ricercatori dell'INFN."
+        "fr": "Un espace pour les plus jeunes, avec des jeux, des expériences et des activités interactives pour découvrir la science en s’amusant. Des ateliers pratiques et des défis invitent les enfants et leurs familles à explorer les principes de la physique et le travail des équipes de recherche de l’INFN."
       },
       "topic": {
         "en": "Physics",
-        "it": "Physics",
-        "fr": "Physics"
+        "it": "Fisica",
+        "fr": "Physique"
       },
       "age": "3–5, 6–10",
       "ageAdaptation": {
@@ -933,10 +998,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -947,15 +1020,23 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
       "websiteUrl": "https://web.infn.it/infn-kids/",
       "websiteLabel": {
         "en": "Explore INFN Kids",
         "it": "Scopri INFN Kids",
         "fr": "Découvrir INFN Kids"
       },
-      "notes": ""
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-003",
@@ -974,9 +1055,9 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
         "en": "ESA Quiz",
@@ -989,16 +1070,20 @@ const programmeActivities2026 = {
         "fr": "Installation interactive"
       },
       "description": {
-        "en": "Scopri come l'Europa esplora lo spazio insieme all'Agenzia Spaziale Europea (ESA). Attraverso materiali divulgativi, attività interattive e il confronto con ricercatori ed esperti, potrai conoscere le missioni spaziali europee, le tecnologie sviluppate per l'esplorazione dell'Universo e il loro impatto sulla vita di tutti i giorni. Un'occasione per avvicinarsi al mondo dello spazio e alle sfide della ricerca del futuro.",
+        "en": "Discover how Europe explores space with the European Space Agency (ESA). Educational materials, interactive activities and conversations with researchers and experts introduce European space missions, technologies for exploring the Universe and their impact on everyday life. An opportunity to discover space and the research challenges of the future.",
         "it": "Scopri come l'Europa esplora lo spazio insieme all'Agenzia Spaziale Europea (ESA). Attraverso materiali divulgativi, attività interattive e il confronto con ricercatori ed esperti, potrai conoscere le missioni spaziali europee, le tecnologie sviluppate per l'esplorazione dell'Universo e il loro impatto sulla vita di tutti i giorni. Un'occasione per avvicinarsi al mondo dello spazio e alle sfide della ricerca del futuro.",
-        "fr": "Scopri come l'Europa esplora lo spazio insieme all'Agenzia Spaziale Europea (ESA). Attraverso materiali divulgativi, attività interattive e il confronto con ricercatori ed esperti, potrai conoscere le missioni spaziali europee, le tecnologie sviluppate per l'esplorazione dell'Universo e il loro impatto sulla vita di tutti i giorni. Un'occasione per avvicinarsi al mondo dello spazio e alle sfide della ricerca del futuro."
+        "fr": "Découvrez comment l’Europe explore l’espace avec l’Agence spatiale européenne (ESA). Supports de médiation, activités interactives et échanges avec des équipes de recherche et des spécialistes vous feront découvrir les missions spatiales européennes, les technologies d’exploration de l’Univers et leur impact au quotidien. Une occasion d’aborder le monde spatial et les défis de la recherche de demain."
       },
       "topic": {
         "en": "Physics, Astronomy, Engineering, Environment, Earth Sciences",
-        "it": "Physics, Astronomy, Engineering, Environment, Earth Sciences",
-        "fr": "Physics, Astronomy, Engineering, Environment, Earth Sciences"
+        "it": "Fisica, Astronomia, Ingegneria, Ambiente, Scienze della Terra",
+        "fr": "Physique, Astronomie, Ingénierie, Environnement, Sciences de la Terre"
       },
-      "age": "All Ages",
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
       "ageAdaptation": {
         "en": "Yes",
         "it": "Sì",
@@ -1009,10 +1094,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1023,9 +1116,17 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "ESA",
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-007",
@@ -1042,14 +1143,14 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
-        "en": "Giant Experiments in VR",
+        "en": "Discover great scientific experiments through virtual reality",
         "it": "Alla scoperta dei grandi esperimenti scientifici con la realtà virtuale",
-        "fr": "Giant Experiments in VR"
+        "fr": "À la découverte des grandes expériences scientifiques en réalité virtuelle"
       },
       "type": {
         "en": "VR/AR Experience",
@@ -1057,14 +1158,14 @@ const programmeActivities2026 = {
         "fr": "Expérience VR/AR"
       },
       "description": {
-        "en": "Indossa un visore per la realtà virtuale ed esplora alcuni dei più grandi esperimenti scientifici al mondo. Entra nei laboratori di ricerca, osserva da vicino strumenti straordinari e scopri come migliaia di ricercatrici e ricercatori collaborano a livello internazionale per studiare l'Universo, dalle particelle elementari al cosmo.",
+        "en": "Put on a virtual reality headset and explore some of the world’s largest scientific experiments. Enter research laboratories, see extraordinary instruments up close and discover how thousands of researchers collaborate internationally to study the Universe, from elementary particles to the cosmos.",
         "it": "Indossa un visore per la realtà virtuale ed esplora alcuni dei più grandi esperimenti scientifici al mondo. Entra nei laboratori di ricerca, osserva da vicino strumenti straordinari e scopri come migliaia di ricercatrici e ricercatori collaborano a livello internazionale per studiare l'Universo, dalle particelle elementari al cosmo.",
-        "fr": "Indossa un visore per la realtà virtuale ed esplora alcuni dei più grandi esperimenti scientifici al mondo. Entra nei laboratori di ricerca, osserva da vicino strumenti straordinari e scopri come migliaia di ricercatrici e ricercatori collaborano a livello internazionale per studiare l'Universo, dalle particelle elementari al cosmo."
+        "fr": "Enfilez un casque de réalité virtuelle et explorez certaines des plus grandes expériences scientifiques au monde. Entrez dans les laboratoires, observez de près des instruments extraordinaires et découvrez comment des milliers de scientifiques collaborent à l’échelle internationale pour étudier l’Univers, des particules élémentaires au cosmos."
       },
       "topic": {
         "en": "Physics, Astronomy, Climate, Earth Sciences",
-        "it": "Physics, Astronomy, Climate, Earth Sciences",
-        "fr": "Physics, Astronomy, Climate, Earth Sciences"
+        "it": "Fisica, Astronomia, Clima, Scienze della Terra",
+        "fr": "Physique, Astronomie, Climat, Sciences de la Terre"
       },
       "age": "11–14, 15–18, 18+",
       "ageAdaptation": {
@@ -1077,10 +1178,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1091,9 +1200,17 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-008",
@@ -1110,14 +1227,14 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
-        "en": "Ascolta l'Universo: alla scoperta delle onde gravitazionali",
+        "en": "Listen to the Universe: discovering gravitational waves",
         "it": "Ascolta l'Universo: alla scoperta delle onde gravitazionali",
-        "fr": "Ascolta l'Universo: alla scoperta delle onde gravitazionali"
+        "fr": "Écouter l’Univers : à la découverte des ondes gravitationnelles"
       },
       "type": {
         "en": "Hands-on Activity, Interactive Installation",
@@ -1125,14 +1242,14 @@ const programmeActivities2026 = {
         "fr": "Activité pratique, Installation interactive"
       },
       "description": {
-        "en": "Scopri come gli scienziati riescono a \"ascoltare\" l'Universo attraverso le onde gravitazionali, minuscole increspature dello spazio-tempo prodotte dagli eventi più violenti del cosmo. Esplora come funzionano i grandi rivelatori, cosa ci raccontano le collisioni tra buchi neri e stelle di neutroni e come questa straordinaria scoperta ha aperto una nuova finestra sull'Universo.",
+        "en": "Discover how scientists listen to the Universe through gravitational waves: tiny ripples in spacetime produced by the most violent events in the cosmos. Explore how giant detectors work, what collisions between black holes and neutron stars reveal, and how this extraordinary discovery opened a new window on the Universe.",
         "it": "Scopri come gli scienziati riescono a \"ascoltare\" l'Universo attraverso le onde gravitazionali, minuscole increspature dello spazio-tempo prodotte dagli eventi più violenti del cosmo. Esplora come funzionano i grandi rivelatori, cosa ci raccontano le collisioni tra buchi neri e stelle di neutroni e come questa straordinaria scoperta ha aperto una nuova finestra sull'Universo.",
-        "fr": "Scopri come gli scienziati riescono a \"ascoltare\" l'Universo attraverso le onde gravitazionali, minuscole increspature dello spazio-tempo prodotte dagli eventi più violenti del cosmo. Esplora come funzionano i grandi rivelatori, cosa ci raccontano le collisioni tra buchi neri e stelle di neutroni e come questa straordinaria scoperta ha aperto una nuova finestra sull'Universo."
+        "fr": "Découvrez comment les scientifiques écoutent l’Univers grâce aux ondes gravitationnelles, de minuscules ondulations de l’espace-temps produites par les événements les plus violents du cosmos. Explorez le fonctionnement des grands détecteurs, ce que révèlent les collisions de trous noirs et d’étoiles à neutrons, et comment cette découverte a ouvert une nouvelle fenêtre sur l’Univers."
       },
       "topic": {
         "en": "Physics, Astronomy",
-        "it": "Physics, Astronomy",
-        "fr": "Physics, Astronomy"
+        "it": "Fisica, Astronomia",
+        "fr": "Physique, Astronomie"
       },
       "age": "6–10, 11–14, 15–18, 18+",
       "ageAdaptation": {
@@ -1145,10 +1262,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1159,9 +1284,17 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-010",
@@ -1178,25 +1311,29 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Teatro",
+        "en": "Theatre",
         "it": "Teatro",
-        "fr": "Teatro"
+        "fr": "Théâtre"
       },
       "title": {
-        "en": "Seminario LHC",
+        "en": "LHC seminar: a journey into the secrets of the Universe",
         "it": "Seminario LHC: viaggio nei segreti dell’Universo",
-        "fr": "Seminario LHC"
+        "fr": "Séminaire LHC : voyage dans les secrets de l’Univers"
       },
       "type": {
         "en": "Talk",
         "it": "Incontro",
         "fr": "Rencontre"
       },
-      "description": "",
+      "description": {
+        "en": "What happens when particles collide at almost the speed of light? Discover LHC, CERN’s great accelerator, and the experiments investigating the building blocks of matter. From the Higgs boson to unanswered questions about the Universe, this seminar takes you on a journey through giant instruments and discoveries about the very small.",
+        "it": "Che cosa succede quando le particelle si scontrano quasi alla velocità della luce? Un seminario per scoprire LHC, il grande acceleratore del CERN, e gli esperimenti che indagano i costituenti della materia. Dal bosone di Higgs alle domande ancora aperte sull’Universo, un viaggio tra strumenti giganteschi e scoperte sull’infinitamente piccolo.",
+        "fr": "Que se passe-t-il lorsque des particules entrent en collision presque à la vitesse de la lumière ? Découvrez le LHC, le grand accélérateur du CERN, et les expériences qui étudient les constituants de la matière. Du boson de Higgs aux questions encore ouvertes sur l’Univers, ce séminaire propose un voyage entre instruments géants et découvertes sur l’infiniment petit."
+      },
       "topic": {
         "en": "Physics",
-        "it": "Physics",
-        "fr": "Physics"
+        "it": "Fisica",
+        "fr": "Physique"
       },
       "age": "15–18, 18+",
       "ageAdaptation": {
@@ -1226,13 +1363,20 @@ const programmeActivities2026 = {
         "fr": "Réserver le séminaire LHC"
       },
       "bookingMethod": {
-        "en": "Online registration, Information desk, First Come, First Served",
-        "it": "Registrazione online, Desk informazioni, First Come, First Served",
-        "fr": "Inscription en ligne, Point information, First Come, First Served"
+        "en": "Click the link to book",
+        "it": "Clicca sul link per prenotare",
+        "fr": "Cliquez sur le lien pour réserver"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
+      "notes": "",
+      "showFormat": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-011",
@@ -1249,14 +1393,14 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
-        "en": "CSI - Caccia al bosone di Higgs",
+        "en": "CSI – The hunt for the Higgs boson",
         "it": "CSI - Caccia al bosone di Higgs",
-        "fr": "CSI - Caccia al bosone di Higgs"
+        "fr": "CSI – À la recherche du boson de Higgs"
       },
       "type": {
         "en": "Talk, Hands-on Activity",
@@ -1264,14 +1408,14 @@ const programmeActivities2026 = {
         "fr": "Rencontre, Activité pratique"
       },
       "description": {
-        "en": "Un’indagine scientifica a squadre in cui i partecipanti analizzano indizi, formulano ipotesi e affrontano semplici esperimenti per ricostruire le tracce del misterioso bosone di Higgs e scoprire come lavorano davvero i fisici delle particelle.",
+        "en": "A team investigation in which participants analyse clues, form hypotheses and tackle simple experiments to reconstruct the traces of the mysterious Higgs boson and discover how particle physicists really work.",
         "it": "Un’indagine scientifica a squadre in cui i partecipanti analizzano indizi, formulano ipotesi e affrontano semplici esperimenti per ricostruire le tracce del misterioso bosone di Higgs e scoprire come lavorano davvero i fisici delle particelle.",
-        "fr": "Un’indagine scientifica a squadre in cui i partecipanti analizzano indizi, formulano ipotesi e affrontano semplici esperimenti per ricostruire le tracce del misterioso bosone di Higgs e scoprire come lavorano davvero i fisici delle particelle."
+        "fr": "Une enquête scientifique en équipe : analysez des indices, formulez des hypothèses et réalisez des expériences simples pour reconstituer les traces du mystérieux boson de Higgs et découvrir le travail de la recherche en physique des particules."
       },
       "topic": {
         "en": "Physics",
-        "it": "Physics",
-        "fr": "Physics"
+        "it": "Fisica",
+        "fr": "Physique"
       },
       "age": "15–18, 18+",
       "ageAdaptation": {
@@ -1287,7 +1431,11 @@ const programmeActivities2026 = {
       "duration": "15",
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1298,9 +1446,17 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-016",
@@ -1317,9 +1473,9 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
         "en": "Dice Hide a Secret",
@@ -1341,7 +1497,11 @@ const programmeActivities2026 = {
         "it": "Probabilità, analisi dati",
         "fr": "Probabilités, analyse de données"
       },
-      "age": "All Ages",
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
       "ageAdaptation": {
         "en": "Yes",
         "it": "Sì",
@@ -1352,10 +1512,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1366,9 +1534,17 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-017",
@@ -1385,9 +1561,9 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
         "en": "Tutti Quantum",
@@ -1434,9 +1610,17 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
       "partner": "Helvetiq · UNSOLVeD",
-      "notes": ""
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-012",
@@ -1454,9 +1638,9 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
         "en": "Demonstrations/Experiments by local schools",
@@ -1468,13 +1652,21 @@ const programmeActivities2026 = {
         "it": "Attività pratica",
         "fr": "Activité pratique"
       },
-      "description": "",
-      "topic": {
-        "en": "Physics, Astronomy, Biology, Environment, Interdisciplinary",
-        "it": "Physics, Astronomy, Biology, Environment, Interdisciplinary",
-        "fr": "Physics, Astronomy, Biology, Environment, Interdisciplinary"
+      "description": {
+        "en": "Science comes to life with local schools! Meet those who learn and experiment every day, explore scientific phenomena and discover demonstrations and experiments. Bring your questions and enjoy observing, reasoning and looking for explanations together.",
+        "it": "La scienza prende forma con le scuole del territorio! Un’occasione per incontrare chi impara e sperimenta ogni giorno, esplorare fenomeni scientifici e lasciarsi sorprendere da dimostrazioni ed esperimenti. Porta le tue domande e scopri il piacere di osservare, ragionare e cercare insieme una spiegazione.",
+        "fr": "La science prend vie avec les écoles du territoire ! Rencontrez celles et ceux qui apprennent et expérimentent chaque jour, explorez des phénomènes scientifiques et découvrez démonstrations et expériences. Venez avec vos questions et prenez plaisir à observer, raisonner et chercher ensemble des explications."
       },
-      "age": "All Ages",
+      "topic": {
+        "en": "Physics, astronomy, biology, environment, interdisciplinary",
+        "it": "Fisica, astronomia, biologia, ambiente, interdisciplinare",
+        "fr": "Physique, astronomie, biologie, environnement, interdisciplinaire"
+      },
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
       "ageAdaptation": {
         "en": "Yes",
         "it": "Sì",
@@ -1485,10 +1677,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1499,9 +1699,21 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": {
+        "en": "Local schools",
+        "it": "Scuole del territorio",
+        "fr": "Écoles du territoire"
+      },
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-013",
@@ -1518,27 +1730,35 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
-        "en": "Torre delle Stelle: Attività dimostrativa",
+        "en": "Torre delle Stelle: demonstration",
         "it": "Torre delle Stelle: Attività dimostrativa",
-        "fr": "Torre delle Stelle: Attività dimostrativa"
+        "fr": "Torre delle Stelle : démonstration"
       },
       "type": {
         "en": "Demonstration",
         "it": "Dimostrazione",
         "fr": "Démonstration"
       },
-      "description": "",
+      "description": {
+        "it": "Alza gli occhi al cielo con la Torre delle Stelle! Un’attività dimostrativa per avvicinarsi all’astronomia e scoprire come un telescopio ci aiuta a esplorare l’Universo. Tra curiosità e domande, scopri come la luce degli astri racconta ciò che accade nello spazio: un invito a osservare il cielo con occhi nuovi, a tutte le età.",
+        "en": "Look up at the sky with Torre delle Stelle! A demonstration to discover astronomy and learn how a telescope helps us explore the Universe. Bring your curiosity and questions, and find out how light from celestial objects reveals what happens in space: an invitation for all ages to see the sky in a new way.",
+        "fr": "Levez les yeux vers le ciel avec Torre delle Stelle ! Une démonstration pour découvrir l’astronomie et comprendre comment un télescope nous aide à explorer l’Univers. Place à la curiosité et aux questions pour découvrir comment la lumière des astres nous raconte ce qui se passe dans l’espace : une invitation à regarder le ciel autrement, à tout âge."
+      },
       "topic": {
         "en": "Astronomy",
-        "it": "Astronomy",
-        "fr": "Astronomy"
+        "it": "Astronomia",
+        "fr": "Astronomie"
       },
-      "age": "All Ages",
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
       "ageAdaptation": {
         "en": "Yes",
         "it": "Sì",
@@ -1549,10 +1769,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1563,9 +1791,23 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "Osservatorio Torre delle Stelle",
+      "websiteUrl": "https://torredellestelleaielli.it/",
+      "websiteLabel": {
+        "en": "Explore the Torre delle Stelle Observatory",
+        "it": "Scopri l’Osservatorio Torre delle Stelle",
+        "fr": "Découvrir l’Observatoire Torre delle Stelle"
+      },
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-014",
@@ -1582,14 +1824,14 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
-        "en": "NAND e AI: una sinergia fondamentale",
+        "en": "NAND and AI: an essential partnership",
         "it": "NAND e AI: una sinergia fondamentale",
-        "fr": "NAND e AI: una sinergia fondamentale"
+        "fr": "NAND et IA : une synergie fondamentale"
       },
       "type": {
         "en": "Demonstration",
@@ -1597,16 +1839,20 @@ const programmeActivities2026 = {
         "fr": "Démonstration"
       },
       "description": {
-        "en": "L'intelligenza artificiale necessita di enormi quantità di dati per apprendere e operare. Le memorie NAND rappresentano il cuore pulsante di questa rivoluzione tecnologica: permettono di archiviare i dataset massivi utilizzati per addestrare i modelli AI e garantiscono accesso rapido alle informazioni durante l'inferenza. Dai data center cloud che ospitano gli LLM (Large Language Models), modelli di intelligenza artificiale, fino ai dispositivi edge come smartphone e auto autonome che eseguono AI localmente, le memorie NAND ad alte prestazioni sono essenziali. Maggiore è la velocità e la capacità dello storage, più complessi e potenti possono essere i modelli di intelligenza artificiale. Queste memorie vengono progettate anche qui, nel nostro sito di Avezzano, un polo di eccellenza nella ricerca e sviluppo, testimoniando l'impegno concreto nel promuovere innovazione e cultura scientifica sul territorio. In sintesi: senza memorie NAND avanzate, l'AI come la conosciamo oggi non sarebbe possibile. Chi lavora nello sviluppo di memorie sta letteralmente costruendo le fondamenta del futuro dell'intelligenza artificiale.",
+        "en": "Artificial intelligence needs vast amounts of data to learn and operate. NAND memory stores the large datasets used to train AI models and provides rapid access to information during inference. From cloud data centres hosting large language models to devices such as smartphones and autonomous cars running AI locally, high-performance NAND memory is essential. Faster, higher-capacity storage supports more complex and powerful AI models. These memories are also designed at the Avezzano site, a centre for research and development that contributes to technological innovation and scientific culture in the local area.",
         "it": "L'intelligenza artificiale necessita di enormi quantità di dati per apprendere e operare. Le memorie NAND rappresentano il cuore pulsante di questa rivoluzione tecnologica: permettono di archiviare i dataset massivi utilizzati per addestrare i modelli AI e garantiscono accesso rapido alle informazioni durante l'inferenza. Dai data center cloud che ospitano gli LLM (Large Language Models), modelli di intelligenza artificiale, fino ai dispositivi edge come smartphone e auto autonome che eseguono AI localmente, le memorie NAND ad alte prestazioni sono essenziali. Maggiore è la velocità e la capacità dello storage, più complessi e potenti possono essere i modelli di intelligenza artificiale. Queste memorie vengono progettate anche qui, nel nostro sito di Avezzano, un polo di eccellenza nella ricerca e sviluppo, testimoniando l'impegno concreto nel promuovere innovazione e cultura scientifica sul territorio. In sintesi: senza memorie NAND avanzate, l'AI come la conosciamo oggi non sarebbe possibile. Chi lavora nello sviluppo di memorie sta letteralmente costruendo le fondamenta del futuro dell'intelligenza artificiale.",
-        "fr": "L'intelligenza artificiale necessita di enormi quantità di dati per apprendere e operare. Le memorie NAND rappresentano il cuore pulsante di questa rivoluzione tecnologica: permettono di archiviare i dataset massivi utilizzati per addestrare i modelli AI e garantiscono accesso rapido alle informazioni durante l'inferenza. Dai data center cloud che ospitano gli LLM (Large Language Models), modelli di intelligenza artificiale, fino ai dispositivi edge come smartphone e auto autonome che eseguono AI localmente, le memorie NAND ad alte prestazioni sono essenziali. Maggiore è la velocità e la capacità dello storage, più complessi e potenti possono essere i modelli di intelligenza artificiale. Queste memorie vengono progettate anche qui, nel nostro sito di Avezzano, un polo di eccellenza nella ricerca e sviluppo, testimoniando l'impegno concreto nel promuovere innovazione e cultura scientifica sul territorio. In sintesi: senza memorie NAND avanzate, l'AI come la conosciamo oggi non sarebbe possibile. Chi lavora nello sviluppo di memorie sta letteralmente costruendo le fondamenta del futuro dell'intelligenza artificiale."
+        "fr": "L’intelligence artificielle a besoin de grandes quantités de données pour apprendre et fonctionner. Les mémoires NAND stockent les ensembles de données utilisés pour entraîner les modèles et permettent un accès rapide aux informations pendant l’inférence. Des centres de données cloud hébergeant les grands modèles de langage aux smartphones et voitures autonomes exécutant l’IA localement, les mémoires NAND à hautes performances sont essentielles. Un stockage plus rapide et de plus grande capacité permet des modèles plus complexes et puissants. Ces mémoires sont également conçues sur le site d’Avezzano, un pôle de recherche et développement qui contribue à l’innovation et à la culture scientifique du territoire."
       },
       "topic": {
         "en": "Artificial intelligence, technology",
         "it": "Intelligenza artificiale, tecnologia",
         "fr": "Intelligence artificielle, technologie"
       },
-      "age": "All Ages",
+      "age": {
+        "en": "All ages",
+        "it": "Tutte le età",
+        "fr": "Tous les âges"
+      },
       "ageAdaptation": {
         "en": "Yes",
         "it": "Sì",
@@ -1617,10 +1863,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1631,9 +1885,23 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "Micron",
+      "websiteUrl": "https://www.micron.com/",
+      "websiteLabel": {
+        "en": "Explore Micron",
+        "it": "Scopri Micron",
+        "fr": "Découvrir Micron"
+      },
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "AVE-015",
@@ -1650,14 +1918,14 @@ const programmeActivities2026 = {
         "fr": "Castello Orsini"
       },
       "area": {
-        "en": "Giardini",
+        "en": "Gardens",
         "it": "Giardini",
-        "fr": "Giardini"
+        "fr": "Jardins"
       },
       "title": {
-        "en": "Trame di scienza: ragazze e donne nella ricerca",
+        "en": "Threads of science: girls and women in research",
         "it": "Trame di scienza: ragazze e donne nella ricerca",
-        "fr": "Trame di scienza: ragazze e donne nella ricerca"
+        "fr": "Fils de science : filles et femmes dans la recherche"
       },
       "type": {
         "en": "Hands-on Activity",
@@ -1665,14 +1933,14 @@ const programmeActivities2026 = {
         "fr": "Activité pratique"
       },
       "description": {
-        "en": "Chi immaginiamo quando pensiamo a una persona che fa ricerca? Un’attività partecipativa per esplorare la percezione del ruolo delle ragazze e delle donne nella scienza. Attraverso domande, scelte e fili colorati, i partecipanti costruiscono insieme una grande mappa delle proprie idee, facendo emergere associazioni, aspettative e stereotipi di genere legati al mondo della ricerca. Un modo semplice e visuale per riflettere su chi può fare scienza e su come immaginiamo le scienziate e gli scienziati di oggi.",
+        "en": "Who do we imagine when we think of someone working in research? A participatory activity exploring perceptions of girls and women in science. Through questions, choices and coloured threads, participants build a large map of their ideas together, revealing associations, expectations and gender stereotypes about research. A simple visual way to reflect on who can do science and how we imagine today’s scientists.",
         "it": "Chi immaginiamo quando pensiamo a una persona che fa ricerca? Un’attività partecipativa per esplorare la percezione del ruolo delle ragazze e delle donne nella scienza. Attraverso domande, scelte e fili colorati, i partecipanti costruiscono insieme una grande mappa delle proprie idee, facendo emergere associazioni, aspettative e stereotipi di genere legati al mondo della ricerca. Un modo semplice e visuale per riflettere su chi può fare scienza e su come immaginiamo le scienziate e gli scienziati di oggi.",
-        "fr": "Chi immaginiamo quando pensiamo a una persona che fa ricerca? Un’attività partecipativa per esplorare la percezione del ruolo delle ragazze e delle donne nella scienza. Attraverso domande, scelte e fili colorati, i partecipanti costruiscono insieme una grande mappa delle proprie idee, facendo emergere associazioni, aspettative e stereotipi di genere legati al mondo della ricerca. Un modo semplice e visuale per riflettere su chi può fare scienza e su come immaginiamo le scienziate e gli scienziati di oggi."
+        "fr": "Qui imaginons-nous lorsque nous pensons à une personne qui fait de la recherche ? Une activité participative pour explorer la perception des filles et des femmes dans les sciences. À travers des questions, des choix et des fils colorés, le public construit une grande carte de ses idées, révélant associations, attentes et stéréotypes de genre liés à la recherche. Une manière simple et visuelle de réfléchir à qui peut faire de la science et à notre représentation des scientifiques d’aujourd’hui."
       },
       "topic": {
         "en": "Interdisciplinary",
-        "it": "Interdisciplinary",
-        "fr": "Interdisciplinary"
+        "it": "Interdisciplinare",
+        "fr": "Interdisciplinaire"
       },
       "age": "11–14, 15–18, 18+",
       "ageAdaptation": {
@@ -1685,10 +1953,18 @@ const programmeActivities2026 = {
         "it": "Continuo",
         "fr": "Continu"
       },
-      "duration": "",
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "sessions25": "17-22",
       "sessions26": "",
-      "maxParticipants": "",
+      "maxParticipants": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
       "bookingRequired": {
         "en": "No",
         "it": "No",
@@ -1699,9 +1975,17 @@ const programmeActivities2026 = {
         "it": "Non applicabile",
         "fr": "Non applicable"
       },
-      "accessibility": "",
-      "partner": "",
-      "notes": ""
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INFN",
+      "notes": "",
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     }
   ],
   "alessandria": [
@@ -4106,7 +4390,24 @@ function sharedZoneActivitiesForEvent() {
       sessions26,
       image: "activities-ern-2026_img/avezzano-debriefing.png"
     }
-  ];
+  ].map((activity) => {
+    if (eventKey !== "avezzano") return activity;
+    const pending = { en: "To be confirmed", it: "Da confermare", fr: "À confirmer" };
+    return {
+      ...activity,
+      ageAdaptation: pending,
+      format: pending,
+      duration: pending,
+      maxParticipants: pending,
+      bookingRequired: pending,
+      bookingMethod: pending,
+      accessibility: { en: "Yes", it: "Sì", fr: "Oui" },
+      partner: pending,
+      showFormat: true,
+      showBooking: true,
+      showAgeAdaptation: true
+    };
+  });
 }
 
 function activityHasDay(activity, day) {
@@ -4182,13 +4483,13 @@ function renderActivityCard(activity, currentDay = "all") {
     createDetail(copy.labels.area, activity.area),
     createDetail(copy.labels.topic, activity.topic),
     createDetail(copy.labels.age, activity.age),
-    isEscapeRoom ? createDetail(copy.labels.ageAdaptation, activity.ageAdaptation) : "",
+    eventKey !== "avezzano" && (isEscapeRoom || activity.showAgeAdaptation) ? createDetail(copy.labels.ageAdaptation, activity.ageAdaptation) : "",
     (isEscapeRoom || activity.showFormat) ? createDetail(copy.labels.format, activity.format) : "",
     createDetail(copy.labels.duration, duration ? (/^\d+$/.test(duration) ? `${duration} min` : duration) : ""),
     activityZoneKey(activity) === "investigation" && (isEscapeRoom || activity.showSchedule) ? createDetail(copy.labels.sessions, sessions) : "",
-    createDetail(copy.labels.maxParticipants, activity.maxParticipants),
-    (isEscapeRoom || activity.showBooking) ? createDetail(copy.labels.booking, [localise(activity.bookingRequired), localise(activity.bookingMethod)].filter(Boolean).join(" · ")) : "",
-    createDetail(copy.labels.accessibility, activity.accessibility),
+    (eventKey !== "avezzano" || activity.id === "AVE-001") ? createDetail(copy.labels.maxParticipants, activity.maxParticipants) : "",
+    (eventKey === "avezzano" ? ["AVE-001", "AVE-010"].includes(activity.id) : (isEscapeRoom || activity.showBooking)) ? createDetail(copy.labels.booking, [...new Set([localise(activity.bookingRequired), localise(activity.bookingMethod)].filter(Boolean))].join(" · ")) : "",
+    (eventKey !== "avezzano" || activity.id === "AVE-001") ? createDetail(copy.labels.accessibility, activity.accessibility) : "",
     createDetail(copy.labels.partner, activity.partner)
   ].filter(Boolean).join("");
 
