@@ -4211,6 +4211,12 @@ const programmeActivities2026 = {
         "it": "Registrazione online, Desk informazioni",
         "fr": "Inscription en ligne, Point information"
       },
+      "bookingUrl": "https://forms.gle/EPNxKDcsywN1ddgL9",
+      "bookingLabel": {
+        "en": "Book the Pavia escape room",
+        "it": "Prenota l’escape room di Pavia",
+        "fr": "Réserver l’escape room de Pavia"
+      },
       "accessibility": "",
       "partner": "",
       "notes": ""
