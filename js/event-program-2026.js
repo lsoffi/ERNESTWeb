@@ -35,7 +35,7 @@ const eventProgrammes2026 = {
     image: "PISA.png"
   },
   bari: {
-    time: "10–22",
+    time: "9–19",
     city: { en: "Bari", it: "Bari", fr: "Bari" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -3010,7 +3010,7 @@ const programmeActivities2026 = {
         "fr": "Sessions programmées"
       },
       "duration": "45",
-      "sessions25": "10 - 22",
+      "sessions25": "9–19",
       "sessions26": "",
       "maxParticipants": "25",
       "bookingRequired": {
@@ -3022,6 +3022,12 @@ const programmeActivities2026 = {
         "en": "Online registration",
         "it": "Registrazione online",
         "fr": "Inscription en ligne"
+      },
+      "bookingUrl": "https://hepscapebari.eventbrite.it",
+      "bookingLabel": {
+        "en": "Book HEPscape! in Bari",
+        "it": "Prenota HEPscape! a Bari",
+        "fr": "Réserver HEPscape! à Bari"
       },
       "accessibility": "",
       "partner": "",
