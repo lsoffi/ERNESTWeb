@@ -3175,9 +3175,9 @@ const programmeActivities2026 = {
         "fr": "Chiostro"
       },
       "title": {
-        "en": "Il medico degli affreschi: il progetto HeRide",
-        "it": "Il medico degli affreschi: il progetto HeRide",
-        "fr": "Il medico degli affreschi: il progetto HeRide"
+        "en": "Il medico degli affreschi: il progetto HERIDE",
+        "it": "Il medico degli affreschi: il progetto HERIDE",
+        "fr": "Il medico degli affreschi: il progetto HERIDE"
       },
       "type": {
         "en": "Hands-on Activity",
@@ -3185,9 +3185,9 @@ const programmeActivities2026 = {
         "fr": "Activité pratique"
       },
       "description": {
-        "en": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nel progetto HeriDe",
-        "it": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nel progetto HeriDe",
-        "fr": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nel progetto HeriDe"
+        "en": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nell'attività sperimentale.",
+        "it": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nell'attività sperimentale.",
+        "fr": "Un percorso interattivo dedicato alla diagnostica non invasiva degli affreschi,in cui il pubblico potrà sperimentare direttamente alcuni principi utilizzati nell'attività sperimentale."
       },
       "topic": {
         "en": "Physics, Humanities, Interdisciplinary",
@@ -3249,9 +3249,9 @@ const programmeActivities2026 = {
         "fr": "Activité pratique"
       },
       "description": {
-        "en": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibbre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno",
-        "it": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibbre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno",
-        "fr": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibbre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno"
+        "en": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno",
+        "it": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno",
+        "fr": "Attraverso piccoli esperimenti e dimostrazioni fantasmagoriche, spaziando dagli ologrammi alle fibre ottiche, i partecipanti scopriranno alcune delle più interessanti applicazioni scientifiche della luce nelle tecnologie che usiamo ogni giorno"
       },
       "topic": {
         "en": "Physics",
@@ -3442,9 +3442,9 @@ const programmeActivities2026 = {
         "fr": "Un viaggio nel mondo della ricerca sperimentale, dalla straordinaria capacità di rigenerazione di Hydra vulgaris ai biosensori SERS, che utilizzano la luce per riconoscere molecole anche in quantità minime. Attraverso osservazioni al microscopio, esperimenti, giochi e piccole sfide, ragazze e ragazzi scopriranno i meccanismi della rigenerazione e il funzionamento dei biosensori, avvicinandosi alla biologia, chimica e fisica in modo coinvolgente e interattivo. Un’esperienza per capire come nasce la ricerca scientifica: osservare, porsi domande, formulare ipotesi e sperimentare in prima persona."
       },
       "topic": {
-        "en": "Biology",
-        "it": "Biology",
-        "fr": "Biology"
+        "en": "Biology, Physics",
+        "it": "Biology, Physics",
+        "fr": "Biology, Physics"
       },
       "age": "18+, 11–14, 6–10, 15–18",
       "ageAdaptation": {
@@ -3506,11 +3506,11 @@ const programmeActivities2026 = {
         "fr": "Un viaggio coinvolgente tra chimica, fisica e biologia, dove la scienza si impara facendo. Dalla magia della luce laser ai segreti delle molecole biologiche, ragazze e ragazzi sperimenteranno in prima persona tra giochi e piccole sfide. Osservando fenomeni sorprendenti e mettendosi alla prova, scopriranno cosa si nasconde davvero dietro i dettagli più curiosi della vita quotidiana."
       },
       "topic": {
-        "en": "Biology",
-        "it": "Biology",
-        "fr": "Biology"
+        "en": "Biology, Chemistry, Physics",
+        "it": "Biology, Chemistry, Physics",
+        "fr": "Biology, Chemistry, Physics"
       },
-      "age": "",
+      "age": "11–14, 15–18, 18+",
       "ageAdaptation": "",
       "format": {
         "en": "On demand",
@@ -4491,6 +4491,46 @@ function sharedZoneActivitiesForEvent() {
       image: "activities-ern-2026_img/avezzano-debriefing.png"
     }
   ].map((activity) => {
+    if (eventKey === "napoli" && activity.zone === "entrance") {
+      return {
+        ...activity,
+        title: { en: "ERNEST Entrance", it: "ERNEST Entrance", fr: "ERNEST Entrance" },
+        type: { en: "Talk", it: "Incontro", fr: "Rencontre" },
+        description: {
+          en: "Inizia qui la tua avventura nella Notte Europea delle Ricercatrici e dei Ricercatori! Ritira il tuo passaporto ERNEST, scopri le attività in programma e preparati a esplorare il mondo della ricerca. L'area Entrance è il punto di partenza del percorso: qui troverai tutte le informazioni utili per vivere l'evento, raccogliere indizi, incontrare i ricercatori e diventare protagonista della tua esperienza.",
+          it: "Inizia qui la tua avventura nella Notte Europea delle Ricercatrici e dei Ricercatori! Ritira il tuo passaporto ERNEST, scopri le attività in programma e preparati a esplorare il mondo della ricerca. L'area Entrance è il punto di partenza del percorso: qui troverai tutte le informazioni utili per vivere l'evento, raccogliere indizi, incontrare i ricercatori e diventare protagonista della tua esperienza.",
+          fr: "Inizia qui la tua avventura nella Notte Europea delle Ricercatrici e dei Ricercatori! Ritira il tuo passaporto ERNEST, scopri le attività in programma e preparati a esplorare il mondo della ricerca. L'area Entrance è il punto di partenza del percorso: qui troverai tutte le informazioni utili per vivere l'evento, raccogliere indizi, incontrare i ricercatori e diventare protagonista della tua esperienza."
+        },
+        topic: {
+          en: "Physics, Chemistry, Biology, Mathematics, Environment, Engineering, Interdisciplinary",
+          it: "Physics, Chemistry, Biology, Mathematics, Environment, Engineering, Interdisciplinary",
+          fr: "Physics, Chemistry, Biology, Mathematics, Environment, Engineering, Interdisciplinary"
+        },
+        area: { en: "Chiostro", it: "Chiostro", fr: "Chiostro" },
+        venue: { en: "Piazza S. Maria La Nova", it: "Piazza S. Maria La Nova", fr: "Piazza S. Maria La Nova" },
+        sessions25: "18-22"
+      };
+    }
+    if (eventKey === "napoli" && activity.zone === "debrief") {
+      return {
+        ...activity,
+        title: { en: "ERNEST Debriefing", it: "ERNEST Debriefing", fr: "ERNEST Debriefing" },
+        type: { en: "Talk", it: "Incontro", fr: "Rencontre" },
+        description: {
+          en: "Concludi il tuo viaggio nella Notte Europea delle Ricercatrici e dei Ricercatori ripercorrendo le esperienze vissute durante l'evento. Nell'area Debriefing potrai condividere ciò che hai scoperto, mettere alla prova le conoscenze acquisite con brevi attività interattive e scoprire come la curiosità, il metodo scientifico e la collaborazione trasformano domande in nuove conoscenze.",
+          it: "Concludi il tuo viaggio nella Notte Europea delle Ricercatrici e dei Ricercatori ripercorrendo le esperienze vissute durante l'evento. Nell'area Debriefing potrai condividere ciò che hai scoperto, mettere alla prova le conoscenze acquisite con brevi attività interattive e scoprire come la curiosità, il metodo scientifico e la collaborazione trasformano domande in nuove conoscenze.",
+          fr: "Concludi il tuo viaggio nella Notte Europea delle Ricercatrici e dei Ricercatori ripercorrendo le esperienze vissute durante l'evento. Nell'area Debriefing potrai condividere ciò che hai scoperto, mettere alla prova le conoscenze acquisite con brevi attività interattive e scoprire come la curiosità, il metodo scientifico e la collaborazione trasformano domande in nuove conoscenze."
+        },
+        topic: {
+          en: "Physics, Biology, Chemistry, Mathematics, Interdisciplinary, Computer Science, Engineering",
+          it: "Physics, Biology, Chemistry, Mathematics, Interdisciplinary, Computer Science, Engineering",
+          fr: "Physics, Biology, Chemistry, Mathematics, Interdisciplinary, Computer Science, Engineering"
+        },
+        area: { en: "Chiostro", it: "Chiostro", fr: "Chiostro" },
+        venue: { en: "Piazza S. Maria La Nova", it: "Piazza S. Maria La Nova", fr: "Piazza S. Maria La Nova" },
+        sessions25: "18-22"
+      };
+    }
     if (eventKey !== "avezzano") return activity;
     const pending = { en: "To be confirmed", it: "Da confermare", fr: "À confirmer" };
     return {
