@@ -3952,7 +3952,7 @@ const programmeActivities2026 = {
         "fr": "Sessions programmées"
       },
       "duration": "60",
-      "sessions25": "19–20; 20–21; 21–22; 22–23",
+	"sessions25": "18:45–19.45; 20–21; 21:15–22.15; 22.30–23.30",
       "sessions26": "",
       "maxParticipants": "25",
       "bookingRequired": {
