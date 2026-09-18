@@ -3111,7 +3111,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-matematica-cittadino.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
