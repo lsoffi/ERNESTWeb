@@ -62,7 +62,7 @@ const eventProgrammes2026 = {
     venue: { en: "École Polytechnique (Palaiseau)", it: "École Polytechnique (Palaiseau)", fr: "École Polytechnique (Palaiseau)" },
     image: "CNRS.png"
   },
-  napoli: {
+    napoli: {
     time: "18–22",
     city: { en: "Naples", it: "Napoli", fr: "Naples" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
@@ -3227,7 +3227,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-ricercatori-luce.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -3287,7 +3287,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-scoperta-vita.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -3351,7 +3351,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-segreti-mare.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -3415,7 +3415,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-biosensori.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -3539,7 +3539,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "activities-ern-2026_img/napoli-il-dato-e-tratto.png",
+      "image": "activities-ern-2026_img/napoli-guai.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -3663,7 +3663,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-biosistemi.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -3787,7 +3787,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-bottega-luce.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
@@ -3843,7 +3843,7 @@ const programmeActivities2026 = {
         "it": "Napoli",
         "fr": "Napoli"
       },
-      "image": "",
+      "image": "activities-ern-2026_img/napoli-plastic-lab.png",
       "venue": {
         "en": "Piazza S. Maria La Nova",
         "it": "Piazza S. Maria La Nova",
