@@ -3111,7 +3111,17 @@ const programmeActivities2026 = {
       },
       "accessibility": "",
       "partner": "",
-      "notes": ""
+	"notes": "",
+	"bookingUrl": "https://www.eventbrite.it/e/ernest-la-notte-europea-della-ricerca-alla-ricerca-dellequilibrio-perduto-tickets-2000952880931?aff=oddtdtcreator",
+      "bookingLabel": {
+        "en": "Book the escape room in Naples",
+        "it": "Prenota l'escape room a Napoli",
+        "fr": "Réserver l'escape room à Napoli"
+      },
+      "showFormat": true,
+      "showBooking": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     },
     {
       "id": "NAP-002",
