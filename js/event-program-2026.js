@@ -2340,10 +2340,20 @@ const programmeActivities2026 = {
         "it": "Sì",
         "fr": "Oui"
       },
-      "bookingMethod": "",
+      "bookingMethod": {
+        "en": "Click the link to book",
+        "it": "Clicca sul link per prenotare",
+        "fr": "Cliquez sur le lien pour réserver"
+      },
       "accessibility": "",
       "partner": "",
-      "notes": ""
+      "notes": "",
+      "bookingUrl": "https://www.eventbrite.com/e/hepscape-ernest2026-tickets-2000576675691?aff=oddtdtcreator",
+      "bookingLabel": {
+        "en": "Book HEPscape! in Terni",
+        "it": "Prenota HEPscape! a Terni",
+        "fr": "Réserver HEPscape! à Terni"
+      }
     },
     {
       "id": "TER-002",
