@@ -279,6 +279,79 @@ const programmeActivities2026 = {
       "image": "activities-ern-2026_img/avezzano-ingresso-ernest.png"
     },
     {
+      "id": "PAD-78",
+      "sourceActivityId": "78",
+      "city": {
+        "en": "Padua",
+        "it": "Padova",
+        "fr": "Padoue"
+      },
+      "title": {
+        "en": "INAF escape mission",
+        "it": "INAF escape mission",
+        "fr": "INAF escape mission"
+      },
+      "area": {
+        "en": "Sala Jappelli",
+        "it": "Sala Jappelli",
+        "fr": "Sala Jappelli"
+      },
+      "description": {
+        "en": "A scientific and interactive escape room combining play, teamwork and science communication, taking children on a journey to discover space, asteroids and the technologies used to protect our planet.",
+        "it": "Un’escape room scientifica e interattiva che unisce gioco, collaborazione e divulgazione, accompagnando i bambini alla scoperta dello spazio, degli asteroidi e delle tecnologie utilizzate per difendere il nostro pianeta.",
+        "fr": "Une escape room scientifique et interactive qui associe jeu, collaboration et médiation scientifique, invitant les enfants à découvrir l’espace, les astéroïdes et les technologies utilisées pour protéger notre planète."
+      },
+      "topic": {
+        "en": "Astronomy, Physics",
+	"it": "Astronomia, Fisica",
+	"fr": "Astronomie, Physique"
+      },
+      "age": "6-10",
+      "duration": "45",
+      "maxParticipants": "",
+      "sessions25": "20–22",
+      "sessions26": "",
+      "ageAdaptation": "",
+      "type": {
+        "en": "Escape room",
+        "it": "Escape room",
+        "fr": "Escape room"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "bookingRequired": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+  "bookingMethod": {
+        "en": "On site registration",
+        "it": "Registrazione in loco",
+        "fr": "Inscription sur place"
+      },
+      "showSchedule": true,
+      "venue": {
+        "en": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "it": "INAF – Osservatorio astronomico di Padova – Museo La Specola",
+        "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
+      },
+      "partner": {
+        "en": "INAF",
+        "it": "INAF",
+        "fr": "INAF"
+      },
+      "image": "events-ern-2026_img/padova-inafescape",
+      "bookingUrl": "",
+      "bookingLabel": {
+        "en": "",
+        "it": "",
+        "fr": ""
+      }
+    },  
+    {
       "id": "PAD-79",
       "sourceActivityId": "79",
       "city": {
