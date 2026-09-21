@@ -119,7 +119,7 @@ const eventProgrammes2026 = {
       fr: "Institut national italien d'astrophysique"
     },
     venue: { en: "University of Palermo campus", it: "Campus dell'Università di Palermo", fr: "Campus de l'Université de Palerme" },
-    image: "PALERMO.png"
+    image: "PALERMO2.png"
   },
   bologna: {
     time: "17:30–23",
