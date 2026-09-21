@@ -1458,7 +1458,92 @@ const programmeActivities2026 = {
       "showFormat": true,
       "showSchedule": true,
       "showAgeAdaptation": true
-    },  
+    },
+      {
+      "id": "AVE-021",
+      "sourceActivityId": "21",
+      "city": {
+        "en": "Avezzano",
+        "it": "Avezzano",
+        "fr": "Avezzano"
+      },
+      "image": "activities-ern-2026_img/avezzano-codymaze.png",
+      "venue": {
+        "en": "Castello Orsini",
+        "it": "Castello Orsini",
+        "fr": "Castello Orsini"
+      },
+      "area": {
+        "en": "Theatre",
+        "it": "Teatro",
+        "fr": "Théâtre"
+      },
+      "title": {
+        "en": "Codymaze Astrofisico",
+        "it": "Codymaze Astrofisico",
+        "fr": "Codymaze Astrofisico"
+      },
+      "type": {
+        "en": "Interactive game",
+        "it": "Gioco interattivo",
+        "fr": "Jeu interactif"
+      },
+      "description": {
+        "en": "Enter the Astrophysics CodyMaze and take on a challenge combining coding and astronomy! Navigate the maze, follow the clues and answer quizzes about space. Use logic and computational thinking to find the right path. Can you make it to the exit?",
+        "it": "Entra nel CodyMaze Astrofisico e mettiti alla prova tra coding e astronomia! Muoviti nel labirinto, segui gli indizi e rispondi a quiz sullo spazio. Usa logica e pensiero computazionale per trovare il percorso giusto. Riuscirai a raggiungere l’uscita?",
+        "fr": "Entrez dans le CodyMaze Astrophysique et relevez un défi entre codage et astronomie ! Parcourez le labyrinthe, suivez les indices et répondez à des quiz sur l’espace. Faites appel à votre logique et à votre pensée informatique pour trouver le bon chemin. Réussirez-vous à trouver la sortie ?"
+      },  "topic": {
+        "en": "AtroPhysics",
+        "it": "Astrofisica",
+        "fr": "Astrophysique"
+      },
+      "age": "10+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+       "en": "Continuous",
+        "it": "Continuo",
+        "fr": "Continu"
+      },
+      "duration": {
+        "en": "To be confirmed",
+        "it": "Da confermare",
+        "fr": "À confirmer"
+      },
+      "sessions25": "17:00–22:00",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "showBooking": false,
+      "bookingUrl": "",
+      "bookingLabel": {
+        "en": "",
+        "it": "",
+        "fr": ""
+      },
+      "bookingMethod": {
+        "en": "",
+        "it": "",
+        "fr": ""
+      },
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "INAF",
+      "notes": "",
+      "showFormat": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
+    },
     {
       "id": "AVE-011",
       "sourceActivityId": "11",
