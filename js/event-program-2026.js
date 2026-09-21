@@ -1489,9 +1489,9 @@ const programmeActivities2026 = {
         "fr": "Jeu interactif"
       },
       "description": {
-        "en": "Enter the Astrophysics CodyMaze and take on a challenge combining coding and astronomy! Navigate the maze, follow the clues and answer quizzes about space. Use logic and computational thinking to find the right path. Can you make it to the exit?",
-        "it": "Entra nel CodyMaze Astrofisico e mettiti alla prova tra coding e astronomia! Muoviti nel labirinto, segui gli indizi e rispondi a quiz sullo spazio. Usa logica e pensiero computazionale per trovare il percorso giusto. Riuscirai a raggiungere l’uscita?",
-        "fr": "Entrez dans le CodyMaze Astrophysique et relevez un défi entre codage et astronomie ! Parcourez le labyrinthe, suivez les indices et répondez à des quiz sur l’espace. Faites appel à votre logique et à votre pensée informatique pour trouver le bon chemin. Réussirez-vous à trouver la sortie ?"
+          "en": "Enter the Astrophysics CodyMaze and take on a challenge combining coding and astronomy! Navigate the maze, follow the clues and answer quizzes about space. Use logic and computational thinking to find the right path. Can you make it to the exit?: Read more here: https://play.inaf.it/cody-maze-astrofisico/",
+          "it": "Entra nel CodyMaze Astrofisico e mettiti alla prova tra coding e astronomia! Muoviti nel labirinto, segui gli indizi e rispondi a quiz sullo spazio. Usa logica e pensiero computazionale per trovare il percorso giusto. Riuscirai a raggiungere l’uscita? Scopri di piu` qui: https://play.inaf.it/cody-maze-astrofisico/",
+          "fr": "Entrez dans le CodyMaze Astrophysique et relevez un défi entre codage et astronomie ! Parcourez le labyrinthe, suivez les indices et répondez à des quiz sur l’espace. Faites appel à votre logique et à votre pensée informatique pour trouver le bon chemin. Réussirez-vous à trouver la sortie ? Infos ici: https://play.inaf.it/cody-maze-astrofisico/"
       },  "topic": {
         "en": "AtroPhysics",
         "it": "Astrofisica",
