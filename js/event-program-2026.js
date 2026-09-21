@@ -220,9 +220,9 @@ const programmeActivities2026 = {
         "fr": "Padoue"
       },
       "title": {
-        "en": "A cavallo di un fotone",
-        "it": "A cavallo di un fotone",
-        "fr": "A cavallo di un fotone"
+        "en": "INAF escape mission"
+        "it": "INAF escape mission"
+        "fr": "INAF escape mission"
       },
       "area": {
         "en": "Sala Jappelli",
@@ -230,9 +230,9 @@ const programmeActivities2026 = {
         "fr": "Sala Jappelli"
       },
       "description": {
-        "it": "Vivi il viaggio dei fotoni – le particelle della luce – dalle profondità del Sole, dove iniziano la loro avventura, attraverso i pianeti e altri corpi celesti del Sistema solare, fino ai telescopi degli astronomi che, dalla Terra, osservano questi corpi per studiarli in dettaglio, comprenderne il funzionamento e realizzarne splendide immagini. Un'escape room che combina l'esplorazione dello spazio con la pratica del pensiero computazionale, tra sfide di robotica e coding unplugged.",
-        "en": "Follow the journey of photons — particles of light — from deep inside the Sun, through the planets and other celestial bodies of the Solar System, to astronomers’ telescopes on Earth. Astronomers observe these objects to study them in detail, understand how they work and create beautiful images. An escape room combining space exploration with computational thinking through robotics challenges and unplugged coding.",
-        "fr": "Suivez le voyage des photons — les particules de lumière — depuis les profondeurs du Soleil, à travers les planètes et les autres corps célestes du Système solaire, jusqu’aux télescopes des astronomes sur Terre. Ces observations permettent de les étudier en détail, de comprendre leur fonctionnement et d’en réaliser de magnifiques images. Une escape room qui associe exploration spatiale et pensée informatique, avec des défis de robotique et de programmation débranchée."
+          "it": "Un’escape room scientifica e interattiva che unisce gioco, collaborazione e divulgazione, accompagnando i bambini alla scoperta dello spazio, degli asteroidi e delle tecnologie utilizzate per difendere il nostro pianeta.",
+          "en": "A scientific and interactive escape room combining play, teamwork and science communication, taking children on a journey to discover space, asteroids and the technologies used to protect our planet.",
+        "fr": "Une escape room scientifique et interactive qui associe jeu, collaboration et médiation scientifique, invitant les enfants à découvrir l’espace, les astéroïdes et les technologies utilisées pour protéger notre planète."
       },
       "topic": {
         "en": "Astronomy, Physics, Computer Science",
@@ -241,7 +241,7 @@ const programmeActivities2026 = {
       },
       "age": "6–10",
       "duration": "45",
-      "maxParticipants": "",
+      "maxParticipants": "10",
       "sessions25": "17–20",
       "sessions26": "",
       "ageAdaptation": {
@@ -265,9 +265,9 @@ const programmeActivities2026 = {
         "fr": "Oui"
       },
       "bookingMethod": {
-        "en": "Online registration",
-        "it": "Registrazione online",
-        "fr": "Inscription en ligne"
+        "en": "Insite registration",
+        "it": "Registrazione in loco",
+        "fr": "Inscription sur place "
       },
       "showSchedule": true,
       "venue": {
@@ -276,16 +276,16 @@ const programmeActivities2026 = {
         "fr": "INAF – Osservatorio astronomico di Padova – Museo La Specola"
       },
       "partner": {
-        "en": "University of Padua",
-        "it": "Università di Padova",
-        "fr": "Université de Padoue"
+        "en": "INAF",
+        "it": "INAF",
+        "fr": "INAF"
       },
-      "image": "activities-ern-2026_img/photon-escape-room.png",
-      "bookingUrl": "https://science4all.it/",
+      "image": "activities-ern-2026_img/padova-inafescape.png",
+      "bookingUrl": "",
       "bookingLabel": {
-        "en": "Book on Science4All",
-        "it": "Prenota su Science4All",
-        "fr": "Réserver sur Science4All"
+        "en": "",
+        "it": "",
+        "fr": ""
       }
     },
     {
