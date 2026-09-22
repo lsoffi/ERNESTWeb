@@ -2585,58 +2585,6 @@ const programmeActivities2026 = {
       "partner": "",
       "notes": ""
     },
-      "en": "An interactive experience that allows you to remotely explore the CMS experiment at CERN, discovering the detector, how it works, and the physics it investigates, \
-guidded by the researchers who work on it.",
-        "it": "Esperienza interattiva che permette di esplorare da remoto l’esperimento CMS al CERN, scoprendo il rivelatore, il suo funzionamento e la fisica che studia, accompagnati dai ricercatori che vi lavorano.",
-        "fr": "Une expérience interactive qui permet d’explorer à distance l’expérience CMS au CERN, de découvrir le détecteur, son fonctionnement et la physique qu’il étudie, accompagné par les chercheurs qui y travaillent."
-      },  "topic": {
-        "en": "Physics",
-        "it": "Fisica",
-        "fr": "Physique"
-      },
-      "age": "15–18, 18+",
-      "ageAdaptation": {
-        "en": "Yes",
-        "it": "Sì",
-        "fr": "Oui"
-      },
-      "format": {
-        "en": "Scheduled sessions",
-        "it": "Sessioni a orario",
-        "fr": "Sessions programmées"
-      },
-  "duration": "60",
-      "sessions25": "19:00–20:00",
-      "sessions26": "",
-      "maxParticipants": "",
-      "bookingRequired": {
-        "en": "No",
-        "it": "No",
-        "fr": "Non"
-      },
-      "showBooking": false,
-      "bookingUrl": "",
-      "bookingLabel": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-      "bookingMethod": {
-        "en": "",
-        "it": "",
-        "fr": ""
-      },
-  "accessibility": {
-        "en": "Yes",
-        "it": "Sì",
-        "fr": "Oui"
-      },
-      "partner": "CMS Experiment at CERN",
-      "notes": "",
-      "showFormat": true,
-      "showSchedule": true,
-      "showAgeAdaptation": true
-    },~
     {
       "id": "TER-003",
       "sourceActivityId": "",
