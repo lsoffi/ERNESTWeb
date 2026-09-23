@@ -3285,6 +3285,88 @@ const programmeActivities2026 = {
       "accessibility": "",
       "partner": "",
       "notes": ""
+    },
+    {
+      "id": "BAR-002",
+      "sourceActivityId": "20",
+      "city": {
+        "en": "Bari",
+        "it": "Bari",
+        "fr": "Bari"
+      },
+      "image": "activities-ern-2026_img/avezzano-CMS-Virtual-Visit.png",
+      "venue": {
+        "en": "Centro Polifunzionale Studenti (I piano) - P.zza Cesare Battisti",
+        "it": "Centro Polifunzionale Studenti (I piano) - P.zza Cesare Battisti",
+        "fr": "Centro Polifunzionale Studenti (I piano) - P.zza Cesare Battisti"
+      },
+      "area": {
+        "en": "BaLab",
+        "it": "BaLab",
+        "fr": "BaLab"
+      },
+      "title": {
+        "en": "Virtual visit of the CMS Experimental site at CERN",
+        "it": "Visita virtuale del sito dell'esperimento CMS al CERN",
+        "fr": "visite virtuelle du CMS Experiment"
+      },
+      "type": {
+        "en": "Video live experience",
+        "it": "Incontro video live",
+        "fr": "Video live experience"
+      },
+      "description": {
+        "en": "An interactive experience that allows you to remotely explore the CMS experiment at CERN, discovering the detector, how it works, and the physics it investigates, guided by the researchers who work on it.",
+        "it": "Esperienza interattiva che permette di esplorare da remoto l’esperimento CMS al CERN, scoprendo il rivelatore, il suo funzionamento e la fisica che studia, accompagnati dai ricercatori che vi lavorano.",
+        "fr": "Une expérience interactive qui permet d’explorer à distance l’expérience CMS au CERN, de découvrir le détecteur, son fonctionnement et la physique qu’il étudie, accompagné par les chercheurs qui y travaillent."
+      },
+      "topic": {
+        "en": "Physics",
+        "it": "Fisica",
+        "fr": "Physique"
+      },
+      "age": "15–18, 18+",
+      "ageAdaptation": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "format": {
+        "en": "Scheduled sessions",
+        "it": "Sessioni a orario",
+        "fr": "Sessions programmées"
+      },
+      "duration": "60",
+      "sessions25": "19:00–20:00",
+      "sessions26": "",
+      "maxParticipants": "",
+      "bookingRequired": {
+        "en": "No",
+        "it": "No",
+        "fr": "Non"
+      },
+      "showBooking": false,
+      "bookingUrl": "",
+      "bookingLabel": {
+        "en": "",
+        "it": "",
+        "fr": ""
+      },
+      "bookingMethod": {
+        "en": "",
+        "it": "",
+        "fr": ""
+      },
+      "accessibility": {
+        "en": "Yes",
+        "it": "Sì",
+        "fr": "Oui"
+      },
+      "partner": "CMS Experiment at CERN",
+      "notes": "",
+      "showFormat": true,
+      "showSchedule": true,
+      "showAgeAdaptation": true
     }
   ],
   "napoli": [
